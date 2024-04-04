@@ -1,5 +1,6 @@
-import { Link } from "gatsby";
 import React from "react";
+import { StaticImage } from "gatsby-plugin-image";
+import { Link } from "gatsby";
 import {
   TiSocialFacebookCircular,
   TiSocialLinkedin,
@@ -19,9 +20,11 @@ const Footer = () => (
           <h2 className="text-slate-100 z-10 text-2xl">
             Start Delivering better customer outcomes today
           </h2>
-          <h2 className=" text-slate-100 text-xl z-10 mt-8">
-            messy programmer logo
-          </h2>
+          <StaticImage
+            src="../images/messyProgrammerLogo.pmg"
+            alt="messyProgrammerLogo"
+            className=" text-slate-100 text-xl z-10 mt-8"
+          />
           {/* icon section  */}
           <div className="flex justify-center gap-2 mt-8">
             <Link to="#" className="text-white text-xl">
