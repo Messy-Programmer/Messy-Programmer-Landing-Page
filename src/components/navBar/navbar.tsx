@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const NavBar = () => {
   return (
-    <nav className=" absolute top-0 w-full bg-gradient-to-b from-[#061906] from-2% via-[#06190642]">
+    <nav className=" absolute top-0 w-full bg-gradient-to-b from-[#061906] from-2% via-[#06190642] z-10">
       <div className="flex justify-between items-center px-2 py-2">
         <div className="log">
           <StaticImage
