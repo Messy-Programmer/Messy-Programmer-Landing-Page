@@ -63,8 +63,8 @@ export const BackgroundGradientAnimation = ({
       if (!interactiveRef.current) {
         return;
       }
-      setCurX(curX + (tgX - curX) / 15);
-      setCurY(curY + (tgY - curY) / 15);
+      setCurX(curX + (tgX - curX) / 20);
+      setCurY(curY + (tgY - curY) / 20);
       interactiveRef.current.style.transform = `translate(${Math.round(
         curX
       )}px, ${Math.round(curY)}px)`;
@@ -92,7 +92,7 @@ export const BackgroundGradientAnimation = ({
         <div className="logoBg bg-[length:112px_128px] bg-[10%_90%]">
           <div
             className={cn(
-              "h-screen w-screen relative overflow-hidden top-0 left-0",
+              "h-screen w-full relative overflow-hidden top-0 left-0 md:h-screen",
               containerClassName
             )}
           >
@@ -114,7 +114,7 @@ export const BackgroundGradientAnimation = ({
                 </filter>
               </defs>
             </svg>
-            <div className={cn("", className)}>{children}</div>
+
             <div
               className={cn(
                 "gradients-container h-full w-full blur-lg",
@@ -179,6 +179,7 @@ export const BackgroundGradientAnimation = ({
                 ></div>
               )}
             </div>
+            <div className={cn("", className)}>{children}</div>
           </div>
         </div>
       </div>

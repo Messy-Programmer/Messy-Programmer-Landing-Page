@@ -15,4 +15,11 @@
     background-repeat: no-repeat;
     box-shadow: 0px 16px 12px #cf040400;
   }
+  .gradient-txt {
+    background: #dddde0;
+    background: linear-gradient(to right, #ffffff 40%, #829f82 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
