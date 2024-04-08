@@ -2,6 +2,7 @@ import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import { IoMail } from "react-icons/io5";
+import { BackgroundBeams } from "../ui/background-beam";
 
 const HeroText = () => {
   return (
@@ -43,23 +44,18 @@ const HeroText = () => {
         </div>
         {/* hero text end */}
         {/* tab images for mobile  */}
-        <div className="mt-[2rem] lg:hidden">
-          <div className="flex justify-around pt-6 sm:justify-center sm:gap-3 w-full">
-            <StaticImage
-              className="w-[6rem] h-[12rem]  sm:w-[10rem] sm:h-[20rem]"
-              src="../../images/tab-img1.png"
-              alt="lorem"
-            />
-            <StaticImage
-              className="w-[8rem] h-[12rem] mt-12 sm:w-[12rem] sm:h-[16rem] sm:mt-0"
-              src="../../images/tab-img2.png"
-              alt=""
-            />
-            <StaticImage
-              className=" w-[6rem] h-[12rem] mt-24 sm:mt-0 sm:w-[10rem] sm:h-[20rem]"
-              src="../../images/tab-img1.png"
-              alt=""
-            />
+        <div className="relative pt-20 sm:mb-20 sm:px-7 lg:hidden">
+          <div className="flex ">
+            <div>
+              <StaticImage src="../../images/projectConsole.png" alt="" />
+            </div>
+            <div className=" pt-10 sm:pt-0">
+              <StaticImage src="../../images/projectDev.png" alt="" />
+            </div>
+            <div className="flex flex-col pt-20 sm:pt-0">
+              <StaticImage src="../../images/projectCode.png" alt="" />
+              <StaticImage src="../../images/projectTerminal.png" alt="" />
+            </div>
           </div>
         </div>
         {/* tab images for mobile end */}

@@ -14,15 +14,15 @@ const IndexPage: React.FC<PageProps> = () => {
       <BackgroundGradientAnimation>
         <HeroText />
       </BackgroundGradientAnimation>
-      <div className="relative hidden md:inline-block bg-gradient-to-b from-[#0d270d] to-[#051405] mix-blend-multiply">
-        <div className="flex py-36 px-20 w-[full] lg:px-24 lg:py-40">
+      <div className="hidden relative bg-gradient-to-b from-[#0d270d] to-[#051405] md:inline-block py-24 px-20">
+        <div className="flex">
           <div>
             <StaticImage src="../images/projectConsole.png" alt="" />
           </div>
-          <div>
+          <div className="">
             <StaticImage src="../images/projectDev.png" alt="" />
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col ">
             <StaticImage src="../images/projectCode.png" alt="" />
             <StaticImage src="../images/projectTerminal.png" alt="" />
           </div>
