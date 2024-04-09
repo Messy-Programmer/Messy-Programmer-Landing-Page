@@ -62,7 +62,7 @@ const Footer = () => (
             </p>
             <div className="flex flex-col">
               <Link
-                to="mailto: contact@messyprogrammer.in"
+                to="/"
                 className="text-[#1E951E] text-sm font-bold z-10 mt-5"
               >
                 contact@messyprogrammer.in

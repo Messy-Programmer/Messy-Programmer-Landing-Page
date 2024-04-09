@@ -3,10 +3,11 @@ import { type HeadFC, type PageProps } from "gatsby";
 import NavBar from "../components/navBar/navbar";
 import Footer from "../components/footer/footer";
 import { BackgroundGradientAnimation } from "../components/ui/background-gradient-animation";
-
 import HeroText from "../components/otherComp/heroText";
 import { BackgroundBeams } from "../components/ui/background-beam";
 import { StaticImage } from "gatsby-plugin-image";
+import { InfiniteMovingImage } from "../components/otherComp/moving-img";
+import { InfiniteMovingLogoComp } from "../components/otherComp/moving-logo-comp";
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <>
@@ -29,6 +30,7 @@ const IndexPage: React.FC<PageProps> = () => {
         </div>
         <BackgroundBeams />
       </div>
+      <InfiniteMovingLogoComp />
       <Footer />
     </>
   );

@@ -35,6 +35,8 @@ module.exports = {
         third: "moveInCircle 30s linear infinite",
         fourth: "moveHorizontal 40s ease infinite",
         fifth: "moveInCircle 20s ease infinite",
+        scroll:
+          "scroll var(--animation-duration, 10s) var(--animation-direction, forwards) linear infinite",
       },
       keyframes: {
         moveHorizontal: {
@@ -68,6 +70,11 @@ module.exports = {
           },
           "100%": {
             transform: "translateY(-50%)",
+          },
+        },
+        scroll: {
+          to: {
+            transform: "translate(calc(-50% - 0.5rem))",
           },
         },
       },
