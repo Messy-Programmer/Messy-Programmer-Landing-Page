@@ -8,6 +8,7 @@ import { BackgroundBeams } from "../components/ui/background-beam";
 import { StaticImage } from "gatsby-plugin-image";
 import { InfiniteMovingImage } from "../components/otherComp/moving-img";
 import { InfiniteMovingLogoComp } from "../components/otherComp/moving-logo-comp";
+import StatsComponent from "../components/otherComp/ourStats";
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <>
@@ -31,6 +32,7 @@ const IndexPage: React.FC<PageProps> = () => {
         <BackgroundBeams />
       </div>
       <InfiniteMovingLogoComp />
+      <StatsComponent />
       <Footer />
     </>
   );
