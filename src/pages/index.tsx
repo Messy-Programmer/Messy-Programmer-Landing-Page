@@ -6,7 +6,6 @@ import { BackgroundGradientAnimation } from "../components/ui/background-gradien
 import HeroText from "../components/otherComp/heroText";
 import { BackgroundBeams } from "../components/ui/background-beam";
 import { StaticImage } from "gatsby-plugin-image";
-import { InfiniteMovingImage } from "../components/otherComp/moving-img";
 import { InfiniteMovingLogoComp } from "../components/otherComp/moving-logo-comp";
 import StatsComponent from "../components/otherComp/ourStats";
 const IndexPage: React.FC<PageProps> = () => {
