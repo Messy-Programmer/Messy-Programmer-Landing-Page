@@ -22,4 +22,16 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  .gradient-both-txt {
+    color: #051505;
+    background-image: -webkit-linear-gradient(
+      45deg,
+      #051505 0%,
+      #f1f5f9 50%,
+      #051505 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
