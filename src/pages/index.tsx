@@ -8,6 +8,8 @@ import { BackgroundBeams } from "../components/ui/background-beam";
 import { StaticImage } from "gatsby-plugin-image";
 import { InfiniteMovingLogoComp } from "../components/otherComp/moving-logo-comp";
 import StatsComponent from "../components/otherComp/ourStats";
+import { EverVaultCardComp } from "../components/otherComp/EverVaultCardComp";
+import MyComponent from "../components/otherComp/text";
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <>
@@ -32,6 +34,8 @@ const IndexPage: React.FC<PageProps> = () => {
       </div>
       <InfiniteMovingLogoComp />
       <StatsComponent />
+      {/* <EverVaultCardComp /> */}
+      <MyComponent />
       <Footer />
     </>
   );

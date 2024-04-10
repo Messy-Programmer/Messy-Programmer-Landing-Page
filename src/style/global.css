@@ -34,4 +34,9 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  .bg-image {
+    background-image: url("../images/icon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
