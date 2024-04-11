@@ -5,14 +5,14 @@ function ServiceHeroImageComponent() {
   return (
     <div className="overflow-hidden pt-20 bg-black">
       {/* bottom div will be the green circle */}
-      <div className=" bg-gradient-to-r from-[#097809] to-[#0ca10c] rounded-full size-[19rem] relative overflow-visible">
+      <div className=" bg-gradient-to-r from-[#097809] to-[#0ca10c] rounded-full size-[19rem] relative overflow-visible sm:size-[25rem]">
         <StaticImage
           src="../../images/human.png"
           alt="human"
           className=" absolute -top-[30%]"
         />
         {/* bottom div contains the ellipse */}
-        <div className="w-[20rem] absolute  -bottom-[30%]">
+        <div className="w-[20rem] absolute  -bottom-[30%] sm:w-[30rem] sm:-left-[8%]">
           <svg
             width="auto"
             height="247"

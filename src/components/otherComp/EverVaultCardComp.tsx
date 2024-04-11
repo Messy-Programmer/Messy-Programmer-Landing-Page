@@ -15,18 +15,21 @@ export function EverVaultCardComp() {
         </p>
       </div>
       {/* container div  */}
-      <div className="flex flex-col items-center gap-5">
-        <div id="item-1" className="flex flex-col items-center gap-5">
+      <div className="flex flex-col items-center gap-5 lg:flex-row">
+        <div
+          id="item-1"
+          className="flex flex-col items-center gap-5 sm:w-[40rem]"
+        >
           {/* down div contains all the context  */}
           <ServiceHeroImageComponent />
           {/* card no1  */}
-          <div className="border border-[#1c381c] w-[14.688rem] px-7 pb-10 pt-5 bg-gradient-to-b from-[#294629] to-[#050a05] relative">
+          <div className="border border-[#1c381c] w-[14.688rem] sm:w-full px-7 pb-10 pt-5 bg-gradient-to-b from-[#294629] to-[#050a05] relative sm:pb-5">
             <Icon className="absolute h-6 w-6 -top-3 -left-3 text-[#7be87b]" />
             <Icon className="absolute h-6 w-6 -bottom-3 -left-3 text-[#7be87b]" />
             <Icon className="absolute h-6 w-6 -top-3 -right-3 text-[#7be87b]" />
             <Icon className="absolute h-6 w-6 -bottom-3 -right-3 text-[#7be87b]" />
-            <div className="flex flex-col gap-6">
-              <EverVaultCard svg={cardOne} bg="bg-one" />
+            <div className="flex flex-col gap-6 sm:flex-row sm:items-center">
+              <EverVaultCard svg={cardOne} bg="bg-one" className="sm:w-[39%]" />
               <div className="text-slate-100">
                 <p className="text-xs font-normal mt-6">
                   Web App, Business Workflow Design & Implementation, Dedicated
@@ -35,10 +38,10 @@ export function EverVaultCardComp() {
                 <h1 className="text-3xl font-medium mt-4 gradient-txt">
                   Website Development
                 </h1>
-                <p className=" text-lg leading-4 mt-4 ">
+                <p className=" text-lg leading-4 mt-4 sm:mt-1">
                   Leave the tech part on us!
                 </p>
-                <div className="flex justify-center mt-4">
+                <div className="flex justify-center mt-4 sm:justify-start">
                   <Link
                     to="/"
                     className=" rounded-xl bg-gradient-to-tr from-green-700 to-lime-500 py-2 px-4"
@@ -50,7 +53,10 @@ export function EverVaultCardComp() {
             </div>
           </div>
         </div>
-        <div id="item-2" className="flex flex-col gap-5">
+        <div
+          id="item-2"
+          className="flex flex-col gap-5 sm:flex-row sm:gap-[9.5rem] lg:flex-col lg:order-1"
+        >
           {/* card no2 */}
           <div className="border border-[#1c381c] w-[14.688rem] px-7 pb-10 pt-5 bg-gradient-to-b from-[#294629] to-[#050a05] relative">
             <Icon className="absolute h-6 w-6 -top-3 -left-3 text-[#7be87b]" />
@@ -92,7 +98,10 @@ export function EverVaultCardComp() {
             </div>
           </div>
         </div>
-        <div id="item-3" className="flex flex-col gap-5">
+        <div
+          id="item-3"
+          className="flex flex-col gap-5 sm:flex-row sm:gap-[9.5rem] lg:flex-col"
+        >
           {/* card no4 */}
           <div className="border border-[#1c381c] w-[14.688rem] px-7 pb-10 pt-5 bg-gradient-to-b from-[#294629] to-[#050a05] relative">
             <Icon className="absolute h-6 w-6 -top-3 -left-3 text-[#7be87b]" />

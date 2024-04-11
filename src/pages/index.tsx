@@ -35,7 +35,6 @@ const IndexPage: React.FC<PageProps> = () => {
       <InfiniteMovingLogoComp />
       <StatsComponent />
       <EverVaultCardComp />
-      <MyComponent />
       <Footer />
     </>
   );
