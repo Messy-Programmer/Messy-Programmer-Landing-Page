@@ -5,7 +5,7 @@ import ServiceHeroImageComponent from "./ServiceHeroImage";
 
 export function EverVaultCardComp() {
   return (
-    <div className="flex flex-col items-center pt-16 bg-[#051405]">
+    <div className="flex flex-col items-center pt-16 bg-[#051405] lg:pb-16">
       <div className="text-slate-100 text-center">
         <h1 className="text-4xl gradient-txt font-medium">
           Our Services Categories
@@ -15,15 +15,15 @@ export function EverVaultCardComp() {
         </p>
       </div>
       {/* container div  */}
-      <div className="flex flex-col items-center gap-5 lg:flex-row">
+      <div className="flex flex-col items-center gap-5 lg:flex-row lg:pt-16">
         <div
           id="item-1"
-          className="flex flex-col items-center gap-5 sm:w-[40rem]"
+          className="flex flex-col items-center gap-5 sm:w-[40rem] lg:gap-60"
         >
           {/* down div contains all the context  */}
           <ServiceHeroImageComponent />
           {/* card no1  */}
-          <div className="border border-[#1c381c] w-[14.688rem] sm:w-full px-7 pb-10 pt-5 bg-gradient-to-b from-[#294629] to-[#050a05] relative sm:pb-5">
+          <div className="border border-[#1c381c] w-[14.688rem] sm:w-full px-7 pb-10 pt-5 bg-gradient-to-b from-[#294629] to-[#050a05] relative sm:pb-5 ">
             <Icon className="absolute h-6 w-6 -top-3 -left-3 text-[#7be87b]" />
             <Icon className="absolute h-6 w-6 -bottom-3 -left-3 text-[#7be87b]" />
             <Icon className="absolute h-6 w-6 -top-3 -right-3 text-[#7be87b]" />
@@ -55,10 +55,10 @@ export function EverVaultCardComp() {
         </div>
         <div
           id="item-2"
-          className="flex flex-col gap-5 sm:flex-row sm:gap-[9.5rem] lg:flex-col lg:order-1"
+          className="flex flex-col gap-5 sm:flex-row sm:gap-[9.5rem] lg:flex-col lg:order-first lg:gap-5 "
         >
           {/* card no2 */}
-          <div className="border border-[#1c381c] w-[14.688rem] px-7 pb-10 pt-5 bg-gradient-to-b from-[#294629] to-[#050a05] relative">
+          <div className="border border-[#1c381c] w-[14.688rem] px-7 pb-10 pt-5 bg-gradient-to-b from-[#294629] to-[#050a05] relative lg:pb-20">
             <Icon className="absolute h-6 w-6 -top-3 -left-3 text-[#7be87b]" />
             <Icon className="absolute h-6 w-6 -bottom-3 -left-3 text-[#7be87b]" />
             <Icon className="absolute h-6 w-6 -top-3 -right-3 text-[#7be87b]" />
@@ -100,7 +100,7 @@ export function EverVaultCardComp() {
         </div>
         <div
           id="item-3"
-          className="flex flex-col gap-5 sm:flex-row sm:gap-[9.5rem] lg:flex-col"
+          className="flex flex-col gap-5 sm:flex-row sm:gap-[9.5rem] lg:flex-col lg:gap-5"
         >
           {/* card no4 */}
           <div className="border border-[#1c381c] w-[14.688rem] px-7 pb-10 pt-5 bg-gradient-to-b from-[#294629] to-[#050a05] relative">
