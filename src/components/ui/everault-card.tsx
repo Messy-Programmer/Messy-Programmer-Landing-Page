@@ -4,12 +4,12 @@ import { useMotionTemplate, motion } from "framer-motion";
 import { cn } from "../../utils/cn";
 
 export const EverVaultCard = ({
-  text,
+  svg,
   className,
   bg,
 }: {
   bg?: string;
-  text?: string;
+  svg?: React.JSX.Element;
   className?: string;
 }) => {
   let mouseX = useMotionValue(0);
@@ -50,9 +50,9 @@ export const EverVaultCard = ({
           randomString={randomString}
         />
         <div className="relative z-10 flex items-center justify-center ">
-          <div className="relative h-44 w-44  rounded-full flex items-center justify-center text-white font-bold text-4xl">
-            <div className="absolute w-full h-full bg-white/[0.8] dark:bg-black/[0.8] blur-sm rounded-full" />
-            <span className="dark:text-white text-black z-20">{text}</span>
+          <div className="relative size-24 rounded-full flex items-center justify-center text-white font-bold text-xl">
+            <div className="absolute w-full h-full bg-white/[0.5] dark:bg-black/[0.8] blur-sm rounded-full" />
+            <span className="dark:text-white text-black z-20">{svg}</span>
           </div>
         </div>
       </div>

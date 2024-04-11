@@ -34,8 +34,28 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  .bg-image {
-    background-image: url("../images/icon.png");
+  .bg-one {
+    background-image: url("../images/bg-two-one.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .bg-two {
+    background-image: url("../images/bg-two-one.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .bg-three {
+    background-image: url("../images/bg-three.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .bg-four {
+    background-image: url("../images/bg-four.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .bg-five {
+    background-image: url("../images/bg-five.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
