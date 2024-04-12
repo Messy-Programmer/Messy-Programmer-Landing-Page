@@ -9,7 +9,9 @@ import { StaticImage } from "gatsby-plugin-image";
 import { InfiniteMovingLogoComp } from "../components/otherComp/moving-logo-comp";
 import StatsComponent from "../components/otherComp/ourStats";
 import { EverVaultCardComp } from "../components/otherComp/EverVaultCardComp";
-import MyComponent from "../components/otherComp/ServiceHeroImage";
+import { ExploreService } from "../components/otherComp/ExploreService";
+import { TabsDemo } from "../components/otherComp/TabComp";
+import WhyUs from "../components/otherComp/WhyUs";
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <>
@@ -35,6 +37,9 @@ const IndexPage: React.FC<PageProps> = () => {
       <InfiniteMovingLogoComp />
       <StatsComponent />
       <EverVaultCardComp />
+      <ExploreService />
+      <TabsDemo />
+      <WhyUs />
       <Footer />
     </>
   );
