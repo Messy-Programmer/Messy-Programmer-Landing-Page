@@ -69,8 +69,10 @@ export function TabsDemo() {
   return (
     <div id="this is tab" className="px-5 pb-40 pt-24 bg-[#051405]">
       <div className="text-center text-slate-100">
-        <h1 className="gradient-text text-4xl">Web App Development</h1>
-        <p className="text-xs mb-8 mt-4">
+        <h1 className="gradient-txt text-4xl font-medium xl:text-7xl">
+          Web App Development
+        </h1>
+        <p className="text-xs mb-8 mt-4 xl:text-base">
           Full-stack development, SEO optimization, and rigorous testing ensure
           functional websites.
         </p>

@@ -59,6 +59,15 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .contact-bg {
+    background: rgb(5, 20, 5);
+    background: linear-gradient(
+      30deg,
+      rgba(5, 20, 5, 1) 40%,
+      rgba(9, 9, 121, 0) 55%,
+      rgba(5, 20, 5, 1) 67%
+    );
+  }
 }
 .no-visible-scrollbar {
   scrollbar-width: none;

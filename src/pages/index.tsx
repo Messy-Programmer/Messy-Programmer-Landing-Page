@@ -12,6 +12,9 @@ import { EverVaultCardComp } from "../components/otherComp/EverVaultCardComp";
 import { ExploreService } from "../components/otherComp/ExploreService";
 import { TabsDemo } from "../components/otherComp/TabComp";
 import WhyUs from "../components/otherComp/WhyUs";
+import { Testimonials } from "../components/otherComp/Testimonial";
+import { SignupFormDemo } from "../components/otherComp/FormComp";
+import ContactUs from "../components/otherComp/ContactUs";
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <>
@@ -40,6 +43,8 @@ const IndexPage: React.FC<PageProps> = () => {
       <ExploreService />
       <TabsDemo />
       <WhyUs />
+      <Testimonials />
+      <ContactUs />
       <Footer />
     </>
   );

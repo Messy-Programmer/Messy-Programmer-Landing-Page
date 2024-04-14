@@ -18,7 +18,7 @@ export function EverVaultCardComp() {
       <div className="flex flex-col items-center gap-5 lg:flex-row lg:pt-16">
         <div
           id="item-1"
-          className="flex flex-col items-center gap-5 sm:w-[40rem] lg:gap-60"
+          className="flex flex-col items-center gap-5 xl:w-[40rem] lg:gap-60"
         >
           {/* down div contains all the context  */}
           <ServiceHeroImageComponent />
