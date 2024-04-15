@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+@layer components {
+  .logoBg {
+    background-image: url("../images/LogoVector.png");
+    background-repeat: no-repeat;
+    box-shadow: 0px 16px 12px #cf040400;
+  }
+  .gradient-txt {
+    background: #f1f5f9;
+    background: linear-gradient(to right, #f1f5f9 40%, #829f82 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .gradient-both-txt {
+    color: #051505;
+    background-image: -webkit-linear-gradient(
+      0deg,
+      rgb(13, 38, 13, 0.1) 2%,
+      #f1f5f9 50%,
+      rgb(13, 38, 13, 0.1) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .bg-one {
+    background-image: url("../images/bg-two-one.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .bg-two {
+    background-image: url("../images/bg-two-one.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .bg-three {
+    background-image: url("../images/bg-three.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .bg-four {
+    background-image: url("../images/bg-four.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .bg-five {
+    background-image: url("../images/bg-five.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .contact-bg {
+    background: rgb(5, 20, 5);
+    background: linear-gradient(
+      30deg,
+      rgba(5, 20, 5, 1) 40%,
+      rgba(9, 9, 121, 0) 55%,
+      rgba(5, 20, 5, 1) 67%
+    );
+  }
+}
+.no-visible-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.no-visible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
