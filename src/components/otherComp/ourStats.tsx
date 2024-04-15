@@ -5,17 +5,17 @@ function StatsComponent() {
   return (
     <div className="bg-[#051405] lg:flex justify-center">
       {/* down this will be container for whole section  */}
-      <div className="text-center sm:flex sm:text-left sm:px-10 sm:py-32 lg:max-w-[750px] 2xl:max-w-[1440px]">
+      <div className="text-center sm:flex sm:text-left sm:px-10 sm:py-32 lg:max-w-[750px] xl:max-w-[70rem] xl:gap-14">
         {/* down div for first container  */}
         <div id="first-container">
-          <div className="pt-[7rem] px-9 sm:pt-0 2xl:pr-[20rem]">
+          <div className="pt-[7rem] px-9 sm:pt-0 ">
             <div className=" rounded-full border-[1px] border-[#FFFFFF] py-2 text-center mx-6 sm:w-[12rem] sm:mx-0">
               <p className="text-slate-100">Working History 📜</p>
             </div>
-            <h1 className="gradient-txt text-4xl px-4 mt-8 sm:pl-0 2xl:text-8xl">
+            <h1 className="gradient-txt text-4xl px-4 mt-8 sm:pl-0 xl:text-7xl">
               Explore Our Impressive Stats
             </h1>
-            <p className="text-slate-100 mb-8 mt-5 2xl:text-[1.5rem]">
+            <p className="text-slate-100 mb-8 mt-5 xl:text-lg xl:font-light">
               We take pride in our commitment to excellence and our dedication
               to our success.
             </p>

@@ -7,10 +7,10 @@ export function EverVaultCardComp() {
   return (
     <div className="flex flex-col items-center pt-16 bg-[#051405] lg:pb-16">
       <div className="text-slate-100 text-center">
-        <h1 className="text-4xl gradient-txt font-medium">
+        <h1 className="text-4xl gradient-txt font-medium xl:text-7xl xl:py-5">
           Our Services Categories
         </h1>
-        <p className="font-thin mt-4">
+        <p className="font-thin mt-4 xl:text-lg xl:font-light">
           Empowering excellence through exceptional services.
         </p>
       </div>

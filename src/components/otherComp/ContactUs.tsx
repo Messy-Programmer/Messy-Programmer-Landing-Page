@@ -16,15 +16,15 @@ const ContactUs = () => {
     <div className="bg-[#051405] xl:py-40 ">
       {/* down div contains the whole context  */}
       <div className="text-slate-100 text-center px-4">
-        <h1 className="text-3xl gradient-txt font-medium sm:text-4xl xl:text-7xl">
+        <h1 className="text-3xl gradient-txt font-medium sm:text-4xl xl:text-7xl xl:p-5">
           Did you just said TECH!
         </h1>
-        <p className="text-sm font-extralight mt-4">
+        <p className="text-sm font-extralight mt-4 xl:text-lg xl:font-light">
           Ready to take your business to the next level? Contact us today to
           discuss your project requirements and get started!
         </p>
       </div>
-      <div className="px-4 sm:flex sm:flex-col sm:items-center lg:flex-row lg:gap-6 xl:max-w-[80rem] xl:mx-auto">
+      <div className="px-4 sm:flex sm:flex-col sm:items-center lg:flex-row lg:gap-6 xl:max-w-[80rem] xl:mx-auto xl:mt-10">
         {/* first item  */}
         <div
           id="first-item"

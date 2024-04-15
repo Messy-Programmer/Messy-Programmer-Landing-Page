@@ -17,22 +17,24 @@ import { SignupFormDemo } from "../components/otherComp/FormComp";
 import ContactUs from "../components/otherComp/ContactUs";
 const IndexPage: React.FC<PageProps> = () => {
   return (
-    <>
+    <div className="overflow-hidden">
       <NavBar></NavBar>
       <BackgroundGradientAnimation>
         <HeroText />
       </BackgroundGradientAnimation>
-      <div className="hidden relative bg-gradient-to-b from-[#0d270d] to-[#051405] md:inline-block py-24 px-20">
-        <div className="flex">
-          <div>
-            <StaticImage src="../images/projectConsole.png" alt="" />
-          </div>
-          <div className="">
-            <StaticImage src="../images/projectDev.png" alt="" />
-          </div>
-          <div className="flex flex-col ">
-            <StaticImage src="../images/projectCode.png" alt="" />
-            <StaticImage src="../images/projectTerminal.png" alt="" />
+      <div className="hidden relative bg-gradient-to-b from-[#0d270d] to-[#051405] md:inline-block py-24 px-20 w-full -z-10">
+        <div>
+          <div className="flex lg:gap-12 xl:max-w-[70rem] xl:mx-auto">
+            <div>
+              <StaticImage src="../images/projectConsole.png" alt="" />
+            </div>
+            <div className="">
+              <StaticImage src="../images/projectDev.png" alt="" />
+            </div>
+            <div className="flex flex-col lg:gap-3 xl:gap-4">
+              <StaticImage src="../images/projectCode.png" alt="" />
+              <StaticImage src="../images/projectTerminal.png" alt="" />
+            </div>
           </div>
         </div>
         <BackgroundBeams />
@@ -46,7 +48,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <Testimonials />
       <ContactUs />
       <Footer />
-    </>
+    </div>
   );
 };
 

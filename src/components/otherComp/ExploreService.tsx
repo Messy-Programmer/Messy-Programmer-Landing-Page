@@ -10,7 +10,7 @@ export const ExploreService = () => {
           <h1 className="text-3xl gradient-txt font-medium sm:text-4xl lg:text-5xl xl:text-7xl">
             Explore Services
           </h1>
-          <p className="font-extralight mt-4">
+          <p className="font-extralight mt-4 xl:font-light xl:text-lg">
             Browse through 8+ Tech Services and find the one that fits your
             needs.
           </p>

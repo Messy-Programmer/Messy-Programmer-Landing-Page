@@ -2,7 +2,6 @@ import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import { IoMail } from "react-icons/io5";
-import { BackgroundBeams } from "../ui/background-beam";
 
 const HeroText = () => {
   return (
