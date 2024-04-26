@@ -13,9 +13,22 @@ import { ExploreService } from "../components/otherComp/ExploreService";
 import { TabsDemo } from "../components/otherComp/TabComp";
 import WhyUs from "../components/otherComp/WhyUs";
 import { Testimonials } from "../components/otherComp/Testimonial";
-import { SignupFormDemo } from "../components/otherComp/FormComp";
 import ContactUs from "../components/otherComp/ContactUs";
+import Loading from "../components/otherComp/Loading";
+import { useState, useEffect } from "react";
 const IndexPage: React.FC<PageProps> = () => {
+  const delay = 5;
+  const [IsLoading, SetLoading] = useState(true);
+  useEffect(() => {
+    let timer1 = setTimeout(() => SetLoading(false), delay * 1000);
+    return () => {
+      clearTimeout(timer1);
+    };
+  });
+
+  if (IsLoading) {
+    return <Loading />;
+  }
   return (
     <div className="overflow-hidden">
       <NavBar></NavBar>
