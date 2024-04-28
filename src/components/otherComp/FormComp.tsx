@@ -3,16 +3,35 @@ import React from "react";
 import { Label } from "../ui/label";
 import { Input } from "../ui/input";
 import { cn } from "../../utils/cn";
-import {
-  IconBrandGithub,
-  IconBrandGoogle,
-  IconBrandOnlyfans,
-} from "@tabler/icons-react";
 
 export function SignupFormDemo() {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("Form submitted");
+    const name = e.target.name.value;
+    const phone = e.target.phone.value;
+    const email = e.target.email.value;
+    const message = e.target.message.value;
+    const key = "AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI";
+    const token = "sn1su9Y62ezUqHupQSoUqZXuql04_BGS3ju0m_fihR0";
+    let url = `https://chat.googleapis.com/v1/spaces/AAAA7L5QnB4/messages?key=${key}&token=${token}`;
+    const header = {
+      "Content-Type": "application/json",
+    };
+    const data = {
+      text: {
+        Name: name,
+        Email: email,
+        Number: phone,
+        Message: message,
+      },
+    };
+    const response = await fetch(url, {
+      method: "POST",
+      headers: header,
+      body: JSON.stringify(data),
+    });
+    console.log(response);
+    // console.log("Form submitted", e.target.email.value);
   };
   return (
     <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 lg:p-0 xl:p-8 xl:max-w-[35rem] shadow-input ">

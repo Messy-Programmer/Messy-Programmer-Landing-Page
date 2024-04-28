@@ -1,6 +1,7 @@
 import { StaticImage } from "gatsby-plugin-image";
 import { cn } from "../../utils/cn";
 import React, { ReactNode, useEffect, useState } from "react";
+import { Link } from "gatsby";
 
 export const InfiniteMovingLogo = ({
   items,
@@ -9,7 +10,10 @@ export const InfiniteMovingLogo = ({
   pauseOnHover = true,
   className,
 }: {
-  items: {}[];
+  items: {
+    img: React.JSX.Element;
+    link: string;
+  }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
   pauseOnHover?: boolean;
@@ -88,7 +92,9 @@ export const InfiniteMovingLogo = ({
             }}
             key={idx}
           >
-            {item as any}
+            <Link to={item.link} target="blank">
+              {item.img as any}
+            </Link>
           </div>
         ))}
       </div>

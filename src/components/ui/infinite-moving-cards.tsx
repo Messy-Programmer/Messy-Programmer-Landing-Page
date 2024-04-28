@@ -112,9 +112,13 @@ export const InfiniteMovingCards = ({
                 <div className="w-20">
                   <img src={`${item.rating}`} alt="stars" />
                 </div>
-                <span className="flex gap-4 items-center">
-                  <div className="size-10 rounded-full">
-                    <img src={`${item.img}`} alt="test" />
+                <span className="flex gap-4 items-center mt-2">
+                  <div className="size-10">
+                    <img
+                      src={`${item.img}`}
+                      alt="Dp"
+                      className="rounded-full"
+                    />
                   </div>
                   <div className="flex flex-col">
                     <span className=" text-sm leading-[1.6] text-gray-400 font-normal">

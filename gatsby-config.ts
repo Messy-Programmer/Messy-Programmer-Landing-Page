@@ -22,6 +22,18 @@ const config: GatsbyConfig = {
         path: `${__dirname}/src/images/`,
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `MessyProgrammer`,
+        short_name: `GatsbyJS`,
+        start_url: `/`,
+        background_color: `#3c933a`,
+        theme_color: `#3c933a`,
+        display: `standalone`,
+        icon: `src/images/logo-transparent.png`,
+      },
+    },
   ],
 };
 

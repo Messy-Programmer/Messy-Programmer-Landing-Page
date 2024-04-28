@@ -3,7 +3,7 @@ import React from "react";
 
 export const ExploreService = () => {
   return (
-    <div className="bg-[#051405] py-20">
+    <div id="explore-service" className="bg-[#051405] py-20">
       {/* this div will contain the context  */}
       <div className="sm:px-6 ">
         <div className="text-slate-100 text-center px-1">
@@ -200,8 +200,8 @@ export const ExploreService = () => {
             {/* bottom div is item one */}
             <div className="relative px-10 py-16 sm:w-[50%] xl:w-[40%]">
               <StaticImage src="../../images/Polygon.png" alt="" />
-              <div className=" absolute size-[7rem] bottom-[33%] left-[33%] lg:size-[9rem]">
-                <StaticImage src="../../images/logoCircle.png" alt="" />
+              <div className=" absolute size-[7rem] bottom-[33%] left-[33%] lg:size-[9rem] xl:left-[11.25rem]">
+                <StaticImage src="../../images/logoCircle.png" alt="logo" />
               </div>
               {/* down div is 1st image  */}
               <div className="absolute size-[5.5rem] lg:size-[8.5rem] bottom-[68%] left-[38%] lg:bottom-[70%] lg:left-[37%]">

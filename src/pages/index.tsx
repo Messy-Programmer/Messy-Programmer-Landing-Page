@@ -31,20 +31,20 @@ const IndexPage: React.FC<PageProps> = () => {
   }
   return (
     <div className="overflow-hidden">
-      <NavBar></NavBar>
+      <NavBar />
       <BackgroundGradientAnimation>
         <HeroText />
       </BackgroundGradientAnimation>
-      <div className="hidden relative bg-gradient-to-b from-[#0d270d] to-[#051405] md:inline-block py-24 px-20 w-full -z-10">
+      <div className=" relative bg-gradient-to-b from-[#0d270d] to-[#051405] md:inline-block px-3 pb-12 lg:py-24 lg:px-12 w-full -z-10">
         <div>
           <div className="flex lg:gap-12 xl:max-w-[70rem] xl:mx-auto">
             <div>
               <StaticImage src="../images/projectConsole.png" alt="" />
             </div>
-            <div className="">
+            <div className="mt-8">
               <StaticImage src="../images/projectDev.png" alt="" />
             </div>
-            <div className="flex flex-col lg:gap-3 xl:gap-4">
+            <div className="mt-16 flex flex-col lg:gap-3 xl:gap-4">
               <StaticImage src="../images/projectCode.png" alt="" />
               <StaticImage src="../images/projectTerminal.png" alt="" />
             </div>
@@ -67,4 +67,30 @@ const IndexPage: React.FC<PageProps> = () => {
 
 export default IndexPage;
 
-export const Head: HeadFC = () => <title>Home Page</title>;
+export const Head: HeadFC = () => (
+  <>
+    <html lang="en" />
+    <meta charSet="utf-8" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../image/logoCircle.png"
+      data-gatsby-head="true"
+    ></link>
+    <meta
+      property="og:image"
+      content="https://messyprogrammer.in/../images/LogoVector1.png"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://messyprogrammer.in/"
+    />
+    {/* <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:image:alt" content="" /> */}
+    <meta name="author" content="MessyProgrammer" />
+    <title>MessyProgrammer</title>
+    <meta name="theme-color" content="#ffffff" />
+  </>
+);

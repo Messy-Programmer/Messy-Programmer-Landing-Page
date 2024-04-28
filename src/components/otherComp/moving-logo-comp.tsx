@@ -86,4 +86,7 @@ const gitlabLogo = (
   </svg>
 );
 
-const imageLink = [mondayLogo, gitlabLogo, mondayLogo, gitlabLogo, mondayLogo];
+const imageLink = [
+  { img: gitlabLogo, link: "github.com" },
+  { img: mondayLogo, link: "github.com" },
+];
