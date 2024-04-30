@@ -11,8 +11,9 @@ export const InfiniteMovingLogo = ({
   className,
 }: {
   items: {
-    img: React.JSX.Element;
+    img: string;
     link: string;
+    name: string;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -92,8 +93,15 @@ export const InfiniteMovingLogo = ({
             }}
             key={idx}
           >
-            <Link to={item.link} target="blank">
-              {item.img as any}
+            <Link
+              to={item.link}
+              target="blank"
+              className="flex justify-center items-center gap-4"
+            >
+              <img src={item.img} alt="logo" className="w-[20%]" />
+              <h1 className="text-slate-100 gradient-txt font-extrabold text-2xl">
+                {item.name}
+              </h1>
             </Link>
           </div>
         ))}

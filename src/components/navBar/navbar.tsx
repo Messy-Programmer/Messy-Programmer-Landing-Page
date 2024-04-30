@@ -6,6 +6,7 @@ const NavBar = () => {
   let prevScrollPos = window.scrollY;
   const navBar = document.getElementById("nav");
   window.onscroll = function () {
+    // console.log("nav bar-", navBar);
     let currentScrollPos = window.scrollY;
     if (prevScrollPos > currentScrollPos) {
       navBar!.style.top = "0";

@@ -9,6 +9,21 @@
   font-style: normal;
   font-variation-settings: "slnt" 0;
 }
+::-webkit-scrollbar {
+  width: 7px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #051405;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2d9034;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #70be1e;
+}
 @layer components {
   .logoBg {
     background-image: url("../images/LogoVector.png");

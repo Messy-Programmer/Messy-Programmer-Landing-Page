@@ -1,12 +1,15 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { Label } from "../ui/label";
 import { Input } from "../ui/input";
 import { cn } from "../../utils/cn";
+import { IconMailUp } from "@tabler/icons-react";
 
 export function SignupFormDemo() {
+  const [isSubmit, setSubmit] = useState(false);
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    let frm = document.getElementsByName("form")[0];
     const name = e.target.name.value;
     const phone = e.target.phone.value;
     const email = e.target.email.value;
@@ -25,17 +28,32 @@ export function SignupFormDemo() {
         Message: message,
       },
     };
-    const response = await fetch(url, {
-      method: "POST",
-      headers: header,
-      body: JSON.stringify(data),
-    });
-    console.log(response);
+    const delay = 5;
+    try {
+      const response = await fetch(url, {
+        method: "POST",
+        headers: header,
+        body: JSON.stringify(data),
+      });
+      console.log(response);
+      setSubmit(true);
+    } catch (err) {
+      console.log(err);
+    } finally {
+      frm.reset();
+      let timer: NodeJS.Timeout;
+      timer = setTimeout(() => {
+        setSubmit(false);
+      }, delay * 1000);
+    }
     // console.log("Form submitted", e.target.email.value);
   };
   return (
-    <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 lg:p-0 xl:p-8 xl:max-w-[35rem] shadow-input ">
-      <form className="my-8" onSubmit={handleSubmit}>
+    <div className=" relative max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 lg:p-0 xl:p-8 xl:max-w-[35rem] shadow-input ">
+      {isSubmit && (
+        <SubmitMessage msg="Your mail is submitted" color="text-lime-500" />
+      )}
+      <form name="form" className="my-8" onSubmit={handleSubmit}>
         <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
           <LabelInputContainer>
             <Label htmlFor="FullName"> Full Name</Label>
@@ -95,6 +113,21 @@ const LabelInputContainer = ({
   return (
     <div className={cn("flex flex-col space-y-2 w-full", className)}>
       {children}
+    </div>
+  );
+};
+
+type SubmitProp = {
+  msg: string;
+  color: string;
+};
+const SubmitMessage = ({ msg, color }: SubmitProp) => {
+  return (
+    <div className="absolute bg-white/0 w-auto inset-0 z-40 rounded-lg backdrop-blur-sm flex items-center justify-center">
+      <div className="bg-[#051405] border-2 border-lime-950 rounded-xl flex items-center flex-col px-6 sm:px-14 py-12">
+        <IconMailUp stroke={2} size={50} className={color} />
+        <h3 className="text-slate-100">{msg}</h3>
+      </div>
     </div>
   );
 };
