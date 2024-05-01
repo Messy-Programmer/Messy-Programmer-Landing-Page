@@ -1,5 +1,6 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
+import dp from "../../images/gif-dp-final.gif";
 
 export const ExploreService = () => {
   return (
@@ -199,25 +200,50 @@ export const ExploreService = () => {
           >
             {/* bottom div is item one */}
             <div className="relative px-10 py-16 sm:w-[50%] xl:w-[40%]">
-              <StaticImage src="../../images/Polygon.png" alt="" />
+              <StaticImage src="../../images/Polygon.png" alt="polygon" />
               <div className=" absolute size-[7rem] bottom-[33%] left-[33%] lg:size-[9rem] xl:left-[11.25rem]">
                 <StaticImage src="../../images/logoCircle.png" alt="logo" />
               </div>
               {/* down div is 1st image  */}
-              <div className="absolute size-[5.5rem] lg:size-[8.5rem] bottom-[68%] left-[38%] lg:bottom-[70%] lg:left-[37%]">
-                <StaticImage src="../../images/icon.png" alt="" />
+              <div className="absolute size-[5.5rem] lg:size-[8.5rem] bottom-[68%] left-[38%] lg:bottom-[70%] lg:left-[37%] border-[#4bb846] border-2 rounded-full">
+                <StaticImage
+                  src="../../images/Suman.jpeg"
+                  alt="Suman"
+                  className="rounded-full h-full"
+                />
               </div>
-              <div className="absolute size-[5.5rem] lg:size-[8.5rem] bottom-[46%] left-[3%]">
-                <StaticImage src="../../images/icon.png" alt="" />
+              <div className="absolute size-[5.5rem] lg:size-[8.5rem] bottom-[46%] left-[3%] border-[#4bb846] border-2 rounded-full overflow-hidden">
+                {/* <img
+                  src={dp}
+                  alt="Deep"
+                  className="rounded-full h-full scale-125"
+                /> */}
+                <StaticImage
+                  src="../../images/Deep.jpg"
+                  alt="Deep"
+                  className="rounded-full h-full"
+                />
               </div>
-              <div className="absolute size-[5.5rem] lg:size-[8.5rem] bottom-[46%] left-[70%]">
-                <StaticImage src="../../images/icon.png" alt="" />
+              <div className="absolute size-[5.5rem] lg:size-[8.5rem] bottom-[46%] left-[70%] border-[#4bb846] border-2 rounded-full">
+                <StaticImage
+                  src="../../images/Biru.jpeg"
+                  alt="Biru"
+                  className="rounded-full h-full"
+                />
               </div>
-              <div className="absolute size-[5.5rem] lg:size-[8.5rem] bottom-[11%] left-[13%] lg:bottom-[6%]">
-                <StaticImage src="../../images/icon.png" alt="" />
+              <div className="absolute size-[5.5rem] lg:size-[8.5rem] bottom-[11%] left-[13%] lg:bottom-[6%] border-[#4bb846] border-2 rounded-full">
+                <StaticImage
+                  src="../../images/icon.png"
+                  alt=""
+                  className="rounded-full h-full"
+                />
               </div>
-              <div className="absolute size-[5.5rem] lg:size-[8.5rem] bottom-[11%] left-[60%] lg:bottom-[6%]">
-                <StaticImage src="../../images/icon.png" alt="" />
+              <div className="absolute size-[5.5rem] lg:size-[8.5rem] bottom-[11%] left-[60%] lg:bottom-[6%] border-[#4bb846] border-2 rounded-full">
+                <StaticImage
+                  src="../../images/icon.png"
+                  alt=""
+                  className="rounded-full h-full"
+                />
               </div>
             </div>
             {/* bottom div is item two */}
