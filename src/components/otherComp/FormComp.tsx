@@ -17,17 +17,12 @@ export function SignupFormDemo() {
     const message = e.target.message.value;
     const key = "AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI";
     const token = "sn1su9Y62ezUqHupQSoUqZXuql04_BGS3ju0m_fihR0";
-    let url = `https://chat.googleapis.com/v1/spaces/AAAA7L5QnB4/messages?key=${key}&token=${token}`;
+    let url = `https://chat.googleapis.com/v1/spaces/AAAA7L5QnB4/messages?key=${process.env.KEY}&token=${process.env.TOKEN}`;
     const header = {
       "Content-Type": "application/json",
     };
     const data = {
-      text: {
-        Name: name,
-        Email: email,
-        Number: phone,
-        Message: message,
-      },
+      text: `𝐍𝐚𝐦𝐞: ${name}\n𝐄𝐦𝐚𝐢𝐥:${email}\n𝐍𝐮𝐦𝐛𝐞𝐫: ${phone}\n𝐌𝐞𝐬𝐬𝐚𝐠𝐞: ${message}`,
     };
     const delay = 5;
     try {

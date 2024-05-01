@@ -1,6 +1,6 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
-import dp from "../../images/gif-dp-final.gif";
+// import dp from "../../images/gif-dp-final.gif";
 
 export const ExploreService = () => {
   return (
