@@ -26,7 +26,7 @@ const WhyUs = () => {
           </p>
           <div className="flex mt-4 justify-start">
             <Link
-              to="/"
+              to="#contact"
               className=" rounded-xl bg-gradient-to-tr from-green-700 to-lime-500 py-2 px-4"
             >
               contact us

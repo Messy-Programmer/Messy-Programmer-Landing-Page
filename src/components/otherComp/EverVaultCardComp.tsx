@@ -43,7 +43,7 @@ export function EverVaultCardComp() {
                 </p>
                 <div className="flex justify-center mt-4 sm:justify-start">
                   <Link
-                    to="/"
+                    to="#contact"
                     className=" rounded-xl bg-gradient-to-tr from-green-700 to-lime-500 py-2 px-4"
                   >
                     contact us

@@ -6,7 +6,7 @@ import { IoMail } from "react-icons/io5";
 const HeroText = () => {
   return (
     <>
-      <div className="z-50 mt-24 absolute top-0 sm:mt-[10rem] w-full lg:mt-[15rem]">
+      <div className="z-50 mt-36 absolute top-0 sm:mt-[15rem] w-full lg:mt-[15rem]">
         <div className="flex flex-col max-w-[904px] text-center sm:text-start sm:pl-7 sm:max-w-[48rem] lg:max-w-[58rem] lg:pl-[5rem]">
           <div className="w-full text-[1.7rem] font-medium max-md:max-w-full gradient-txt sm:text-4xl md:text-5xl lg:text-6xl lg:leading-loose">
             Your Success Story,
@@ -28,13 +28,13 @@ const HeroText = () => {
           </div>
           <div className="text-slate-100 mt-5 flex gap-1.5 justify-center sm:justify-start">
             <Link
-              to="/"
+              to="#contact"
               className="rounded-2xl max-md:px-5 bg-gradient-to-tr from-green-700 to-lime-500 py-2 px-3"
             >
               Contact Us
             </Link>
             <Link
-              to=""
+              to="#explore-service"
               className="rounded-2xl bg-neutral-800/65 py-2 px-3 max-md:px-5"
             >
               Explore Services
@@ -42,22 +42,6 @@ const HeroText = () => {
           </div>
         </div>
         {/* hero text end */}
-        {/* tab images for mobile  */}
-        <div className="relative pt-20 sm:mb-20 sm:px-7 lg:hidden">
-          <div className="flex ">
-            <div>
-              <StaticImage src="../../images/projectConsole.png" alt="" />
-            </div>
-            <div className=" pt-10 sm:pt-0">
-              <StaticImage src="../../images/projectDev.png" alt="" />
-            </div>
-            <div className="flex flex-col pt-20 sm:pt-0">
-              <StaticImage src="../../images/projectCode.png" alt="" />
-              <StaticImage src="../../images/projectTerminal.png" alt="" />
-            </div>
-          </div>
-        </div>
-        {/* tab images for mobile end */}
       </div>
       {/* hero image for tab n desktop */}
       <div className="hidden absolute sm:inline-block sm:top-[20%] sm:right-0 sm:w-[8rem] sm:z-10 lg:right-[10rem] lg:w-[11rem] xl:right-[20%] xl:w-[17rem] xl:h-[22rem]">

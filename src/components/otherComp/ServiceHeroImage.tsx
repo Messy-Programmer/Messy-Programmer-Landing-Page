@@ -7,7 +7,7 @@ function ServiceHeroImageComponent() {
       {/* bottom div will be the green circle */}
       <div className=" bg-gradient-to-r from-[#097809] to-[#0ca10c] rounded-full size-[19rem] relative overflow-visible sm:size-[25rem] lg:size-[30rem]">
         <StaticImage
-          src="../../images/human.png"
+          src="../../images/transparent-suman.png"
           alt="human"
           className=" absolute -top-[30%]"
         />
