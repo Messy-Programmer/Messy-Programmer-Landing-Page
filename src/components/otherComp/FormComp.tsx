@@ -7,6 +7,7 @@ import { IconMailUp } from "@tabler/icons-react";
 
 export function SignupFormDemo() {
   const [isSubmit, setSubmit] = useState(false);
+  const [isError, setError] = useState(false);
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     let frm = document.getElementsByName("form")[0];
@@ -38,13 +39,20 @@ export function SignupFormDemo() {
       console.log(response);
       setSubmit(true);
     } catch (err) {
-      console.log(err);
+      setError(true);
     } finally {
       frm.reset();
       let timer: NodeJS.Timeout;
-      timer = setTimeout(() => {
-        setSubmit(false);
-      }, delay * 1000);
+      let timer1: NodeJS.Timeout;
+      if (isSubmit) {
+        timer = setTimeout(() => {
+          setSubmit(false);
+        }, delay * 1000);
+      } else {
+        timer1 = setTimeout(() => {
+          setSubmit(false);
+        }, delay * 1000);
+      }
     }
     // console.log("Form submitted", e.target.email.value);
   };
@@ -52,6 +60,9 @@ export function SignupFormDemo() {
     <div className=" relative max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 lg:p-0 xl:p-8 xl:max-w-[35rem] shadow-input ">
       {isSubmit && (
         <SubmitMessage msg="Your mail is submitted" color="text-lime-500" />
+      )}
+      {isError && (
+        <SubmitMessage msg="Something went wrong" color="text-red-500" />
       )}
       <form name="form" className="my-8" onSubmit={handleSubmit}>
         <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
