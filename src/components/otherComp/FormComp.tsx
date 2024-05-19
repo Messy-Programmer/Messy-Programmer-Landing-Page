@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Label } from "../ui/label";
 import { Input } from "../ui/input";
 import { cn } from "../../utils/cn";
@@ -8,6 +8,24 @@ import { IconMailUp } from "@tabler/icons-react";
 export function SignupFormDemo() {
   const [isSubmit, setSubmit] = useState(false);
   const [isError, setError] = useState(false);
+  useEffect(() => {
+    const delay = 4;
+    let timer: NodeJS.Timeout;
+    let timer1: NodeJS.Timeout;
+
+    timer = setTimeout(() => {
+      setSubmit(false);
+    }, delay * 1000);
+
+    timer1 = setTimeout(() => {
+      setError(false);
+    }, delay * 1000);
+    return () => {
+      clearTimeout(timer);
+      clearTimeout(timer1);
+    };
+  });
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     let frm = document.getElementsByName("form")[0];
@@ -17,47 +35,39 @@ export function SignupFormDemo() {
     const message = e.target.message.value;
     const key = "AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI";
     const token = "sn1su9Y62ezUqHupQSoUqZXuql04_BGS3ju0m_fihR0";
-    let url = `https://chat.googleapis.com/v1/spaces/AAAA7L5QnB4/messages?key=${process.env.KEY}&token=${process.env.TOKEN}`;
+    let url = `https://chat.googleapis.com/v1/spaces/AAAA7L5QnB4/messages?key=${key}&token=${token}`;
     const header = {
       "Content-Type": "application/json",
     };
     const data = {
       text: `𝐍𝐚𝐦𝐞: ${name}\n𝐄𝐦𝐚𝐢𝐥:${email}\n𝐍𝐮𝐦𝐛𝐞𝐫: ${phone}\n𝐌𝐞𝐬𝐬𝐚𝐠𝐞: ${message}`,
     };
-    const delay = 5;
+
     try {
       const response = await fetch(url, {
         method: "POST",
         headers: header,
         body: JSON.stringify(data),
       });
-      console.log(response);
       setSubmit(true);
     } catch (err) {
-      setError(true);
+      if (err) {
+        setError(true);
+      }
     } finally {
       frm.reset();
-      let timer: NodeJS.Timeout;
-      let timer1: NodeJS.Timeout;
-      if (isSubmit) {
-        timer = setTimeout(() => {
-          setSubmit(false);
-        }, delay * 1000);
-      } else {
-        timer1 = setTimeout(() => {
-          setSubmit(false);
-        }, delay * 1000);
-      }
     }
-    // console.log("Form submitted", e.target.email.value);
   };
   return (
     <div className=" relative max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 lg:p-0 xl:p-8 xl:max-w-[35rem] shadow-input ">
       {isSubmit && (
-        <SubmitMessage msg="Your mail is submitted" color="text-lime-500" />
+        <SubmitMessage msg="Your query is submitted" color="text-lime-500" />
       )}
       {isError && (
-        <SubmitMessage msg="Something went wrong" color="text-red-500" />
+        <SubmitMessage
+          msg={`Something went wrong. Please try again`}
+          color="text-red-500"
+        />
       )}
       <form name="form" className="my-8" onSubmit={handleSubmit}>
         <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
@@ -92,7 +102,7 @@ export function SignupFormDemo() {
           className="bg-gradient-to-br relative group/btn from-green-700 to-lime-500 w-full text-white rounded-xl h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
           type="submit"
         >
-          Sign up &rarr;
+          Send Query &rarr;
           <BottomGradient />
         </button>
       </form>

@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image";
 export function TabsDemo() {
   const tabs = [
     {
-      title: "Test",
+      title: "WebApp",
       value: "test",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-4 text-xl md:text-4xl font-bold text-slate-100  bg-gradient-to-br from-[#0c240c] to-[#081a08] text-center">
@@ -17,7 +17,7 @@ export function TabsDemo() {
             ensure functional websites.
           </p>
           <StaticImage
-            src="../../images/exploreService1.png"
+            src="../../images/web-app-demo.png"
             alt=""
             className="mt-6"
           />
@@ -25,42 +25,20 @@ export function TabsDemo() {
       ),
     },
     {
-      title: "Services",
-      value: "services",
+      title: "Automation",
+      value: "automation",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Services tab</p>
-          <StaticImage src="../../images/icon.png" alt="" />
-        </div>
-      ),
-    },
-    {
-      title: "Playground",
-      value: "playground",
-      content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Playground tab</p>
-          <StaticImage src="../../images/icon.png" alt="" />
-        </div>
-      ),
-    },
-    {
-      title: "Content",
-      value: "content",
-      content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Content tab</p>
-          <StaticImage src="../../images/icon.png" alt="" />
-        </div>
-      ),
-    },
-    {
-      title: "Random",
-      value: "random",
-      content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Random tab</p>
-          <StaticImage src="../../images/icon.png" alt="" />
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-4 text-xl md:text-4xl font-bold text-slate-100  bg-gradient-to-br from-[#0c240c] to-[#081a08] text-center">
+          <p className="text-xg font-semibold gradient-txt mt-4">Automation</p>
+          <p className="text-xs font-light mt-3">
+            Full-stack development, SEO optimization, and rigorous testing
+            ensure functional websites.
+          </p>
+          <StaticImage
+            src="../../images/automation-demo.png"
+            alt=""
+            className="mt-6"
+          />
         </div>
       ),
     },

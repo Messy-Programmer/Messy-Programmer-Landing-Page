@@ -1,17 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
 const NavBar = () => {
+  // const [navBar, setNavBar] = useState<any | HTMLElement>();
   let prevScrollPos = window.scrollY;
-  const navBar = document.getElementById("nav");
+  let nav: HTMLElement | null;
+  useEffect(() => {
+    nav = document.getElementById("nav");
+  });
   window.onscroll = function () {
-    // console.log("nav bar-", navBar);
+    console.log("nav bar-", nav);
     let currentScrollPos = window.scrollY;
     if (prevScrollPos > currentScrollPos) {
-      navBar!.style.top = "0";
+      nav!.style.top = "0px";
     } else {
-      navBar!.style.top = "-70px";
+      nav!.style.top = "-70px";
     }
     prevScrollPos = currentScrollPos;
   };

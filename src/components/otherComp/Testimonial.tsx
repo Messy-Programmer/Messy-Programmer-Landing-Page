@@ -26,7 +26,7 @@ export function Testimonials() {
 
 const testimonials = [
   {
-    title: "Fiver",
+    title: "Fiverr",
     quote:
       "Almost 10 projects with Suman and he always delivered before the due date!, Very good communication and execution as always!",
     name: "hollyopk",
@@ -35,7 +35,7 @@ const testimonials = [
     rating: stars,
   },
   {
-    title: "Fiver",
+    title: "Fiverr",
     quote:
       "Always a pleasure to work with. Gets the job done quickly and effectively.",
     name: "richdifeo",
@@ -44,7 +44,7 @@ const testimonials = [
     rating: stars,
   },
   {
-    title: "Fiver",
+    title: "Fiverr",
     quote:
       "Suman was a game-changer! His ingenious solution, quick implementation, and creative thinking exceeded my expectations. I highly recommend him for any programming needs. Thank you, Suman!",
     name: "pyramking",
@@ -53,7 +53,7 @@ const testimonials = [
     rating: stars,
   },
   {
-    title: "Fiver",
+    title: "Fiverr",
     quote:
       "Very cooperative, quick in response and quick in delivery. Fast and high quality work. Do not look anywhere else!",
     name: "felix_merkle",
@@ -62,7 +62,7 @@ const testimonials = [
     rating: stars,
   },
   {
-    title: "Fiver",
+    title: "Fiverr",
     quote:
       "As always, Suman was reactive, quick to understand and adapt to our needs and also quick to deliver.",
     name: "policymakr",

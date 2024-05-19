@@ -233,14 +233,14 @@ export const ExploreService = () => {
               </div>
               <div className="absolute size-[5.5rem] lg:size-[8.5rem] bottom-[11%] left-[13%] lg:bottom-[6%] border-[#4bb846] border-2 rounded-full">
                 <StaticImage
-                  src="../../images/icon.png"
-                  alt=""
+                  src="../../images/harsh.png"
+                  alt="harsh"
                   className="rounded-full h-full"
                 />
               </div>
               <div className="absolute size-[5.5rem] lg:size-[8.5rem] bottom-[11%] left-[60%] lg:bottom-[6%] border-[#4bb846] border-2 rounded-full">
                 <StaticImage
-                  src="../../images/icon.png"
+                  src="../../images/profile.png"
                   alt=""
                   className="rounded-full h-full"
                 />

@@ -47,16 +47,16 @@ const HeroText = () => {
       <div className="hidden absolute sm:inline-block sm:top-[20%] sm:right-0 sm:w-[8rem] sm:z-10 lg:right-[10rem] lg:w-[11rem] xl:right-[20%] xl:w-[17rem] xl:h-[22rem]">
         <StaticImage
           className="w-full h-full"
-          src="../../images/LogoVector.png"
+          src="../../images/heroLogo.png"
           alt="logo"
         />
       </div>
       {/* hero image for tab n desktop end */}
       <div className="absolute z-10 top-[10%] left-[10%] w-[8rem]">
-        <StaticImage src="../../images/LogoVector.png" alt="logo" />
+        <StaticImage src="../../images/heroLogo.png" alt="logo" />
       </div>
       <div className="absolute z-10 w-[9rem] bottom-[10%] left-[20%]">
-        <StaticImage src="../../images/LogoVector.png" alt="logo" />
+        <StaticImage src="../../images/heroLogo.png" alt="logo" />
       </div>
     </>
   );
