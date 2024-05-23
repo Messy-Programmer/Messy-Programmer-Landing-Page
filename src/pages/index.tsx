@@ -85,12 +85,11 @@ export const Head: HeadFC = () => (
       property="og:image:secure_url"
       content="https://messyprogrammer.in/"
     />
-    {/* <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="400" />
     <meta property="og:image:height" content="300" />
-    <meta property="og:image:alt" content="" /> */}
     <meta name="author" content="MessyProgrammer" />
     <title>MessyProgrammer</title>
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#051405" />
   </>
 );
