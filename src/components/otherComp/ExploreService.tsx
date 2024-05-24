@@ -1,6 +1,6 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
-// import dp from "../../images/gif-dp-final.gif";
+import polygon from "../../images/Polygon.png";
 
 export const ExploreService = () => {
   return (
@@ -23,7 +23,10 @@ export const ExploreService = () => {
           >
             {/* bottom div is item one */}
             <div className="relative px-2 py-5 sm:w-[50%] xl:w-[40%]">
-              <StaticImage src="../../images/exploreService1.png" alt="" />
+              <StaticImage
+                src="../../images/exploreService1.png"
+                alt="service 1"
+              />
             </div>
             {/* bottom div is item two */}
             <div className="px-5 text-slate-100 sm:w-[50%] sm:px-2 xl:w-[55%]">
@@ -49,7 +52,10 @@ export const ExploreService = () => {
           >
             {/* bottom div is item one */}
             <div className="relative px-2 py-5 sm:w-[50%] xl:w-[40%]">
-              <StaticImage src="../../images/exploreService3.png" alt="" />
+              <StaticImage
+                src="../../images/exploreService3.png"
+                alt="service 3"
+              />
             </div>
             {/* bottom div is item two */}
             <div className="px-5 text-slate-100 sm:w-[50%] sm:px-2 xl:w-[55%]">
@@ -73,7 +79,10 @@ export const ExploreService = () => {
           >
             {/* bottom div is item one */}
             <div className="relative px-2 py-5 sm:w-[50%] xl:w-[40%]">
-              <StaticImage src="../../images/exploreService2.png" alt="" />
+              <StaticImage
+                src="../../images/exploreService2.png"
+                alt="service-2"
+              />
             </div>
             {/* bottom div is item two */}
             <div className="px-5 text-slate-100 sm:w-[50%] sm:px-2 xl:w-[55%]">
@@ -200,7 +209,7 @@ export const ExploreService = () => {
           >
             {/* bottom div is item one */}
             <div className="relative px-10 py-16 sm:w-[50%] xl:w-[40%]">
-              <StaticImage src="../../images/Polygon.png" alt="polygon" />
+              <img src={polygon} alt="polygon" />
               <div className=" absolute size-[7rem] bottom-[33%] left-[33%] lg:size-[9rem] xl:left-[11.25rem]">
                 <StaticImage src="../../images/logoCircle.png" alt="logo" />
               </div>
@@ -213,11 +222,6 @@ export const ExploreService = () => {
                 />
               </div>
               <div className="absolute size-[5.5rem] lg:size-[8.5rem] bottom-[46%] left-[3%] border-[#4bb846] border-2 rounded-full overflow-hidden">
-                {/* <img
-                  src={dp}
-                  alt="Deep"
-                  className="rounded-full h-full scale-125"
-                /> */}
                 <StaticImage
                   src="../../images/Deep.jpg"
                   alt="Deep"

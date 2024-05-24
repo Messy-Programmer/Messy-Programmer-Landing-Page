@@ -30,10 +30,7 @@ const StatsComponent = () => {
           </div>
         </div>
         {/* down div is for number card container */}
-        <motion.div
-          layout
-          className="flex flex-col items-center gap-4 mt-16 sm:mt-0"
-        >
+        <div className="flex flex-col items-center gap-4 mt-16 sm:mt-0">
           {/* first two card container */}
           <div className="gap-4 flex flex-col sm:flex-row">
             <motion.div
@@ -83,7 +80,7 @@ const StatsComponent = () => {
               <h2>Completed Projects</h2>
             </motion.div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );

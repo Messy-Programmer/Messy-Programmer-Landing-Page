@@ -68,7 +68,7 @@ export const Tabs = ({
               />
             )}
 
-            <span className="relative block text-slate-100 text-xs sm:text-sm lg:text-base">
+            <span className="relative block text-slate-100 text-xs sm:text-sm lg:text-base w-max">
               {tab.title}
             </span>
           </button>
