@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "gatsby";
+import scrollTo from "gatsby-plugin-smoothscroll";
 import { StaticImage } from "gatsby-plugin-image";
 
 const NavBar = () => {
@@ -9,7 +9,6 @@ const NavBar = () => {
     nav = document.getElementById("nav");
   });
   window.onscroll = function () {
-    console.log("nav bar-", nav);
     let currentScrollPos = window.scrollY;
     if (prevScrollPos > currentScrollPos) {
       nav!.style.top = "0rem";
@@ -31,12 +30,14 @@ const NavBar = () => {
             className=" text-slate-100 font-medium it w-48"
           />
         </div>
-        <Link
-          to="#contact"
+        <button
+          onClick={() => {
+            scrollTo("#contact");
+          }}
           className=" text-slate-100 rounded-xl bg-gradient-to-tr from-green-700 to-lime-500 py-2 px-3"
         >
           Let's talk
-        </Link>
+        </button>
       </div>
     </nav>
   );

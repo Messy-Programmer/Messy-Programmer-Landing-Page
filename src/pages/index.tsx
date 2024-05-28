@@ -85,6 +85,10 @@ export const Head: HeadFC = () => (
       property="og:image:secure_url"
       content="https://messyprogrammer.in/"
     />
+    <meta
+      name="description"
+      content="Messy Programmer is your trusted partner for top-notch IT services at affordable prices. With a focus on quality and affordability, we specialize in providing a wide range of IT solutions tailored to meet your business needs."
+    />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="400" />
     <meta property="og:image:height" content="300" />
