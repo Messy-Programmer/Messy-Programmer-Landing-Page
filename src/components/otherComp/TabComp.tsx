@@ -6,7 +6,7 @@ export function TabsDemo() {
   const tabs = [
     {
       title: "WebApp",
-      value: "test",
+      value: "webapp",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-4 text-xl md:text-4xl font-bold text-slate-100  bg-gradient-to-br from-[#0c240c] to-[#081a08] text-center">
           <p className="text-xg font-semibold gradient-txt mt-4">
@@ -36,6 +36,66 @@ export function TabsDemo() {
           </p>
           <StaticImage
             src="../../images/automation-demo.png"
+            alt=""
+            className="mt-6"
+          />
+        </div>
+      ),
+    },
+    {
+      title: "Android Dev",
+      value: "android",
+      content: (
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-4 text-xl md:text-4xl font-bold text-slate-100  bg-gradient-to-br from-[#0c240c] to-[#081a08] text-center">
+          <p className="text-xg font-semibold gradient-txt mt-4">
+            Android development
+          </p>
+          <p className="text-xs font-light mt-3">
+            Full-stack development, SEO optimization, and rigorous testing
+            ensure functional websites.
+          </p>
+          <StaticImage
+            src="../../images/android-development.png"
+            alt=""
+            className="mt-6"
+          />
+        </div>
+      ),
+    },
+    {
+      title: "IOS Dev",
+      value: "ios",
+      content: (
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-4 text-xl md:text-4xl font-bold text-slate-100  bg-gradient-to-br from-[#0c240c] to-[#081a08] text-center">
+          <p className="text-xg font-semibold gradient-txt mt-4">
+            IOS development
+          </p>
+          <p className="text-xs font-light mt-3">
+            Full-stack development, SEO optimization, and rigorous testing
+            ensure functional websites.
+          </p>
+          <StaticImage
+            src="../../images/ios-development.png"
+            alt=""
+            className="mt-6"
+          />
+        </div>
+      ),
+    },
+    {
+      title: "Consultancy",
+      value: "consultancy",
+      content: (
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-4 text-xl md:text-4xl font-bold text-slate-100  bg-gradient-to-br from-[#0c240c] to-[#081a08] text-center">
+          <p className="text-xg font-semibold gradient-txt mt-4">
+            IOS development
+          </p>
+          <p className="text-xs font-light mt-3">
+            Full-stack development, SEO optimization, and rigorous testing
+            ensure functional websites.
+          </p>
+          <StaticImage
+            src="../../images/ios-development.png"
             alt=""
             className="mt-6"
           />

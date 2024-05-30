@@ -2,20 +2,32 @@ import React from "react";
 import { EverVaultCard, Icon } from "../ui/everault-card";
 import { Link } from "gatsby";
 import ServiceHeroImageComponent from "./ServiceHeroImage";
+import { motion } from "framer-motion";
 
 export function EverVaultCardComp() {
   return (
     <div className="flex flex-col items-center pt-16 bg-[#051405] lg:pb-16">
-      <div className="text-slate-100 text-center">
+      <motion.div
+        className="text-slate-100 text-center"
+        whileInView={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
+        transition={{ delay: 0.2 }}
+      >
         <h1 className="text-4xl gradient-txt font-medium xl:text-7xl xl:py-5">
           Our Services Categories
         </h1>
         <p className="font-thin mt-4 xl:text-lg xl:font-light">
           Empowering excellence through exceptional services.
         </p>
-      </div>
+      </motion.div>
       {/* container div  */}
-      <div className="flex flex-col items-center gap-5 lg:flex-row lg:pt-16">
+      <motion.div
+        className="flex flex-col items-center gap-5 lg:flex-row lg:pt-16"
+        whileInView={{ y: 0, opacity: 1 }}
+        initial={{ y: 200, opacity: 0 }}
+        transition={{ delay: 0.2, type: "spring", bounce: 0.1 }}
+        viewport={{ once: true }}
+      >
         <div
           id="item-1"
           className="flex flex-col items-center gap-5 xl:w-[40rem] lg:gap-60"
@@ -143,7 +155,7 @@ export function EverVaultCardComp() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

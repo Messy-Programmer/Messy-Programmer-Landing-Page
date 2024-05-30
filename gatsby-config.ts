@@ -1,7 +1,5 @@
 import type { GatsbyConfig } from "gatsby";
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-});
+
 const config: GatsbyConfig = {
   siteMetadata: {
     siteUrl: `https://www.yourdomain.tld`,
@@ -13,6 +11,7 @@ const config: GatsbyConfig = {
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    "gatsby-plugin-smoothscroll",
     {
       resolve: `gatsby-source-filesystem`,
       options: {

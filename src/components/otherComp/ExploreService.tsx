@@ -1,8 +1,10 @@
+import { motion } from "framer-motion";
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
-// import dp from "../../images/gif-dp-final.gif";
 
 export const ExploreService = () => {
+  const ease = "backIn";
+  const duration = 10;
   return (
     <div id="explore-service" className="bg-[#051405] py-20">
       {/* this div will contain the context  */}
@@ -23,7 +25,10 @@ export const ExploreService = () => {
           >
             {/* bottom div is item one */}
             <div className="relative px-2 py-5 sm:w-[50%] xl:w-[40%]">
-              <StaticImage src="../../images/exploreService1.png" alt="" />
+              <StaticImage
+                src="../../images/exploreService1.png"
+                alt="service 1"
+              />
             </div>
             {/* bottom div is item two */}
             <div className="px-5 text-slate-100 sm:w-[50%] sm:px-2 xl:w-[55%]">
@@ -49,7 +54,10 @@ export const ExploreService = () => {
           >
             {/* bottom div is item one */}
             <div className="relative px-2 py-5 sm:w-[50%] xl:w-[40%]">
-              <StaticImage src="../../images/exploreService3.png" alt="" />
+              <StaticImage
+                src="../../images/exploreService3.png"
+                alt="service 3"
+              />
             </div>
             {/* bottom div is item two */}
             <div className="px-5 text-slate-100 sm:w-[50%] sm:px-2 xl:w-[55%]">
@@ -73,7 +81,10 @@ export const ExploreService = () => {
           >
             {/* bottom div is item one */}
             <div className="relative px-2 py-5 sm:w-[50%] xl:w-[40%]">
-              <StaticImage src="../../images/exploreService2.png" alt="" />
+              <StaticImage
+                src="../../images/exploreService2.png"
+                alt="service-2"
+              />
             </div>
             {/* bottom div is item two */}
             <div className="px-5 text-slate-100 sm:w-[50%] sm:px-2 xl:w-[55%]">
@@ -200,51 +211,174 @@ export const ExploreService = () => {
           >
             {/* bottom div is item one */}
             <div className="relative px-10 py-16 sm:w-[50%] xl:w-[40%]">
-              <StaticImage src="../../images/Polygon.png" alt="polygon" />
+              <div className=" scale-[.8]">
+                <StaticImage src="../../images/Polygon.png" alt="polygon" />
+              </div>
+
               <div className=" absolute size-[7rem] bottom-[33%] left-[33%] lg:size-[9rem] xl:left-[11.25rem]">
                 <StaticImage src="../../images/logoCircle.png" alt="logo" />
               </div>
               {/* down div is 1st image  */}
-              <div className="absolute size-[5.5rem] lg:size-[8.5rem] bottom-[68%] left-[38%] lg:bottom-[70%] lg:left-[37%] border-[#4bb846] border-2 rounded-full">
+              <motion.div
+                className="absolute size-[5.5rem] lg:size-[8.5rem] bottom-[68%] left-[38%] lg:bottom-[70%] lg:left-[37%] border-[#4bb846] border-2 rounded-full [--first-x:115%] [--second-x:79%] [--first-y:90%] [--second-y:233%] [--third-x:-90%] [--third-y:233%] [--fourth-x:-128%] [--fourth-y:90%]"
+                animate={{
+                  x: [
+                    "0%",
+                    "var(--first-x)",
+                    "var(--second-x)",
+                    "var(--third-x)",
+                    "var(--fourth-x)",
+                    "0%",
+                  ],
+                  y: [
+                    "0%",
+                    "var(--first-y)",
+                    "var(--second-y)",
+                    "var(--third-y)",
+                    "var(--fourth-y)",
+                    "0%",
+                  ],
+                }}
+                transition={{
+                  repeat: Infinity,
+                  duration: duration,
+                  ease: ease,
+                }}
+              >
                 <StaticImage
                   src="../../images/Suman.jpeg"
                   alt="Suman"
                   className="rounded-full h-full"
                 />
-              </div>
-              <div className="absolute size-[5.5rem] lg:size-[8.5rem] bottom-[46%] left-[3%] border-[#4bb846] border-2 rounded-full overflow-hidden">
-                {/* <img
-                  src={dp}
-                  alt="Deep"
-                  className="rounded-full h-full scale-125"
-                /> */}
+              </motion.div>
+              <motion.div
+                className="absolute size-[5.5rem] lg:size-[8.5rem] bottom-[46%] left-[3%] border-[#4bb846] border-2 rounded-full  [--first-x:127%] [--first-y:-90%] [--second-x:243%] [--second-y:0%] [--third-x:208%] [--third-y:144%] [--fourth-x:37%] [--fourth-y:144%]"
+                animate={{
+                  x: [
+                    "0%",
+                    "var(--first-x)",
+                    "var(--second-x)",
+                    "var(--third-x)",
+                    "var(--fourth-x)",
+                    "0%",
+                  ],
+                  y: [
+                    "0%",
+                    "var(--first-y)",
+                    "var(--second-y)",
+                    "var(--third-y)",
+                    "var(--fourth-y)",
+                    "0%",
+                  ],
+                }}
+                transition={{
+                  repeat: Infinity,
+                  duration: duration,
+                  ease: ease,
+                }}
+              >
                 <StaticImage
                   src="../../images/Deep.jpg"
                   alt="Deep"
                   className="rounded-full h-full"
                 />
-              </div>
-              <div className="absolute size-[5.5rem] lg:size-[8.5rem] bottom-[46%] left-[70%] border-[#4bb846] border-2 rounded-full">
+              </motion.div>
+              <motion.div
+                className="absolute size-[5.5rem] lg:size-[8.5rem] bottom-[46%] left-[70%] border-[#4bb846] border-2 rounded-full [--first-x:-36.3%] [--first-y:144%] [--second-x:-208%] [--second-y:144%] [--third-x:-243%] [--third-y:0%] [--fourth-x:-115%] [--fourth-y:-90%]"
+                animate={{
+                  x: [
+                    "0%",
+                    "var(--first-x)",
+                    "var(--second-x)",
+                    "var(--third-x)",
+                    "var(--fourth-x)",
+                    "0%",
+                  ],
+                  y: [
+                    "0%",
+                    "var(--first-y)",
+                    "var(--second-y)",
+                    "var(--third-y)",
+                    "var(--fourth-y)",
+                    "0%",
+                  ],
+                }}
+                transition={{
+                  repeat: Infinity,
+                  duration: duration,
+                  ease: ease,
+                }}
+              >
                 <StaticImage
                   src="../../images/Biru.jpeg"
                   alt="Biru"
                   className="rounded-full h-full"
                 />
-              </div>
-              <div className="absolute size-[5.5rem] lg:size-[8.5rem] bottom-[11%] left-[13%] lg:bottom-[6%] border-[#4bb846] border-2 rounded-full">
+              </motion.div>
+              <motion.div
+                className="absolute size-[5.5rem] lg:size-[8.5rem] bottom-[11%] left-[13%] lg:bottom-[6%] border-[#4bb846] border-2 rounded-full [--first-x:-37%] [--first-y:-143%] [--second-x:90%] [--second-y:-233%] [--third-x:210%] [--third-y:-143%] [--fourth-x:170%] [--fourth-y:0%]"
+                animate={{
+                  x: [
+                    "0%",
+                    "var(--first-x)",
+                    "var(--second-x)",
+                    "var(--third-x)",
+                    "var(--fourth-x)",
+                    "0%",
+                  ],
+                  y: [
+                    "0%",
+                    "var(--first-y)",
+                    "var(--second-y)",
+                    "var(--third-y)",
+                    "var(--fourth-y)",
+                    "0%",
+                  ],
+                }}
+                transition={{
+                  duration: duration,
+                  repeat: Infinity,
+                  ease: ease,
+                }}
+              >
                 <StaticImage
                   src="../../images/harsh.png"
                   alt="harsh"
                   className="rounded-full h-full"
                 />
-              </div>
-              <div className="absolute size-[5.5rem] lg:size-[8.5rem] bottom-[11%] left-[60%] lg:bottom-[6%] border-[#4bb846] border-2 rounded-full">
+              </motion.div>
+              <motion.div
+                className="absolute size-[5.5rem] lg:size-[8.5rem] bottom-[11%] left-[60%] lg:bottom-[6%] border-[#4bb846] border-2 rounded-full [--first-x:-170%] [--first-y:0%] [--second-x:-207.9%] [--second-y:-143%]  [--third-x:-80%] [--third-y:-233%]  [--fourth-x:40%] [--fourth-y:-140%] "
+                animate={{
+                  x: [
+                    "0%",
+                    "var(--first-x)",
+                    "var(--second-x)",
+                    "var(--third-x)",
+                    "var(--fourth-x)",
+                    "0%",
+                  ],
+                  y: [
+                    "0%",
+                    "var(--first-y)",
+                    "var(--second-y)",
+                    "var(--third-y)",
+                    "var(--fourth-y)",
+                    "0%",
+                  ],
+                }}
+                transition={{
+                  duration: duration,
+                  repeat: Infinity,
+                  ease: ease,
+                }}
+              >
                 <StaticImage
                   src="../../images/profile.png"
                   alt=""
                   className="rounded-full h-full"
                 />
-              </div>
+              </motion.div>
             </div>
             {/* bottom div is item two */}
             <div className="px-5 text-slate-100 sm:w-[50%] sm:px-2 xl:w-[55%]">

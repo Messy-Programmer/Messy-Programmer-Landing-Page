@@ -1,7 +1,9 @@
+import { motion } from "framer-motion";
 import { Link } from "gatsby";
 import * as React from "react";
+import { AnimatedCounter } from "../ui/countup";
 
-function StatsComponent() {
+const StatsComponent = () => {
   return (
     <div className="bg-[#051405] lg:flex justify-center">
       {/* down this will be container for whole section  */}
@@ -31,29 +33,56 @@ function StatsComponent() {
         <div className="flex flex-col items-center gap-4 mt-16 sm:mt-0">
           {/* first two card container */}
           <div className="gap-4 flex flex-col sm:flex-row">
-            <div className="text-slate-100 size-[12rem] bg-gradient-to-br from-[#0c240c] to-[#081a08] text-center flex flex-col justify-center rounded-xl border-[1.5px] border-t-[#284528] border-l-[#284528] border-b-[#112311] border-r-[#112311] ">
-              <h1 className="gradient-txt text-6xl mb-2">200+</h1>
+            <motion.div
+              className="text-slate-100 size-[12rem] bg-gradient-to-br from-[#0c240c] to-[#081a08] text-center flex flex-col justify-center rounded-xl border-[1.5px] border-t-[#284528] border-l-[#284528] border-b-[#112311] border-r-[#112311] [--tx-from:9rem] [--tx-to:0rem] sm:[--tx-from:15rem] sm:[--tx-to:0rem]"
+              initial={{ x: "var(--tx-from)", opacity: 0 }}
+              whileInView={{ x: "var(--tx-to)", opacity: 1 }}
+            >
+              <div className="gradient-txt text-6xl mb-2">
+                <AnimatedCounter from={0} to={100} />+
+              </div>
               <h2>Completed Projects</h2>
-            </div>
-            <div className="text-slate-100 size-[12rem] bg-gradient-to-br from-[#0c240c] to-[#081a08] text-center flex flex-col justify-center rounded-xl border-[1.5px] border-t-[#284528] border-l-[#284528] border-b-[#112311] border-r-[#112311]">
-              <h1 className="gradient-txt text-6xl mb-2">200+</h1>
+            </motion.div>
+            <motion.div
+              className="text-slate-100 size-[12rem] bg-gradient-to-br from-[#0c240c] to-[#081a08] text-center flex flex-col justify-center rounded-xl border-[1.5px] border-t-[#284528] border-l-[#284528] border-b-[#112311] border-r-[#112311] [--tx-from:-9rem] [--tx-to:0rem] sm:[--tx-from:10rem] sm:[--tx-to:0rem]"
+              initial={{ x: "var(--tx-from)", opacity: 0 }}
+              whileInView={{ x: "var(--tx-to)", opacity: 1 }}
+              transition={{ delay: 0.3 }}
+            >
+              <div className="gradient-txt text-6xl mb-2">
+                <AnimatedCounter from={0} to={200} />+
+              </div>
               <h2>Completed Projects</h2>
-            </div>
+            </motion.div>
           </div>
           {/* last two card container */}
           <div className="flex flex-col gap-4 sm:flex-row">
-            <div className="text-slate-100 size-[12rem] bg-gradient-to-br from-[#0c240c] to-[#081a08] text-center flex flex-col justify-center rounded-xl border-[1.5px] border-t-[#284528] border-l-[#284528] border-b-[#112311] border-r-[#112311]">
-              <h1 className="gradient-txt text-6xl mb-2">200+</h1>
+            <motion.div
+              className="text-slate-100 size-[12rem] bg-gradient-to-br from-[#0c240c] to-[#081a08] text-center flex flex-col justify-center rounded-xl border-[1.5px] border-t-[#284528] border-l-[#284528] border-b-[#112311] border-r-[#112311] [--tx-from:9rem] [--tx-to:0rem] sm:[--tx-from:15rem] sm:[--tx-to:0rem]"
+              initial={{ x: "var(--tx-from)", opacity: 0 }}
+              whileInView={{ x: "var(--tx-to)", opacity: 1 }}
+              transition={{ delay: 0.2 }}
+            >
+              <div className="gradient-txt text-6xl mb-2">
+                <AnimatedCounter from={0} to={300} />+
+              </div>
               <h2>Completed Projects</h2>
-            </div>
-            <div className="text-slate-100 size-[12rem] bg-gradient-to-br from-[#0c240c] to-[#081a08] text-center flex flex-col justify-center rounded-xl border-[1.5px] border-t-[#284528] border-l-[#284528] border-b-[#112311] border-r-[#112311]">
-              <h1 className="gradient-txt text-6xl mb-2">200+</h1>
+            </motion.div>
+            <motion.div
+              className="text-slate-100 size-[12rem] bg-gradient-to-br from-[#0c240c] to-[#081a08] text-center flex flex-col justify-center rounded-xl border-[1.5px] border-t-[#284528] border-l-[#284528] border-b-[#112311] border-r-[#112311] [--tx-from:-9rem] [--tx-to:0rem] sm:[--tx-from:10rem] sm:[--tx-to:0rem]"
+              initial={{ x: "var(--tx-from)", opacity: 0 }}
+              whileInView={{ x: "var(--tx-to)", opacity: 1 }}
+              transition={{ delay: 0.4 }}
+            >
+              <div className="gradient-txt text-6xl mb-2">
+                <AnimatedCounter from={0} to={400} />+
+              </div>
               <h2>Completed Projects</h2>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
 export default StatsComponent;
