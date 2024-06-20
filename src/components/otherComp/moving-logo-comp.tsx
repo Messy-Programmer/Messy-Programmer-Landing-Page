@@ -9,7 +9,7 @@ import DreamDesignLabs from "../../images/DreamDesignLabs.png";
 
 export function InfiniteMovingLogoComp() {
   return (
-    <div className="h-[10rem] flex flex-col antialiased bg-[#051405] dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+    <div className="h-[10rem] flex flex-col antialiased bg-[#051405] dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden -z-10">
       <InfiniteMovingLogo items={imageLink} direction="right" speed="slow" />
     </div>
   );
