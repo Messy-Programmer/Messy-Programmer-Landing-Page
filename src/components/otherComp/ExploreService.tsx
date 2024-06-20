@@ -215,7 +215,7 @@ export const ExploreService = () => {
                 <StaticImage src="../../images/Polygon.png" alt="polygon" />
               </div>
 
-              <div className=" absolute size-[6rem] bottom-[33%] left-[33%] lg:size-[7rem] xl:left-[12.25rem] xl:[top-43%]">
+              <div className=" absolute size-[6rem] bottom-[33%] left-[33%] lg:size-[7rem] xl:left-[12.25rem] xl:bottom-[36%]">
                 <StaticImage src="../../images/logoCircle.png" alt="logo" />
               </div>
               {/* down div is 1st image  */}

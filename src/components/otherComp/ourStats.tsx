@@ -34,7 +34,7 @@ const StatsComponent = () => {
           {/* first two card container */}
           <div className="gap-4 flex flex-col sm:flex-row">
             <motion.div
-              className="text-slate-100 size-[12rem] bg-gradient-to-br from-[#0c240c] to-[#081a08] text-center flex flex-col justify-center rounded-xl border-[1.5px] border-t-[#284528] border-l-[#284528] border-b-[#112311] border-r-[#112311] [--tx-from:9rem] [--tx-to:0rem] sm:[--tx-from:15rem] sm:[--tx-to:0rem]"
+              className="text-slate-100 size-[13rem] bg-gradient-to-br from-[#0c240c] to-[#081a08] text-center flex flex-col justify-center rounded-xl border-[1.5px] border-t-[#284528] border-l-[#284528] border-b-[#112311] border-r-[#112311] [--tx-from:9rem] [--tx-to:0rem] sm:[--tx-from:15rem] sm:[--tx-to:0rem]"
               initial={{ x: "var(--tx-from)", opacity: 0 }}
               whileInView={{ x: "var(--tx-to)", opacity: 1 }}
             >
@@ -44,7 +44,7 @@ const StatsComponent = () => {
               <h2>Completed Projects</h2>
             </motion.div>
             <motion.div
-              className="text-slate-100 size-[12rem] bg-gradient-to-br from-[#0c240c] to-[#081a08] text-center flex flex-col justify-center rounded-xl border-[1.5px] border-t-[#284528] border-l-[#284528] border-b-[#112311] border-r-[#112311] [--tx-from:-9rem] [--tx-to:0rem] sm:[--tx-from:10rem] sm:[--tx-to:0rem]"
+              className="text-slate-100 size-[13rem] bg-gradient-to-br from-[#0c240c] to-[#081a08] text-center flex flex-col justify-center rounded-xl border-[1.5px] border-t-[#284528] border-l-[#284528] border-b-[#112311] border-r-[#112311] [--tx-from:-9rem] [--tx-to:0rem] sm:[--tx-from:10rem] sm:[--tx-to:0rem]"
               initial={{ x: "var(--tx-from)", opacity: 0 }}
               whileInView={{ x: "var(--tx-to)", opacity: 1 }}
               transition={{ delay: 0.3 }}
@@ -58,7 +58,7 @@ const StatsComponent = () => {
           {/* last two card container */}
           <div className="flex flex-col gap-4 sm:flex-row">
             <motion.div
-              className="text-slate-100 size-[12rem] bg-gradient-to-br from-[#0c240c] to-[#081a08] text-center flex flex-col justify-center rounded-xl border-[1.5px] border-t-[#284528] border-l-[#284528] border-b-[#112311] border-r-[#112311] [--tx-from:9rem] [--tx-to:0rem] sm:[--tx-from:15rem] sm:[--tx-to:0rem]"
+              className="text-slate-100 size-[13rem] bg-gradient-to-br from-[#0c240c] to-[#081a08] text-center flex flex-col justify-center rounded-xl border-[1.5px] border-t-[#284528] border-l-[#284528] border-b-[#112311] border-r-[#112311] [--tx-from:9rem] [--tx-to:0rem] sm:[--tx-from:15rem] sm:[--tx-to:0rem]"
               initial={{ x: "var(--tx-from)", opacity: 0 }}
               whileInView={{ x: "var(--tx-to)", opacity: 1 }}
               transition={{ delay: 0.2 }}
@@ -69,7 +69,7 @@ const StatsComponent = () => {
               <h2>5⭐reviews</h2>
             </motion.div>
             <motion.div
-              className="text-slate-100 size-[12rem] bg-gradient-to-br from-[#0c240c] to-[#081a08] text-center flex flex-col justify-center rounded-xl border-[1.5px] border-t-[#284528] border-l-[#284528] border-b-[#112311] border-r-[#112311] [--tx-from:-9rem] [--tx-to:0rem] sm:[--tx-from:10rem] sm:[--tx-to:0rem]"
+              className="text-slate-100 size-[13rem] bg-gradient-to-br from-[#0c240c] to-[#081a08] text-center flex flex-col justify-center rounded-xl border-[1.5px] border-t-[#284528] border-l-[#284528] border-b-[#112311] border-r-[#112311] [--tx-from:-9rem] [--tx-to:0rem] sm:[--tx-from:10rem] sm:[--tx-to:0rem]"
               initial={{ x: "var(--tx-from)", opacity: 0 }}
               whileInView={{ x: "var(--tx-to)", opacity: 1 }}
               transition={{ delay: 0.4 }}
