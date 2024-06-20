@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import * as React from "react";
 
@@ -7,7 +8,7 @@ function ServiceHeroImageComponent() {
       {/* bottom div will be the green circle */}
       <div className=" bg-gradient-to-r from-[#097809] to-[#0ca10c] rounded-full size-[19rem] relative overflow-visible sm:size-[25rem] lg:size-[30rem]">
         <StaticImage
-          src="../../images/transparent-suman.png"
+          src="../../images/t-suman.png"
           alt="human"
           className=" absolute -top-[30%]"
         />
@@ -27,7 +28,10 @@ function ServiceHeroImageComponent() {
           </svg>
         </div>
         {/* bottom div contains the book now  */}
-        <div className="text-slate-100 bg-gradient-to-b from-[#40a5fd] to-[#7dff7d] w-[5rem] h-[11rem] flex flex-col items-center justify-evenly rounded-full absolute right-[37%] bottom-0 lg:bottom-[7%] lg:right-[40%]">
+        <Link
+          to="#contact"
+          className="text-slate-100 bg-gradient-to-b from-[#40a5fd] to-[#7dff7d] w-[5rem] h-[11rem] flex flex-col items-center justify-evenly rounded-full absolute right-[37%] bottom-0 lg:bottom-[7%] lg:right-[40%]"
+        >
           <div className="text-center">
             <h1>Book</h1>
             <h1>Now</h1>
@@ -49,7 +53,7 @@ function ServiceHeroImageComponent() {
               />
             </svg>
           </div>
-        </div>
+        </Link>
       </div>
     </div>
   );
