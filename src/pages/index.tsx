@@ -122,6 +122,6 @@ export const Head: HeadFC = () => (
     <meta property="og:image:height" content="300" />
     <meta name="author" content="MessyProgrammer" />
     <meta name="theme-color" content="#051405" />
-    <title>MessyProgrammer</title>
+    <title>Messy Programmer</title>
   </>
 );
