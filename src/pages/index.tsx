@@ -39,14 +39,42 @@ const IndexPage: React.FC<PageProps> = () => {
         <div>
           <div className="flex lg:gap-12 xl:max-w-[70rem] xl:mx-auto">
             <div>
-              <StaticImage src="../images/projectConsole.png" alt="" />
+              <StaticImage
+                src="../images/projectConsole.png"
+                alt=""
+                placeholder="blurred"
+                layout="constrained"
+                loading="eager"
+                quality={100}
+              />
             </div>
             <div className="mt-8">
-              <StaticImage src="../images/projectDev.png" alt="" />
+              <StaticImage
+                src="../images/projectDev.png"
+                alt=""
+                placeholder="blurred"
+                layout="constrained"
+                loading="eager"
+                quality={100}
+              />
             </div>
             <div className="mt-16 flex flex-col lg:gap-3 xl:gap-4">
-              <StaticImage src="../images/projectCode.png" alt="" />
-              <StaticImage src="../images/projectTerminal.png" alt="" />
+              <StaticImage
+                src="../images/projectCode.png"
+                alt=""
+                placeholder="blurred"
+                layout="constrained"
+                loading="eager"
+                quality={100}
+              />
+              <StaticImage
+                src="../images/projectTerminal.png"
+                alt=""
+                placeholder="blurred"
+                layout="constrained"
+                loading="eager"
+                quality={100}
+              />
             </div>
           </div>
         </div>
@@ -93,7 +121,7 @@ export const Head: HeadFC = () => (
     <meta property="og:image:width" content="400" />
     <meta property="og:image:height" content="300" />
     <meta name="author" content="MessyProgrammer" />
-    <title>MessyProgrammer</title>
     <meta name="theme-color" content="#051405" />
+    <title>MessyProgrammer</title>
   </>
 );
