@@ -258,7 +258,7 @@ export const ExploreService = () => {
                 />
               </div>
 
-              <div className=" absolute size-[6rem] bottom-[33%] left-[33%] lg:size-[7rem] xl:left-[12.25rem] xl:bottom-[36%]">
+              <div className=" absolute size-[5.5rem] bottom-[33%] left-[37%] md:left-[39%] lg:size-[7rem] xl:left-[13rem] xl:bottom-[36%]">
                 <StaticImage
                   src="../../images/logoCircle.png"
                   alt="logo"
