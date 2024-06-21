@@ -12,8 +12,7 @@ const NotFoundPage: React.FC<PageProps> = () => {
             Page not found
           </h1>
           <p className="mt-4 text-slate-100">
-            Sorry, the page you are looking for doesn't exist.Here are some
-            helpful links:
+            Sorry, the page you are looking for doesn't exist.
           </p>
 
           <div className="flex items-center mt-6 gap-x-3">
