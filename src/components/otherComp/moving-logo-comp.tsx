@@ -1,6 +1,4 @@
-"use client";
-
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { InfiniteMovingLogo } from "../ui/moving-logo";
 import dps from "../../images/dps.png";
 import TheStreamers from "../../images/TheStreamers.png";

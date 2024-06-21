@@ -88,7 +88,14 @@ const ContactUs = () => {
               </Link>
             </div>
             <div className="mt-4">
-              <StaticImage src="../../images/contactImage.png" alt="" />
+              <StaticImage
+                src="../../images/contactImage.png"
+                alt="contact-us"
+                placeholder="blurred"
+                layout="constrained"
+                loading="eager"
+                quality={100}
+              />
             </div>
           </div>
           <div className="z-0 absolute inset-0 contact-bg rounded-xl"></div>

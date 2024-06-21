@@ -25,6 +25,10 @@ const Footer = () => (
               src="../../images/messyProgrammerLogo.png"
               alt="messyProgrammerLogo"
               className="z-10 mt-8 w-48 md:mt-[30px]"
+              placeholder="blurred"
+              layout="constrained"
+              loading="eager"
+              quality={100}
             />
             {/* icon section  */}
             <div className="flex justify-center gap-2 mt-8 md:mt-[30px] md:justify-start">

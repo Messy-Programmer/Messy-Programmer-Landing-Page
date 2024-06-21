@@ -11,6 +11,10 @@ function ServiceHeroImageComponent() {
           src="../../images/t-suman.png"
           alt="human"
           className=" absolute -top-[30%]"
+          placeholder="blurred"
+          layout="constrained"
+          loading="eager"
+          quality={100}
         />
         {/* bottom div contains the ellipse */}
         <div className="w-[20rem] absolute  -bottom-[30%] sm:w-[30rem] sm:-left-[8%] lg:-bottom-[20%] lg:left-[2%]">

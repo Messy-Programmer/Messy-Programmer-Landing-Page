@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import scrollTo from "gatsby-plugin-smoothscroll";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -28,6 +28,10 @@ const NavBar = () => {
             src="../../images/messyProgrammerLogo.png"
             alt="messyProgrammerLogo"
             className=" text-slate-100 font-medium it w-48"
+            placeholder="blurred"
+                layout="constrained"
+                loading="eager"
+                quality={100}
           />
         </div>
         <button
