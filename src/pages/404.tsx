@@ -33,6 +33,7 @@ const NotFoundPage: React.FC<PageProps> = () => {
             viewBox="0 0 514 164"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            style={{ width: "inherit" }}
           >
             <circle cx="101" cy="22" r="20" stroke="#84cc16" stroke-width="2" />
             <circle
