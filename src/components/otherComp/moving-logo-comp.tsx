@@ -7,14 +7,14 @@ import DreamDesignLabs from "../../images/DreamDesignLabs.png";
 
 export function InfiniteMovingLogoComp() {
   return (
-    <div className="h-[10rem] flex flex-col antialiased bg-[#051405] dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden -z-10">
+    <div className="h-[10rem] flex flex-col antialiased bg-[#051405] dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden z-0">
       <InfiniteMovingLogo items={imageLink} direction="right" speed="slow" />
     </div>
   );
 }
 
 const imageLink = [
-  { img: dps, link: "github.com", name: "DPS" },
+  { img: dps, link: "https://www.dpsjhansi.in/", name: "DPS" },
   { img: TheStreamers, link: "github.com", name: "TheStreamers" },
   { img: AdultFamilyHomes, link: "github.com", name: "AdultFamilyHomes" },
   { img: DreamDesignLabs, link: "github.com", name: "DreamDesignLabs" },
