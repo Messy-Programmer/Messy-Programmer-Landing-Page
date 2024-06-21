@@ -12,8 +12,7 @@ const NotFoundPage: React.FC<PageProps> = () => {
             Page not found
           </h1>
           <p className="mt-4 text-slate-100">
-            Sorry, the page you are looking for doesn't exist.Here are some
-            helpful links:
+            Sorry, the page you are looking for doesn't exist.
           </p>
 
           <div className="flex items-center mt-6 gap-x-3">
@@ -33,6 +32,7 @@ const NotFoundPage: React.FC<PageProps> = () => {
             viewBox="0 0 514 164"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            style={{ width: "inherit" }}
           >
             <circle cx="101" cy="22" r="20" stroke="#84cc16" stroke-width="2" />
             <circle

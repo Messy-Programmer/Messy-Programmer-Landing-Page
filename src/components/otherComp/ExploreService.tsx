@@ -28,6 +28,10 @@ export const ExploreService = () => {
               <StaticImage
                 src="../../images/exploreService1.png"
                 alt="service 1"
+                placeholder="blurred"
+                layout="constrained"
+                loading="eager"
+                quality={100}
               />
             </div>
             {/* bottom div is item two */}
@@ -84,6 +88,10 @@ export const ExploreService = () => {
               <StaticImage
                 src="../../images/exploreService2.png"
                 alt="service-2"
+                placeholder="blurred"
+                layout="constrained"
+                loading="eager"
+                quality={100}
               />
             </div>
             {/* bottom div is item two */}
@@ -109,7 +117,14 @@ export const ExploreService = () => {
           >
             {/* bottom div is item one */}
             <div className="relative px-2 py-5 sm:w-[50%] xl:w-[40%]">
-              <StaticImage src="../../images/exploreService4.png" alt="" />
+              <StaticImage
+                src="../../images/exploreService4.png"
+                alt=""
+                placeholder="blurred"
+                layout="constrained"
+                loading="eager"
+                quality={100}
+              />
             </div>
             {/* bottom div is item two */}
             <div className="px-5 text-slate-100 sm:w-[50%] sm:px-2 xl:w-[55%]">
@@ -134,7 +149,14 @@ export const ExploreService = () => {
           >
             {/* bottom div is item one */}
             <div className="relative px-2 py-5 sm:w-[50%] xl:w-[40%]">
-              <StaticImage src="../../images/exploreService5.png" alt="" />
+              <StaticImage
+                src="../../images/exploreService5.png"
+                alt=""
+                placeholder="blurred"
+                layout="constrained"
+                loading="eager"
+                quality={100}
+              />
             </div>
             {/* bottom div is item two */}
             <div className="px-5 text-slate-100 sm:w-[50%] sm:px-2 xl:w-[55%]">
@@ -161,7 +183,14 @@ export const ExploreService = () => {
           >
             {/* bottom div is item one */}
             <div className="relative px-2 py-5 sm:w-[50%] xl:w-[40%]">
-              <StaticImage src="../../images/exploreService6.png" alt="" />
+              <StaticImage
+                src="../../images/exploreService6.png"
+                alt=""
+                placeholder="blurred"
+                layout="constrained"
+                loading="eager"
+                quality={100}
+              />
             </div>
             {/* bottom div is item two */}
             <div className="px-5 text-slate-100 sm:w-[50%] sm:px-2 xl:w-[55%]">
@@ -186,7 +215,14 @@ export const ExploreService = () => {
           >
             {/* bottom div is item one */}
             <div className="relative px-2 py-5 sm:w-[50%] xl:w-[40%]">
-              <StaticImage src="../../images/exploreService7.png" alt="" />
+              <StaticImage
+                src="../../images/exploreService7.png"
+                alt=""
+                placeholder="blurred"
+                layout="constrained"
+                loading="eager"
+                quality={100}
+              />
             </div>
             {/* bottom div is item two */}
             <div className="px-5 text-slate-100 sm:w-[50%] sm:px-2 xl:w-[55%]">
@@ -212,11 +248,25 @@ export const ExploreService = () => {
             {/* bottom div is item one */}
             <div className="relative px-10 py-16 sm:w-[50%] xl:w-[40%]">
               <div className=" scale-[.8] ">
-                <StaticImage src="../../images/Polygon.png" alt="polygon" />
+                <StaticImage
+                  src="../../images/Polygon.png"
+                  alt="polygon"
+                  placeholder="blurred"
+                  layout="constrained"
+                  loading="eager"
+                  quality={100}
+                />
               </div>
 
-              <div className=" absolute size-[6rem] bottom-[33%] left-[33%] lg:size-[7rem] xl:left-[12.25rem] xl:bottom-[36%]">
-                <StaticImage src="../../images/logoCircle.png" alt="logo" />
+              <div className=" absolute size-[5.5rem] bottom-[33%] left-[37%] md:left-[39%] lg:size-[7rem] xl:left-[13rem] xl:bottom-[36%]">
+                <StaticImage
+                  src="../../images/logoCircle.png"
+                  alt="logo"
+                  placeholder="blurred"
+                  layout="constrained"
+                  loading="eager"
+                  quality={100}
+                />
               </div>
               {/* down div is 1st image  */}
               <motion.div
@@ -231,6 +281,10 @@ export const ExploreService = () => {
                   src="../../images/Suman.jpeg"
                   alt="Suman"
                   className="rounded-full h-full"
+                  placeholder="blurred"
+                  layout="constrained"
+                  loading="eager"
+                  quality={100}
                 />
               </motion.div>
               <motion.div
@@ -245,6 +299,10 @@ export const ExploreService = () => {
                   src="../../images/Deep.jpg"
                   alt="Deep"
                   className="rounded-full h-full"
+                  placeholder="blurred"
+                  layout="constrained"
+                  loading="eager"
+                  quality={100}
                 />
               </motion.div>
               <motion.div
@@ -259,6 +317,10 @@ export const ExploreService = () => {
                   src="../../images/Biru.jpeg"
                   alt="Biru"
                   className="rounded-full h-full"
+                  placeholder="blurred"
+                  layout="constrained"
+                  loading="eager"
+                  quality={100}
                 />
               </motion.div>
               <motion.div
@@ -273,6 +335,10 @@ export const ExploreService = () => {
                   src="../../images/harsh.png"
                   alt="harsh"
                   className="rounded-full h-full"
+                  placeholder="blurred"
+                  layout="constrained"
+                  loading="eager"
+                  quality={100}
                 />
               </motion.div>
               <motion.div
@@ -287,6 +353,10 @@ export const ExploreService = () => {
                   src="../../images/profile.png"
                   alt=""
                   className="rounded-full h-full"
+                  placeholder="blurred"
+                  layout="constrained"
+                  loading="eager"
+                  quality={100}
                 />
               </motion.div>
             </div>
@@ -313,7 +383,14 @@ export const ExploreService = () => {
           >
             {/* bottom div is item one */}
             <div className="relative px-2 py-5 sm:w-[50%] xl:w-[40%]">
-              <StaticImage src="../../images/exploreService9.png" alt="" />
+              <StaticImage
+                src="../../images/exploreService9.png"
+                alt=""
+                placeholder="blurred"
+                layout="constrained"
+                loading="eager"
+                quality={100}
+              />
             </div>
             {/* bottom div is item two */}
             <div className="px-5 text-slate-100 sm:w-[50%] sm:px-2 xl:w-[55%]">

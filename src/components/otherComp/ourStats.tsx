@@ -52,7 +52,7 @@ const StatsComponent = () => {
               <div className="gradient-txt text-6xl mb-2">
                 <AnimatedCounter from={0} to={89} />+
               </div>
-              <h2>Happy clients</h2>
+              <h2>Happy Clients 😄</h2>
             </motion.div>
           </div>
           {/* last two card container */}
@@ -66,7 +66,7 @@ const StatsComponent = () => {
               <div className="gradient-txt text-6xl mb-2">
                 <AnimatedCounter from={0} to={86} />+
               </div>
-              <h2>5⭐reviews</h2>
+              <span>5🌟 Reviews</span>
             </motion.div>
             <motion.div
               className="text-slate-100 size-[13rem] bg-gradient-to-br from-[#0c240c] to-[#081a08] text-center flex flex-col justify-center rounded-xl border-[1.5px] border-t-[#284528] border-l-[#284528] border-b-[#112311] border-r-[#112311] [--tx-from:-9rem] [--tx-to:0rem] sm:[--tx-from:10rem] sm:[--tx-to:0rem]"
@@ -77,7 +77,7 @@ const StatsComponent = () => {
               <div className="gradient-txt text-6xl mb-2">
                 <AnimatedCounter from={0} to={4000} />+
               </div>
-              <h2>Hours worked</h2>
+              <h2>Hours Worked</h2>
             </motion.div>
           </div>
         </div>

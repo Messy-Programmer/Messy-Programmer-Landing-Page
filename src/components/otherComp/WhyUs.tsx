@@ -7,7 +7,14 @@ const WhyUs = () => {
       <div className="sm:flex sm:items-center lg:px-16 xl:max-w-[85rem] xl:mx-auto xl:px-0 xl:gap-8">
         {/* bottom div is item one */}
         <div className="relative px-2 py-5 sm:w-[45%]">
-          <StaticImage src="../../images/whyUs.png" alt="" />
+          <StaticImage
+            src="../../images/whyUs.png"
+            alt=""
+            placeholder="blurred"
+            layout="constrained"
+            loading="eager"
+            quality={100}
+          />
         </div>
         {/* bottom div is item two */}
         <div className="px-5 text-slate-100 sm:w-[55%] xl:pr-[5rem]">

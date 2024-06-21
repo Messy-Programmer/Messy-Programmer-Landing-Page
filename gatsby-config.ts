@@ -25,10 +25,10 @@ const config: GatsbyConfig = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `MessyProgrammer`,
-        short_name: `GatsbyJS`,
+        short_name: `Messy X Lobo`,
         start_url: `/`,
-        background_color: `#3c933a`,
-        theme_color: `#3c933a`,
+        background_color: `#051405`,
+        theme_color: `#051405`,
         display: `standalone`,
         icon: `src/images/logo-transparent.png`,
       },

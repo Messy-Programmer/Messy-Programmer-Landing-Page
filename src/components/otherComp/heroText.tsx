@@ -1,7 +1,6 @@
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
-import bgLogo from "../../images/heroLogo.png";
 import { IoMail } from "react-icons/io5";
 
 const HeroText = () => {
@@ -45,15 +44,39 @@ const HeroText = () => {
         {/* hero text end */}
       </div>
       {/* hero image for tab n desktop */}
-      <div className="hidden absolute sm:inline-block sm:top-[20%] sm:right-0 sm:w-[8rem] sm:z-10 lg:right-[10rem] lg:w-[11rem] xl:right-[20%] xl:w-[17rem] xl:h-[22rem]">
-        <img className="w-full h-full" src={bgLogo} alt="logo" />
+      <div className="hidden absolute sm:inline-block sm:top-[20%] sm:right-0 sm:w-[8rem] sm:z-10 lg:right-[10rem] lg:w-[11rem] xl:right-[20%] xl:w-[17rem] xl:h-[20rem]">
+        <StaticImage
+          className="w-full h-full"
+          src="../../images/heroLogo.png"
+          alt="logo"
+          placeholder="blurred"
+          layout="constrained"
+          loading="eager"
+          quality={100}
+        />
       </div>
       {/* hero image for tab n desktop end */}
       <div className="absolute z-10 top-[10%] left-[10%] w-[8rem]">
-        <img className="w-full h-full" src={bgLogo} alt="logo" />
+        <StaticImage
+          className="w-full h-full"
+          src="../../images/heroLogo.png"
+          alt="logo"
+          placeholder="blurred"
+          layout="constrained"
+          loading="eager"
+          quality={100}
+        />
       </div>
       <div className="absolute z-10 w-[9rem] bottom-[10%] left-[20%]">
-        <img className="w-full h-full" src={bgLogo} alt="logo" />
+        <StaticImage
+          className="w-full h-full"
+          src="../../images/heroLogo.png"
+          alt="logo"
+          placeholder="blurred"
+          layout="constrained"
+          loading="eager"
+          quality={100}
+        />
       </div>
     </>
   );

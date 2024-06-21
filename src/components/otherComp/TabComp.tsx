@@ -38,6 +38,10 @@ export function TabsDemo() {
             src="../../images/automation-demo.png"
             alt=""
             className="mt-6"
+            placeholder="blurred"
+                layout="constrained"
+                loading="eager"
+                quality={100}
           />
         </div>
       ),
@@ -59,6 +63,10 @@ export function TabsDemo() {
             src="../../images/android-development.png"
             alt=""
             className="mt-6"
+            placeholder="blurred"
+                layout="constrained"
+                loading="eager"
+                quality={100}
           />
         </div>
       ),
@@ -79,6 +87,10 @@ export function TabsDemo() {
             src="../../images/ios-development.png"
             alt=""
             className="mt-6"
+            placeholder="blurred"
+                layout="constrained"
+                loading="eager"
+                quality={100}
           />
         </div>
       ),
