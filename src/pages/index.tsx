@@ -99,6 +99,10 @@ export const Head: HeadFC = () => (
   <>
     <html lang="en" />
     <meta charSet="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    ></meta>
     <link
       rel="icon"
       type="image/x-icon"

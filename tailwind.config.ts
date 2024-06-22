@@ -29,6 +29,9 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      screens: {
+        "3xl": "2560px",
+      },
       animation: {
         first: "moveVertical 30s ease infinite",
         second: "moveInCircle 20s reverse infinite",
