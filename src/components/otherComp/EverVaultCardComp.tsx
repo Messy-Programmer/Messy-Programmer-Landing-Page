@@ -47,7 +47,7 @@ export function EverVaultCardComp() {
                   Web App, Business Workflow Design & Implementation, Dedicated
                   Tech Team for Your Business
                 </p>
-                <h1 className="text-3xl font-medium mt-4 gradient-txt">
+                <h1 className="text-[1.7rem] font-medium mt-4 gradient-txt">
                   Website Development
                 </h1>
                 <p className=" text-lg leading-4 mt-4 sm:mt-1">
@@ -78,7 +78,7 @@ export function EverVaultCardComp() {
             <div className="flex flex-col gap-6">
               <EverVaultCard svg={cardTwo} bg="bg-two" />
               <div className="text-slate-100">
-                <h1 className="text-3xl font-medium mt-4 gradient-txt">
+                <h1 className=" text-[1.7rem] font-medium mt-4 gradient-txt">
                   Business Development
                 </h1>
                 <p className=" text-sm mt-4 font-[200] tracking-wide">
@@ -98,7 +98,7 @@ export function EverVaultCardComp() {
             <div className="flex flex-col gap-6">
               <EverVaultCard svg={cardThree} bg="bg-three" />
               <div className="text-slate-100">
-                <h1 className="text-3xl font-medium mt-4 gradient-txt">
+                <h1 className="text-[1.7rem] font-medium mt-4 gradient-txt">
                   Automation Tool
                 </h1>
                 <p className=" text-sm mt-4 font-[200] tracking-wide">
@@ -123,7 +123,7 @@ export function EverVaultCardComp() {
             <div className="flex flex-col gap-6">
               <EverVaultCard svg={cardFour} bg="bg-four" />
               <div className="text-slate-100">
-                <h1 className="text-3xl font-medium mt-4 gradient-txt">
+                <h1 className="text-[1.7rem] font-medium mt-4 gradient-txt">
                   Workflow Design
                 </h1>
                 <p className=" text-sm mt-4 font-[200] tracking-wide">
@@ -143,7 +143,7 @@ export function EverVaultCardComp() {
             <div className="flex flex-col gap-6">
               <EverVaultCard svg={cardFive} bg="bg-five" />
               <div className="text-slate-100">
-                <h1 className="text-3xl font-medium mt-4 gradient-txt">
+                <h1 className="text-[1.7rem] font-medium mt-4 gradient-txt">
                   Tech Consultancy
                 </h1>
                 <p className=" text-sm mt-4 font-[200] tracking-wide">
