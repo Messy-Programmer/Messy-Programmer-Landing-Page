@@ -260,7 +260,7 @@ export const ExploreService = () => {
 
               <div className=" absolute size-[5.5rem] bottom-[33%] left-[37%] md:left-[39%] lg:size-[7rem] xl:left-[13rem] xl:bottom-[36%]">
                 <StaticImage
-                  src="../../images/logoCircle.png"
+                  src="../../images/logoCircle1.png"
                   alt="logo"
                   placeholder="blurred"
                   layout="constrained"
@@ -269,14 +269,7 @@ export const ExploreService = () => {
                 />
               </div>
               {/* down div is 1st image  */}
-              <motion.div
-                className="absolute size-[5.5rem] lg:size-[8rem] bottom-[68%] left-[38%] lg:bottom-[70%] lg:left-[37%] border-[#4bb846] border-2 rounded-full [--first-x:115%] [--second-x:79%] [--first-y:90%] [--second-y:233%] [--third-x:-90%] [--third-y:233%] [--fourth-x:-128%] [--fourth-y:90%]"
-                transition={{
-                  repeat: Infinity,
-                  duration: duration,
-                  ease: ease,
-                }}
-              >
+              <div className="absolute size-[5.5rem] lg:size-[8rem] bottom-[68%] left-[38%] lg:bottom-[70%] lg:left-[37%] border-[#4bb846] border-2 rounded-full [--first-x:115%] [--second-x:79%] [--first-y:90%] [--second-y:233%] [--third-x:-90%] [--third-y:233%] [--fourth-x:-128%] [--fourth-y:90%]">
                 <StaticImage
                   src="../../images/Suman.jpeg"
                   alt="Suman"
@@ -286,15 +279,8 @@ export const ExploreService = () => {
                   loading="eager"
                   quality={100}
                 />
-              </motion.div>
-              <motion.div
-                className="absolute size-[5.5rem] lg:size-[8rem] bottom-[46%] left-[3%] border-[#4bb846] border-2 rounded-full  [--first-x:127%] [--first-y:-90%] [--second-x:243%] [--second-y:0%] [--third-x:208%] [--third-y:144%] [--fourth-x:37%] [--fourth-y:144%]"
-                transition={{
-                  repeat: Infinity,
-                  duration: duration,
-                  ease: ease,
-                }}
-              >
+              </div>
+              <div className="absolute size-[5.5rem] lg:size-[8rem] bottom-[46%] left-[3%] border-[#4bb846] border-2 rounded-full  [--first-x:127%] [--first-y:-90%] [--second-x:243%] [--second-y:0%] [--third-x:208%] [--third-y:144%] [--fourth-x:37%] [--fourth-y:144%]">
                 <StaticImage
                   src="../../images/Deep.jpg"
                   alt="Deep"
@@ -304,15 +290,8 @@ export const ExploreService = () => {
                   loading="eager"
                   quality={100}
                 />
-              </motion.div>
-              <motion.div
-                className="absolute size-[5.5rem] lg:size-[8rem] bottom-[46%] left-[70%] border-[#4bb846] border-2 rounded-full [--first-x:-36.3%] [--first-y:144%] [--second-x:-208%] [--second-y:144%] [--third-x:-243%] [--third-y:0%] [--fourth-x:-115%] [--fourth-y:-90%]"
-                transition={{
-                  repeat: Infinity,
-                  duration: duration,
-                  ease: ease,
-                }}
-              >
+              </div>
+              <div className="absolute size-[5.5rem] lg:size-[8rem] bottom-[46%] left-[70%] border-[#4bb846] border-2 rounded-full [--first-x:-36.3%] [--first-y:144%] [--second-x:-208%] [--second-y:144%] [--third-x:-243%] [--third-y:0%] [--fourth-x:-115%] [--fourth-y:-90%]">
                 <StaticImage
                   src="../../images/Biru.jpeg"
                   alt="Biru"
@@ -322,15 +301,8 @@ export const ExploreService = () => {
                   loading="eager"
                   quality={100}
                 />
-              </motion.div>
-              <motion.div
-                className="absolute size-[5.5rem] lg:size-[8rem] bottom-[11%] left-[13%] lg:bottom-[6%] border-[#4bb846] border-2 rounded-full [--first-x:-37%] [--first-y:-143%] [--second-x:90%] [--second-y:-233%] [--third-x:210%] [--third-y:-143%] [--fourth-x:170%] [--fourth-y:0%]"
-                transition={{
-                  duration: duration,
-                  repeat: Infinity,
-                  ease: ease,
-                }}
-              >
+              </div>
+              <div className="absolute size-[5.5rem] lg:size-[8rem] bottom-[11%] left-[13%] lg:bottom-[6%] border-[#4bb846] border-2 rounded-full [--first-x:-37%] [--first-y:-143%] [--second-x:90%] [--second-y:-233%] [--third-x:210%] [--third-y:-143%] [--fourth-x:170%] [--fourth-y:0%]">
                 <StaticImage
                   src="../../images/harsh.png"
                   alt="harsh"
@@ -340,17 +312,10 @@ export const ExploreService = () => {
                   loading="eager"
                   quality={100}
                 />
-              </motion.div>
-              <motion.div
-                className="absolute size-[5.5rem] lg:size-[8rem] bottom-[11%] left-[60%] lg:bottom-[6%] border-[#4bb846] border-2 rounded-full [--first-x:-170%] [--first-y:0%] [--second-x:-207.9%] [--second-y:-143%]  [--third-x:-80%] [--third-y:-233%]  [--fourth-x:40%] [--fourth-y:-140%] "
-                transition={{
-                  duration: duration,
-                  repeat: Infinity,
-                  ease: ease,
-                }}
-              >
+              </div>
+              <div className="absolute size-[5.5rem] lg:size-[8rem] bottom-[11%] left-[60%] lg:bottom-[6%] border-[#4bb846] border-2 rounded-full [--first-x:-170%] [--first-y:0%] [--second-x:-207.9%] [--second-y:-143%]  [--third-x:-80%] [--third-y:-233%]  [--fourth-x:40%] [--fourth-y:-140%] ">
                 <StaticImage
-                  src="../../images/profile.png"
+                  src="../../images/ayush.jpg"
                   alt=""
                   className="rounded-full h-full"
                   placeholder="blurred"
@@ -358,7 +323,7 @@ export const ExploreService = () => {
                   loading="eager"
                   quality={100}
                 />
-              </motion.div>
+              </div>
             </div>
             {/* bottom div is item two */}
             <div className="px-5 text-slate-100 sm:w-[50%] sm:px-2 xl:w-[55%]">
