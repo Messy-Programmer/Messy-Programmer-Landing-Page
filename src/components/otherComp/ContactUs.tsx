@@ -28,7 +28,7 @@ const ContactUs = () => {
         {/* first item  */}
         <div
           id="first-item"
-          className="rounded-xl border-2 border-[#1b321b] p-8 relative mt-5 bg-grid-black sm:w-[50%]"
+          className="rounded-xl border-2 border-[#1b321b] p-8 relative mt-5 bg-grid-black sm:w-[50%] lg:p-16 xl:p-[2.5rem]"
         >
           <Spotlight
             className="top-[2rem] w-[40rem] left-[6rem] md:left-[1rem] md:-top-[1rem] sm:w-[60rem] lg:w-[60rem]"
