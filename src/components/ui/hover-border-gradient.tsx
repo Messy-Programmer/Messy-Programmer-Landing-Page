@@ -40,7 +40,7 @@ export function HoverBorderGradient({
     BOTTOM:
       "radial-gradient(20.7% 50% at 50% 100%,  hsl(120, 47%, 52%) 0%, rgba(255, 255, 255, 0) 100%)",
     RIGHT:
-      "radial-gradient(16.2% 41.199999999999996% at 100% 50%,  hsl(120, 47%, 52%) 0%, rgba(255, 255, 255, 0) 100%)",
+      "radial-gradient(16.2% 41.199999999999996% at 100% 50%,  hsl(120, 47%, 52%) 0%, rgba(75, 255, 75, 0.5) 100%)",
   };
 
   const highlight =
@@ -79,7 +79,7 @@ export function HoverBorderGradient({
           "flex-none inset-0 overflow-hidden absolute z-0 rounded-[inherit]"
         )}
         style={{
-          filter: "blur(0px)",
+          filter: "blur(2px)",
           position: "absolute",
           width: "100%",
           height: "100%",
