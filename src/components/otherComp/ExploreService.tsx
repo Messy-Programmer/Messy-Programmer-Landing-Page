@@ -1,6 +1,6 @@
-import { motion } from "framer-motion";
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
+import { HoverBorderGradient } from "../ui/hover-border-gradient";
 
 export const ExploreService = () => {
   const ease = "linear";
@@ -259,70 +259,82 @@ export const ExploreService = () => {
               </div>
 
               <div className=" absolute size-[5.5rem] bottom-[33%] left-[37%] md:left-[39%] lg:size-[7rem] xl:left-[13rem] xl:bottom-[36%]">
-                <StaticImage
-                  src="../../images/logoCircle1.png"
-                  alt="logo"
-                  placeholder="blurred"
-                  layout="constrained"
-                  loading="eager"
-                  quality={100}
-                />
+                <HoverBorderGradient>
+                  <StaticImage
+                    src="../../images/logoCircle1.png"
+                    alt="logo"
+                    placeholder="blurred"
+                    layout="constrained"
+                    loading="eager"
+                    quality={100}
+                  />
+                </HoverBorderGradient>
               </div>
               {/* down div is 1st image  */}
-              <div className="absolute size-[5.5rem] lg:size-[8rem] bottom-[68%] left-[38%] lg:bottom-[70%] lg:left-[37%] border-[#4bb846] border-2 rounded-full [--first-x:115%] [--second-x:79%] [--first-y:90%] [--second-y:233%] [--third-x:-90%] [--third-y:233%] [--fourth-x:-128%] [--fourth-y:90%]">
-                <StaticImage
-                  src="../../images/Suman.jpeg"
-                  alt="Suman"
-                  className="rounded-full h-full"
-                  placeholder="blurred"
-                  layout="constrained"
-                  loading="eager"
-                  quality={100}
-                />
+              <div className="absolute size-[5.5rem] lg:size-[8rem] bottom-[68%] left-[38%] lg:bottom-[70%] lg:left-[37%] ">
+                <HoverBorderGradient>
+                  <StaticImage
+                    src="../../images/suman.png"
+                    alt="Suman"
+                    className="rounded-full h-full"
+                    placeholder="blurred"
+                    layout="constrained"
+                    loading="eager"
+                    quality={100}
+                  />
+                </HoverBorderGradient>
               </div>
-              <div className="absolute size-[5.5rem] lg:size-[8rem] bottom-[46%] left-[3%] border-[#4bb846] border-2 rounded-full  [--first-x:127%] [--first-y:-90%] [--second-x:243%] [--second-y:0%] [--third-x:208%] [--third-y:144%] [--fourth-x:37%] [--fourth-y:144%]">
-                <StaticImage
-                  src="../../images/Deep.jpg"
-                  alt="Deep"
-                  className="rounded-full h-full"
-                  placeholder="blurred"
-                  layout="constrained"
-                  loading="eager"
-                  quality={100}
-                />
+              <div className="absolute size-[5.5rem] lg:size-[8rem] bottom-[46%] left-[3%] ">
+                <HoverBorderGradient>
+                  <StaticImage
+                    src="../../images/Deep.jpg"
+                    alt="Deep"
+                    className="rounded-full h-full"
+                    placeholder="blurred"
+                    layout="constrained"
+                    loading="eager"
+                    quality={100}
+                  />
+                </HoverBorderGradient>
               </div>
-              <div className="absolute size-[5.5rem] lg:size-[8rem] bottom-[46%] left-[70%] border-[#4bb846] border-2 rounded-full [--first-x:-36.3%] [--first-y:144%] [--second-x:-208%] [--second-y:144%] [--third-x:-243%] [--third-y:0%] [--fourth-x:-115%] [--fourth-y:-90%]">
-                <StaticImage
-                  src="../../images/Biru.jpeg"
-                  alt="Biru"
-                  className="rounded-full h-full"
-                  placeholder="blurred"
-                  layout="constrained"
-                  loading="eager"
-                  quality={100}
-                />
+              <div className="absolute size-[5.5rem] lg:size-[8rem] bottom-[46%] left-[70%] ">
+                <HoverBorderGradient>
+                  <StaticImage
+                    src="../../images/biru.png"
+                    alt="Biru"
+                    className="rounded-full h-full"
+                    placeholder="blurred"
+                    layout="constrained"
+                    loading="eager"
+                    quality={100}
+                  />
+                </HoverBorderGradient>
               </div>
-              <div className="absolute size-[5.5rem] lg:size-[8rem] bottom-[11%] left-[13%] lg:bottom-[6%] border-[#4bb846] border-2 rounded-full [--first-x:-37%] [--first-y:-143%] [--second-x:90%] [--second-y:-233%] [--third-x:210%] [--third-y:-143%] [--fourth-x:170%] [--fourth-y:0%]">
-                <StaticImage
-                  src="../../images/harsh.png"
-                  alt="harsh"
-                  className="rounded-full h-full"
-                  placeholder="blurred"
-                  layout="constrained"
-                  loading="eager"
-                  quality={100}
-                />
+              <div className="absolute size-[5.5rem] lg:size-[8rem] bottom-[11%] left-[13%] lg:bottom-[6%] ">
+                <HoverBorderGradient>
+                  <StaticImage
+                    src="../../images/harsh.png"
+                    alt="harsh"
+                    className="rounded-full h-full"
+                    placeholder="blurred"
+                    layout="constrained"
+                    loading="eager"
+                    quality={100}
+                  />
+                </HoverBorderGradient>
               </div>
-              <div className="absolute size-[5.5rem] lg:size-[8rem] bottom-[11%] left-[60%] lg:bottom-[6%] border-[#4bb846] border-2 rounded-full [--first-x:-170%] [--first-y:0%] [--second-x:-207.9%] [--second-y:-143%]  [--third-x:-80%] [--third-y:-233%]  [--fourth-x:40%] [--fourth-y:-140%] ">
-                <StaticImage
-                  src="../../images/ayush.jpg"
-                  alt=""
-                  className="rounded-full h-full"
-                  placeholder="blurred"
-                  layout="constrained"
-                  loading="eager"
-                  quality={100}
-                />
+              <div className="absolute size-[5.5rem] lg:size-[8rem] bottom-[11%] left-[60%] lg:bottom-[6%] ">
+                <HoverBorderGradient>
+                  <StaticImage
+                    src="../../images/ayush.jpg"
+                    alt=""
+                    className="rounded-full h-full"
+                    placeholder="blurred"
+                    layout="constrained"
+                    loading="eager"
+                    quality={100}
+                  />
+                </HoverBorderGradient>
               </div>
             </div>
             {/* bottom div is item two */}
