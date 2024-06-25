@@ -64,13 +64,21 @@ const Footer = () => (
           </div>
           {/* this is link section  */}
           <div className="flex flex-col gap-5 mt-5 sm:mt-0 sm:gap-7">
-            <Link to="/" className="text-slate-100">
+            <Link
+              to="/privacypolicy"
+              target="_blank"
+              className="text-slate-100"
+            >
               Privacy Policy
             </Link>
-            <Link to="/" className="text-slate-100">
+            <Link
+              to="/termsandcondition/"
+              target="_blank"
+              className="text-slate-100"
+            >
               Terms & Conditions
             </Link>
-            <Link to="/" className="text-slate-100">
+            <Link to="/" target="_blank" className="text-slate-100">
               Copyright Notice
             </Link>
           </div>
