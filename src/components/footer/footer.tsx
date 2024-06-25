@@ -18,7 +18,7 @@ const Footer = () => (
         {/* this is main footer context container */}
         <div className="flex text-center px-3 flex-col mt-12 mb-14 items-center md:flex-row md:text-left md:items-start md:justify-between md:gap-8 md:pr-0">
           <div className="z-10 md:flex-[.8] ">
-            <h2 className="text-slate-100 text-xl">
+            <h2 className="text-slate-100 text-xl sm:text-lg">
               Start Delivering better customer outcomes today
             </h2>
             <StaticImage
@@ -63,17 +63,16 @@ const Footer = () => (
             </div>
           </div>
           {/* this is link section  */}
-          <div>
-            <p className="text-slate-100 mt-16 md:mt-0">Portfolio</p>
-            <p className="text-slate-100 mt-[18px] md:mt-[25px]">
-              Privacy Policy{" "}
-            </p>
-            <p className="text-slate-100 mt-[18px] md:mt-[25px]">
+          <div className="flex flex-col gap-5 mt-5 sm:mt-0 sm:gap-7">
+            <Link to="/" className="text-slate-100">
+              Privacy Policy
+            </Link>
+            <Link to="/" className="text-slate-100">
               Terms & Conditions
-            </p>
-            <p className="text-slate-100 mt-[18px] md:mt-[25px]">
+            </Link>
+            <Link to="/" className="text-slate-100">
               Copyright Notice
-            </p>
+            </Link>
           </div>
           {/* this is the contact us section  */}
           <div className="relative mt-16 md:mt-0">
