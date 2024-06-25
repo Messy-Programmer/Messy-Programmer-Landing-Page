@@ -94,9 +94,9 @@ const Footer = () => (
                 +91 86176 38628
               </Link>
             </div>
-            <div className="flex justify-center px-9 mt-5 md:px-0 md:gap-1 ">
-              <FaBuilding className="text-slate-100" />
-              <p className="text-slate-100 text-xs md:w-[14rem]">
+            <div className="flex justify-center px-9 mt-5 sm:items-center md:px-0 md:gap-1 ">
+              <FaBuilding className="text-slate-100 sm:h-8" />
+              <p className="text-slate-100 text-xs sm:text-[.7rem] sm:leading-3 md:w-[14rem]">
                 Vaoal More, Koch Bihar, West Bengal, India
               </p>
             </div>

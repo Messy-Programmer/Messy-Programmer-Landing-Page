@@ -1,6 +1,6 @@
 import * as yup from "yup";
-const phoneRegExp =
-  /^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/;
+const phoneRegExp = /^\d{10,15}$/;
+
 export const signUpSchema = yup.object({
   fullName: yup.string().min(2).required("Provide a valid name"),
   num: yup
