@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image";
 export function TabsDemo() {
   const tabs = [
     {
-      title: "WebApp",
+      title: "Web App",
       value: "webapp",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-4 text-xl md:text-4xl font-bold text-slate-100  bg-gradient-to-br from-[#0c240c] to-[#081a08] text-center">
@@ -39,9 +39,9 @@ export function TabsDemo() {
             alt=""
             className="mt-6"
             placeholder="blurred"
-                layout="constrained"
-                loading="eager"
-                quality={100}
+            layout="constrained"
+            loading="eager"
+            quality={100}
           />
         </div>
       ),
@@ -64,9 +64,9 @@ export function TabsDemo() {
             alt=""
             className="mt-6"
             placeholder="blurred"
-                layout="constrained"
-                loading="eager"
-                quality={100}
+            layout="constrained"
+            loading="eager"
+            quality={100}
           />
         </div>
       ),
@@ -88,9 +88,9 @@ export function TabsDemo() {
             alt=""
             className="mt-6"
             placeholder="blurred"
-                layout="constrained"
-                loading="eager"
-                quality={100}
+            layout="constrained"
+            loading="eager"
+            quality={100}
           />
         </div>
       ),
