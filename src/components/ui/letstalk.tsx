@@ -1,6 +1,7 @@
 import React from "react";
 import { getCalApi } from "@calcom/embed-react";
 import { useEffect } from "react";
+import { HoverBorderGradient } from "./hover-border-gradient";
 export default function LetsTalk({ className, text }: any) {
   useEffect(() => {
     (async function () {
@@ -21,12 +22,14 @@ export default function LetsTalk({ className, text }: any) {
     })();
   }, []);
   return (
-    <button
-      data-cal-link="messyprogrammer/project-meeting"
-      data-cal-config='{"layout":"month_view"}'
-      className={className}
-    >
-      {text}
-    </button>
+    <HoverBorderGradient>
+      <button
+        data-cal-link="messyprogrammer/project-meeting"
+        data-cal-config='{"layout":"month_view"}'
+        className={className}
+      >
+        {text}
+      </button>
+    </HoverBorderGradient>
   );
 }
