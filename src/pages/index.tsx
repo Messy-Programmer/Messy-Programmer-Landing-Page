@@ -16,11 +16,15 @@ import { Testimonials } from "../components/otherComp/Testimonial";
 import ContactUs from "../components/otherComp/ContactUs";
 import Loading from "../components/otherComp/Loading";
 import { useState, useEffect } from "react";
+import { getCalApi } from "@calcom/embed-react";
+import LetsTalk from "../components/ui/letstalk";
+import { HoverBorderGradient } from "../components/ui/hover-border-gradient";
 const IndexPage: React.FC<PageProps> = () => {
   const delay = 5;
+  let timer1: NodeJS.Timeout;
   const [IsLoading, SetLoading] = useState(true);
   useEffect(() => {
-    let timer1 = setTimeout(() => SetLoading(false), delay * 1000);
+    timer1 = setTimeout(() => SetLoading(false), delay * 1000);
     return () => {
       clearTimeout(timer1);
     };
@@ -89,6 +93,12 @@ const IndexPage: React.FC<PageProps> = () => {
       <Testimonials />
       <ContactUs />
       <Footer />
+      <LetsTalk
+        text={"Let's Talk"}
+        className={
+          "fixed bottom-8 right-5 text-xs bg-[#051405]/55 py-2 px-4 rounded-xl text-lime-100 outline-2 outline-offset-1 outline-[#289c28] outline"
+        }
+      />
     </div>
   );
 };
