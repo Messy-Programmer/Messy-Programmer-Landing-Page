@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import scrollTo from "gatsby-plugin-smoothscroll";
 import { StaticImage } from "gatsby-plugin-image";
+import LetsTalk from "../ui/letstalk";
 
 const NavBar = () => {
   let prevScrollPos = window.scrollY;
@@ -29,19 +30,25 @@ const NavBar = () => {
             alt="messyProgrammerLogo"
             className=" text-slate-100 font-medium it w-48"
             placeholder="blurred"
-                layout="constrained"
-                loading="eager"
-                quality={100}
+            layout="constrained"
+            loading="eager"
+            quality={100}
           />
         </div>
-        <button
+        {/* <button
           onClick={() => {
             scrollTo("#contact");
           }}
           className=" text-slate-100 rounded-xl bg-gradient-to-tr from-green-700 to-lime-500 py-2 px-3"
         >
           Let's talk
-        </button>
+        </button> */}
+        <LetsTalk
+          text={"Book Appointment"}
+          className={
+            " text-slate-100 text-xs rounded-xl bg-gradient-to-tr from-green-700 to-lime-500 py-2 px-3"
+          }
+        />
       </div>
     </nav>
   );
