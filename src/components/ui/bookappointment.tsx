@@ -18,9 +18,11 @@ export default function BookAppointment() {
       style={{
         overflow: "scroll",
         scrollbarWidth: "none",
+        height: "100%",
+        width: "100%",
       }}
       config={{ layout: "month_view" }}
-      className="p-2 h-h-full lg:max-h-[28rem] lg:px-16 xl:max-h-[30.5rem] "
+      className="p-2 h-full lg:max-h-[28rem] lg:px-16 xl:max-h-[30.5rem] "
     />
   );
 }
