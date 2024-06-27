@@ -19,7 +19,7 @@ const BookMeeting = () => {
         </p>
         <div className="flex w-full justify-center">
           <LetsTalk
-            text={"FREE APPOINTMENT"}
+            text={"BOOK APPOINTMENT"}
             className={
               " text-slate-100 text-xs align-middle rounded-xl bg-gradient-to-tr from-green-700 to-lime-500 py-2 px-3 w-[17rem] lg:min-w-[25rem] xl:min-w-[30rem]"
             }
