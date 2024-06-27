@@ -11,7 +11,7 @@ import {
 } from "react-icons/ti";
 import { Link } from "gatsby";
 import { Spotlight } from "../ui/Spotlight";
-import BookAppointment from "../ui/bookappointment";
+import BookMeeting from "../ui/bookmeeting";
 const ContactUs = () => {
   return (
     <div id="contact" className="bg-[#051405] xl:py-40 ">
@@ -102,11 +102,9 @@ const ContactUs = () => {
           <div className="z-0 absolute inset-0 contact-bg rounded-xl"></div>
         </div>
         {/* second item */}
-        <div id="second-item" className="mt-4 sm:w-[50%]">
-          <div className="rounded-xl border-2 border-[#1b321b] p-2 bg-gradient-to-br from-[#0c240c] to-[#081a08] xl:p-0">
-            {/* <SignupFormDemo /> */}
-            <BookAppointment />
-          </div>
+        <div id="second-item" className="mt-4 sm:w-[50%] h-full">
+          {/* <SignupFormDemo /> */}
+          <BookMeeting />
         </div>
       </div>
     </div>

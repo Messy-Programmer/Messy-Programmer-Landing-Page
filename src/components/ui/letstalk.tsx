@@ -24,7 +24,7 @@ export default function LetsTalk({ className, text }: any) {
   return (
     <HoverBorderGradient>
       <button
-        data-cal-link="messyprogrammer/project-meeting"
+        data-cal-link="messyprogrammer/lead-meeting"
         data-cal-config='{"layout":"month_view"}'
         className={className}
       >
