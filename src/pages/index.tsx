@@ -93,12 +93,14 @@ const IndexPage: React.FC<PageProps> = () => {
       <Testimonials />
       <ContactUs />
       <Footer />
-      <LetsTalk
-        text={"Let's Talk"}
-        className={
-          "fixed bottom-8 right-5 text-xs bg-[#051405]/55 py-2 px-4 rounded-xl text-lime-100 outline-2 outline-offset-1 outline-[#289c28] outline"
-        }
-      />
+      <div className="fixed bottom-3 right-2 sm:bottom-8 sm:right-5 z-50 ">
+        <LetsTalk
+          text={"Book Free Appointment"}
+          className={
+            " text-xs bg-[#051405]/30 py-2 px-4 rounded-xl text-lime-100"
+          }
+        />
+      </div>
     </div>
   );
 };
