@@ -93,8 +93,8 @@ export const InfiniteMovingLogo = ({
             }}
             key={idx}
           >
-            <Link
-              to={item.link}
+            <a
+              href={item.link}
               target="blank"
               className="flex justify-center items-center gap-4"
             >
@@ -102,7 +102,7 @@ export const InfiniteMovingLogo = ({
               <h1 className="text-slate-100 gradient-txt font-extrabold text-2xl">
                 {item.name}
               </h1>
-            </Link>
+            </a>
           </div>
         ))}
       </div>
