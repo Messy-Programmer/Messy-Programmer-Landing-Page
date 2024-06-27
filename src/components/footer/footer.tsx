@@ -32,34 +32,34 @@ const Footer = () => (
             />
             {/* icon section  */}
             <div className="flex justify-center gap-2 mt-8 md:mt-[30px] md:justify-start">
-              <Link
+              <a
                 target="blank"
-                to="https://www.linkedin.com/company/messyprogrammer"
+                href="https://www.linkedin.com/company/messyprogrammer"
                 className="text-white text-xl"
               >
                 <TiSocialLinkedin />
-              </Link>
-              <Link
+              </a>
+              <a
                 target="blank"
-                to="https://www.instagram.com/messyprogrammer/"
+                href="https://www.instagram.com/messyprogrammer/"
                 className="text-white text-xl"
               >
                 <TiSocialInstagram />
-              </Link>
-              <Link
+              </a>
+              <a
                 target="blank"
-                to="http://facebook.com/mssyprogrammer"
+                href="http://facebook.com/mssyprogrammer"
                 className="text-white text-xl"
               >
                 <TiSocialFacebookCircular />
-              </Link>
-              <Link
+              </a>
+              <a
                 target="blank"
-                to="https://www.youtube.com/@messyprogrammer"
+                href="https://www.youtube.com/@messyprogrammer"
                 className="text-white text-xl"
               >
                 <TiSocialYoutube />
-              </Link>
+              </a>
             </div>
           </div>
           {/* this is link section  */}
