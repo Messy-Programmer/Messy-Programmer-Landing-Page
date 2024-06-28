@@ -65,21 +65,21 @@ const Footer = () => (
           {/* this is link section  */}
           <div className="flex flex-col gap-5 mt-5 sm:mt-0 sm:gap-7">
             <Link to="/privacypolicy" target="blank" className="text-slate-100">
-              Privacy Policy
+              Privacy-Policy
             </Link>
             <Link
               to="/termsandconditions/"
               target="blank"
               className="text-slate-100"
             >
-              Terms & Conditions
+              Terms-Conditions
             </Link>
             <Link
               to="/copyrightnotice/"
               target="blank"
               className="text-slate-100"
             >
-              Copyright Notice
+              Copyright-Notice
             </Link>
           </div>
           {/* this is the contact us section  */}
