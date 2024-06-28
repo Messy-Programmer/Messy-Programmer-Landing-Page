@@ -23,7 +23,7 @@ const BookMeeting = () => {
           <LetsTalk
             text={"BOOK APPOINTMENT"}
             className={
-              " text-slate-50 font-semibold text-xs align-middle rounded-xl bg-gradient-to-tr from-green-700  to-lime-600 py-2 px-3 w-[17rem] lg:min-w-[25rem] xl:min-w-[30rem]"
+              " text-slate-50 font-medium text-sm align-middle rounded-xl bg-gradient-to-tr from-green-700  to-lime-600 py-2 px-3 w-[17rem] lg:min-w-[25rem] xl:min-w-[30rem]"
             }
           />
         </div>
