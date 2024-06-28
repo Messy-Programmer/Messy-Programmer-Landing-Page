@@ -96,9 +96,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <div className="fixed bottom-3 right-2 sm:bottom-8 sm:right-5 z-50 ">
         <LetsTalk
           text={"Book Free Appointment"}
-          className={
-            " text-xs bg-[#051405]/30 py-2 px-4 rounded-xl text-lime-100"
-          }
+          className={" text-xs bg-[#050f05] py-2 px-4 rounded-xl text-lime-100"}
         />
       </div>
     </div>
