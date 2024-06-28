@@ -25,7 +25,7 @@ export default function LetsTalk({ className, text }: any) {
     <HoverBorderGradient>
       <button
         onClick={() => {
-          (window as any).dataLayer.push("appointment_booked");
+          (window as any).dataLayer.push({ event: "appointment_booked" });
         }}
         data-cal-link="messyprogrammer/lead-meeting"
         data-cal-config='{"layout":"month_view"}'
