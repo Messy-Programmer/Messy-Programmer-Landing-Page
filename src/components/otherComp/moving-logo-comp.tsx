@@ -25,12 +25,12 @@ export function InfiniteMovingLogoComp() {
 
 const imageLink = [
   { img: dps, link: "https://www.dpsjhansi.in/", name: "DPS" },
-  { img: TheStreamers, link: "github.com", name: "TheStreamers" },
-  { img: AdultFamilyHomes, link: "github.com", name: "AdultFamilyHomes" },
+  { img: TheStreamers, link: "github.com", name: "The Streamers" },
+  { img: AdultFamilyHomes, link: "github.com", name: "Adult Family Homes" },
   {
     img: DreamDesignLabs,
     link: "https://dreamdesignlabs.com/",
-    name: "DreamDesignLabs",
+    name: "Dream Design Labs",
   },
   {
     img: SaaSiest,
