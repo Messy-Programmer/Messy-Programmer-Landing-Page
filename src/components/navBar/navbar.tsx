@@ -46,7 +46,7 @@ const NavBar = () => {
         <LetsTalk
           text={"Let's Talk"}
           className={
-            " text-slate-100 text-xs rounded-xl bg-gradient-to-tr from-green-700 to-lime-500 py-2 px-3 lg:px-6"
+            " text-slate-100 rounded-xl bg-gradient-to-tr from-green-700 to-lime-500 py-2 px-3 lg:px-6"
           }
         />
       </div>
