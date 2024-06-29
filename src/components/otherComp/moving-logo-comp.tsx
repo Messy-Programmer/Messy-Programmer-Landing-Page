@@ -71,7 +71,7 @@ const imageLink = [
   },
   {
     img: Click,
-    link: "",
+    link: "https://www.clickmidas.com.br/",
     name: "Click Midas",
   },
   {
