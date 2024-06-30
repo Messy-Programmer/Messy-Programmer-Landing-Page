@@ -20,18 +20,19 @@ import LetsTalk from "../components/ui/letstalk";
 import $ from "jquery";
 const IndexPage: React.FC<PageProps> = () => {
   const delay = 5;
-  let hash = window.location.hash;
   let timer1: NodeJS.Timeout;
   let timer2: NodeJS.Timeout;
+  let hash: string;
+  if (typeof window !== "undefined") {
+    hash = window.location.hash;
+  }
   const [IsLoading, SetLoading] = useState(true);
   useEffect(() => {
     timer1 = setTimeout(() => SetLoading(false), delay * 1000);
-    if (typeof window !== "undefined") {
-      if (hash) {
-        timer2 = setTimeout(() => {
-          $("html, body").animate({ scrollTop: $(hash)?.offset()?.top });
-        }, 1200);
-      }
+    if (hash) {
+      timer2 = setTimeout(() => {
+        $("html, body").animate({ scrollTop: $(hash)?.offset()?.top });
+      }, 1200);
     }
     return () => {
       clearTimeout(timer1);
