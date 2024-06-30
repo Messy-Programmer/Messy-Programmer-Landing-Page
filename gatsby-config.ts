@@ -32,7 +32,7 @@ const config: GatsbyConfig = {
         background_color: `#051405`,
         theme_color: `#051405`,
         display: `standalone`,
-        icon: `src/images/logoCircleManifest.png`,
+        icon: `src/images/logo-transparent.png`,
       },
     },
     {
