@@ -26,10 +26,12 @@ const IndexPage: React.FC<PageProps> = () => {
   const [IsLoading, SetLoading] = useState(true);
   useEffect(() => {
     timer1 = setTimeout(() => SetLoading(false), delay * 1000);
-    if (hash) {
-      timer2 = setTimeout(() => {
-        $("html, body").animate({ scrollTop: $(hash)?.offset()?.top });
-      }, 1200);
+    if (typeof window !== "undefined") {
+      if (hash) {
+        timer2 = setTimeout(() => {
+          $("html, body").animate({ scrollTop: $(hash)?.offset()?.top });
+        }, 1200);
+      }
     }
     return () => {
       clearTimeout(timer1);
