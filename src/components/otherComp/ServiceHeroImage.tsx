@@ -1,6 +1,6 @@
-import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import * as React from "react";
+import scrollTo from "gatsby-plugin-smoothscroll";
 
 function ServiceHeroImageComponent() {
   return (
@@ -32,8 +32,10 @@ function ServiceHeroImageComponent() {
           </svg>
         </div>
         {/* bottom div contains the book now  */}
-        <Link
-          to="#contact"
+        <button
+          onClick={() => {
+            scrollTo("#second-item", "center");
+          }}
           className="text-slate-100 bg-gradient-to-b from-[#40a5fd] to-[#7dff7d] w-[5rem] h-[11rem] flex flex-col items-center justify-evenly rounded-full absolute right-[37%] bottom-0 lg:bottom-[7%] lg:right-[40%]"
         >
           <div className="text-center">
@@ -57,7 +59,7 @@ function ServiceHeroImageComponent() {
               />
             </svg>
           </div>
-        </Link>
+        </button>
       </div>
     </div>
   );

@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import scrollTo from "gatsby-plugin-smoothscroll";
 import { StaticImage } from "gatsby-plugin-image";
 import LetsTalk from "../ui/letstalk";
 

@@ -16,19 +16,21 @@ import { Testimonials } from "../components/otherComp/Testimonial";
 import ContactUs from "../components/otherComp/ContactUs";
 import Loading from "../components/otherComp/Loading";
 import { useState, useEffect } from "react";
-import { getCalApi } from "@calcom/embed-react";
 import LetsTalk from "../components/ui/letstalk";
-import { HoverBorderGradient } from "../components/ui/hover-border-gradient";
+import $ from "jquery";
 const IndexPage: React.FC<PageProps> = () => {
   const delay = 5;
+  let hash = window.location.hash;
   let timer1: NodeJS.Timeout;
   const [IsLoading, SetLoading] = useState(true);
   useEffect(() => {
     timer1 = setTimeout(() => SetLoading(false), delay * 1000);
+    // console.log(hash);
+    $("html, body").animate({ scrollTop: $(hash)?.offset()?.top });
     return () => {
       clearTimeout(timer1);
     };
-  });
+  }, [hash]);
 
   if (IsLoading) {
     return <Loading />;

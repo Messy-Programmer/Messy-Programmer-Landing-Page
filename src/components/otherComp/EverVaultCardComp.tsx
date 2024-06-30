@@ -1,9 +1,8 @@
 import React from "react";
 import { EverVaultCard, Icon } from "../ui/everault-card";
-import { Link } from "gatsby";
 import ServiceHeroImageComponent from "./ServiceHeroImage";
 import { motion } from "framer-motion";
-
+import scrollTo from "gatsby-plugin-smoothscroll";
 export function EverVaultCardComp() {
   return (
     <div className="flex flex-col items-center pt-16 bg-[#051405] lg:pb-16">
@@ -54,12 +53,14 @@ export function EverVaultCardComp() {
                   Leave the tech part on us!
                 </p>
                 <div className="flex justify-center mt-4 sm:justify-start">
-                  <Link
-                    to="#contact"
+                  <button
+                    onClick={() => {
+                      scrollTo("#footer", "center");
+                    }}
                     className=" rounded-xl bg-gradient-to-tr from-green-700 to-lime-500 py-2 px-4"
                   >
                     contact us
-                  </Link>
+                  </button>
                 </div>
               </div>
             </div>
