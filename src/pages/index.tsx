@@ -32,7 +32,7 @@ const IndexPage: React.FC<PageProps> = () => {
     if (hash) {
       timer2 = setTimeout(() => {
         $("html, body").animate({ scrollTop: $(hash)?.offset()?.top });
-      }, 1200);
+      }, 1000);
     }
     return () => {
       clearTimeout(timer1);
