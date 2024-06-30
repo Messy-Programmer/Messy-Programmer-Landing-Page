@@ -9,7 +9,6 @@ import {
   TiSocialLinkedin,
   TiSocialYoutube,
 } from "react-icons/ti";
-import { Link } from "gatsby";
 import { Spotlight } from "../ui/Spotlight";
 import BookMeeting from "../ui/bookmeeting";
 const ContactUs = () => {
@@ -17,12 +16,13 @@ const ContactUs = () => {
     <div id="contact" className="bg-[#051405] xl:py-40 ">
       {/* down div contains the whole context  */}
       <div className="text-slate-100 text-center px-4">
-        <h1 className="text-3xl gradient-txt font-medium sm:text-4xl xl:text-7xl xl:p-5">
-          Did you just said TECH!
+        <h1 className="text-3xl gradient-txt font-medium sm:text-4xl xl:text-6xl xl:p-5">
+          Unlock Your Project's Potential with a Free Discovery Meeting
         </h1>
-        <p className="text-sm font-extralight mt-4 xl:text-lg xl:font-light">
-          Ready to take your business to the next level? Contact us today to
-          discuss your project requirements and get started!
+        <p className="text-sm font-extralight mt-4 xl:text-sm xl:font-light">
+          Join us for a free session to discuss your project ideas and
+          requirements. Share your vision, receive expert feedback, and get a
+          clear roadmap to bring your ideas to life
         </p>
       </div>
       <div className="px-4 sm:flex sm:flex-col sm:items-center lg:flex-row lg:gap-6 xl:max-w-[80rem] xl:mx-auto xl:mt-10">

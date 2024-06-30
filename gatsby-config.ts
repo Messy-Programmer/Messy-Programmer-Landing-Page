@@ -25,12 +25,14 @@ const config: GatsbyConfig = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `MessyProgrammer`,
-        short_name: `Messy X Lobo`,
+        short_name: `messyprogrammer`,
+        description:
+          "Messy Programmer is your trusted partner for top-notch IT services at affordable prices. With a focus on quality and affordability, we specialize in providing a wide range of IT solutions tailored to meet your business needs.",
         start_url: `/`,
         background_color: `#051405`,
         theme_color: `#051405`,
         display: `standalone`,
-        icon: `src/images/logo-transparent.png`,
+        icon: `src/images/logoCircleManifest.png`,
       },
     },
     {

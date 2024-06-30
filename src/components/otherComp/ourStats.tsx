@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "gatsby";
 import * as React from "react";
 import { AnimatedCounter } from "../ui/countup";
+import scrollTo from "gatsby-plugin-smoothscroll";
 
 const StatsComponent = () => {
   return (
@@ -21,12 +22,14 @@ const StatsComponent = () => {
               We take pride in our commitment to excellence and our dedication
               to our success.
             </p>
-            <Link
-              to="/"
+            <button
+              onClick={() => {
+                scrollTo("#footer");
+              }}
               className="rounded-xl bg-gradient-to-tr from-green-700 to-lime-500 px-4 py-2 text-slate-100"
             >
               Contact us
-            </Link>
+            </button>
           </div>
         </div>
         {/* down div is for number card container */}

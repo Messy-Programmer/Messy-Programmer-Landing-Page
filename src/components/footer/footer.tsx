@@ -10,7 +10,7 @@ import {
 import { FaBuilding } from "react-icons/fa";
 
 const Footer = () => (
-  <div className="bg-[#051405] py-14">
+  <div id="footer" className="bg-[#051405] py-14">
     <div className="w-full dark:bg-black dark:bg-grid-white/[0.2] bg-grid-black relative flex items-center justify-center bg-[#0d260d] md:justify-around">
       {/* Radial gradient for the container to give a faded look */}
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-gradient-to-r from-[#051505] from-1% via-[rgba(74,114,74,0)] via-800% to-[#051505] to-99%"></div>

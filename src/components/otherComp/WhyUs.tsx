@@ -1,6 +1,6 @@
-import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
+import scrollTo from "gatsby-plugin-smoothscroll";
 const WhyUs = () => {
   return (
     <div className="bg-[#051405] py-14 xl:py-[13rem]">
@@ -32,12 +32,12 @@ const WhyUs = () => {
             bank for our clients.
           </p>
           <div className="flex mt-4 justify-start">
-            <Link
-              to="#contact"
+            <button
+              onClick={() => scrollTo("#footer")}
               className=" rounded-xl bg-gradient-to-tr from-green-700 to-lime-500 py-2 px-4"
             >
               contact us
-            </Link>
+            </button>
           </div>
         </div>
       </div>

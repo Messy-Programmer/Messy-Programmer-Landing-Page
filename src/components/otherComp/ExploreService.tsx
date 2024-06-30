@@ -3,8 +3,6 @@ import React from "react";
 import { HoverBorderGradient } from "../ui/hover-border-gradient";
 
 export const ExploreService = () => {
-  const ease = "linear";
-  const duration = 45;
   return (
     <div id="explore-service" className="bg-[#051405] py-20">
       {/* this div will contain the context  */}

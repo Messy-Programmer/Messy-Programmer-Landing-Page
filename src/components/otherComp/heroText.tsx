@@ -1,8 +1,7 @@
-import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import { IoMail } from "react-icons/io5";
-
+import scrollTo from "gatsby-plugin-smoothscroll";
 const HeroText = () => {
   return (
     <>
@@ -27,18 +26,20 @@ const HeroText = () => {
             meet your business needs.
           </div>
           <div className="text-slate-100 mt-5 flex gap-1.5 justify-center sm:justify-start">
-            <Link
-              to="#contact"
+            <button
+              onClick={() => {
+                scrollTo("#footer", "center");
+              }}
               className="rounded-2xl max-md:px-5 bg-gradient-to-tr from-green-700 to-lime-500 py-2 px-3"
             >
               Contact Us
-            </Link>
-            <Link
-              to="#explore-service"
+            </button>
+            <button
+              onClick={() => scrollTo("#explore-service")}
               className="rounded-2xl bg-neutral-800/65 py-2 px-3 max-md:px-5"
             >
               Explore Services
-            </Link>
+            </button>
           </div>
         </div>
         {/* hero text end */}
