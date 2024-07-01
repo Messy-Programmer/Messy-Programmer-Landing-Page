@@ -1,6 +1,7 @@
 const {
   createOpenGraphImage,
 } = require("gatsby-plugin-dynamic-open-graph-images");
+const path = require("path");
 
 exports.createPages = async ({ actions }) => {
   const { createPage } = actions;
