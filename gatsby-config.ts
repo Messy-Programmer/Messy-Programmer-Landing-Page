@@ -3,6 +3,10 @@ import type { GatsbyConfig } from "gatsby";
 const config: GatsbyConfig = {
   siteMetadata: {
     siteUrl: `https://messyprogrammer.in/`,
+    title: `Messy programmer`,
+    description:
+      "Messy Programmer is your trusted partner for top-notch IT services at affordable prices. With a focus on quality and affordability, we specialize in providing a wide range of IT solutions tailored to meet your business needs.",
+    image: "src/images/logo-transparent.png",
   },
 
   graphqlTypegen: true,
@@ -12,6 +16,7 @@ const config: GatsbyConfig = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     "gatsby-plugin-smoothscroll",
+    `gatsby-plugin-dynamic-open-graph-images`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
