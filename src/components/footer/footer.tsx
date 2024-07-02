@@ -95,10 +95,10 @@ const Footer = () => (
                 contact@messyprogrammer.in
               </Link>
               <Link
-                to="tel:+91 86176 38628"
+                to="tel:+91 9933924693"
                 className="text-[#1E951E] text-sm font-bold z-10"
               >
-                +91 86176 38628
+                +91 99339 24693
               </Link>
             </div>
             <div className="flex justify-center px-9 mt-5 sm:items-center md:px-0 md:gap-1 ">
