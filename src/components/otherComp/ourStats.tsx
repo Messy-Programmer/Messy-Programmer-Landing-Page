@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Link } from "gatsby";
 import * as React from "react";
 import { AnimatedCounter } from "../ui/countup";
 import scrollTo from "gatsby-plugin-smoothscroll";
@@ -35,19 +34,19 @@ const StatsComponent = () => {
         {/* down div is for number card container */}
         <div className="flex flex-col items-center gap-4 mt-16 sm:mt-0">
           {/* first two card container */}
-          <div className="gap-4 flex flex-col sm:flex-row">
+          <div className="gap-4 flex items-end flex-row sm:flex-row">
             <motion.div
-              className="text-slate-100 size-[13rem] bg-gradient-to-br from-[#0c240c] to-[#081a08] text-center flex flex-col justify-center rounded-xl border-[1.5px] border-t-[#284528] border-l-[#284528] border-b-[#112311] border-r-[#112311] [--tx-from:9rem] [--tx-to:0rem] sm:[--tx-from:15rem] sm:[--tx-to:0rem]"
+              className="text-slate-100 size-[10rem] sm:size-[13rem] bg-gradient-to-br from-[#0c240c] to-[#081a08] text-center flex flex-col justify-center rounded-xl border-[1.5px] border-t-[#284528] border-l-[#284528] border-b-[#112311] border-r-[#112311] [--tx-from:9rem] [--tx-to:0rem] sm:[--tx-from:15rem] sm:[--tx-to:0rem]"
               initial={{ x: "var(--tx-from)", opacity: 0 }}
               whileInView={{ x: "var(--tx-to)", opacity: 1 }}
             >
-              <div className="gradient-txt text-6xl mb-2">
+              <div className="gradient-txt text-4xl sm:text-6xl mb-2">
                 <AnimatedCounter from={0} to={153} />+
               </div>
               <h2>Completed Projects</h2>
             </motion.div>
             <motion.div
-              className="text-slate-100 size-[13rem] bg-gradient-to-br from-[#0c240c] to-[#081a08] text-center flex flex-col justify-center rounded-xl border-[1.5px] border-t-[#284528] border-l-[#284528] border-b-[#112311] border-r-[#112311] [--tx-from:-9rem] [--tx-to:0rem] sm:[--tx-from:10rem] sm:[--tx-to:0rem]"
+              className="text-slate-100 w-[13rem] h-[10rem] sm:size-[13rem] bg-gradient-to-br from-[#0c240c] to-[#081a08] text-center flex flex-col justify-center rounded-xl border-[1.5px] border-t-[#284528] border-l-[#284528] border-b-[#112311] border-r-[#112311] [--tx-from:-9rem] [--tx-to:0rem] sm:[--tx-from:10rem] sm:[--tx-to:0rem]"
               initial={{ x: "var(--tx-from)", opacity: 0 }}
               whileInView={{ x: "var(--tx-to)", opacity: 1 }}
               transition={{ delay: 0.3 }}
@@ -59,9 +58,9 @@ const StatsComponent = () => {
             </motion.div>
           </div>
           {/* last two card container */}
-          <div className="flex flex-col gap-4 sm:flex-row">
+          <div className="flex flex-row gap-4 sm:flex-row">
             <motion.div
-              className="text-slate-100 size-[13rem] bg-gradient-to-br from-[#0c240c] to-[#081a08] text-center flex flex-col justify-center rounded-xl border-[1.5px] border-t-[#284528] border-l-[#284528] border-b-[#112311] border-r-[#112311] [--tx-from:9rem] [--tx-to:0rem] sm:[--tx-from:15rem] sm:[--tx-to:0rem]"
+              className="text-slate-100 w-[13rem] h-[10rem] sm:size-[13rem] bg-gradient-to-br from-[#0c240c] to-[#081a08] text-center flex flex-col justify-center rounded-xl border-[1.5px] border-t-[#284528] border-l-[#284528] border-b-[#112311] border-r-[#112311] [--tx-from:9rem] [--tx-to:0rem] sm:[--tx-from:15rem] sm:[--tx-to:0rem]"
               initial={{ x: "var(--tx-from)", opacity: 0 }}
               whileInView={{ x: "var(--tx-to)", opacity: 1 }}
               transition={{ delay: 0.2 }}
@@ -72,12 +71,12 @@ const StatsComponent = () => {
               <span>5🌟 Reviews</span>
             </motion.div>
             <motion.div
-              className="text-slate-100 size-[13rem] bg-gradient-to-br from-[#0c240c] to-[#081a08] text-center flex flex-col justify-center rounded-xl border-[1.5px] border-t-[#284528] border-l-[#284528] border-b-[#112311] border-r-[#112311] [--tx-from:-9rem] [--tx-to:0rem] sm:[--tx-from:10rem] sm:[--tx-to:0rem]"
+              className="text-slate-100 size-[10rem] sm:size-[13rem] bg-gradient-to-br from-[#0c240c] to-[#081a08] text-center flex flex-col justify-center rounded-xl border-[1.5px] border-t-[#284528] border-l-[#284528] border-b-[#112311] border-r-[#112311] [--tx-from:-9rem] [--tx-to:0rem] sm:[--tx-from:10rem] sm:[--tx-to:0rem]"
               initial={{ x: "var(--tx-from)", opacity: 0 }}
               whileInView={{ x: "var(--tx-to)", opacity: 1 }}
               transition={{ delay: 0.4 }}
             >
-              <div className="gradient-txt text-6xl mb-2">
+              <div className="gradient-txt text-3xl sm:text-6xl mb-2">
                 <AnimatedCounter from={0} to={4000} />+
               </div>
               <h2>Hours Worked</h2>
