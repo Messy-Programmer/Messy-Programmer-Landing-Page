@@ -120,7 +120,11 @@ const IndexPage: React.FC<PageProps> = () => {
           allowClickAway={true}
           className="[--w-bottom:4.6rem] sm:[--w-bottom:6rem] [--w-right:.5rem] sm:[--w-right:1.3rem]"
           buttonClassName="size-14 bg-gradient-to-tr from-green-700 to-lime-500"
-          buttonStyle={{ bottom: "var(--w-bottom)", right: "var(--w-right)" }}
+          buttonStyle={{
+            bottom: "var(--w-bottom)",
+            right: "var(--w-right)",
+          }}
+          notification={false}
         />
       </div>
     </div>

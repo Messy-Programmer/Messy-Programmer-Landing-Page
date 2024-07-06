@@ -9,6 +9,9 @@
   font-style: normal;
   font-variation-settings: "slnt" 0;
 }
+.styles-module_whatsappButton__tVits:after {
+  animation: none !important;
+}
 body {
   background-color: #051405;
   scroll-behavior: smooth;
