@@ -64,7 +64,11 @@ const Footer = () => (
           </div>
           {/* this is link section  */}
           <div className="flex flex-col gap-5 mt-5 sm:mt-0 sm:gap-7">
-            <Link to="/privac-ypolicy" target="blank" className="text-slate-100">
+            <Link
+              to="/privacy-policy"
+              target="blank"
+              className="text-slate-100"
+            >
               Privacy-Policy
             </Link>
             <Link
