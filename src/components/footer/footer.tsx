@@ -105,6 +105,10 @@ const Footer = () => (
                 +91 99339 24693
               </Link>
             </div>
+            <div className="text-slate-100 flex gap-2 flex-col text-xs sm:text-[.8rem] sm:leading-3 md:w-[14rem] mt-2">
+              <span>Mon-Sat &nbsp; 10:00 a.m - 9:00 p.m</span>
+              <p>Sun - Close</p>
+            </div>
             <div className="flex justify-center px-9 mt-5 sm:items-center md:px-0 md:gap-1 ">
               <FaBuilding className="text-slate-100 sm:h-8" />
               <p className="text-slate-100 text-xs sm:text-[.7rem] sm:leading-3 md:w-[14rem]">
