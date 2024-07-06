@@ -113,7 +113,7 @@ const IndexPage: React.FC<PageProps> = () => {
       </div>
       <div>
         <FloatingWhatsApp
-          phoneNumber="+91 99339 24693"
+          phoneNumber="+919933924693"
           accountName="Messy Programmer"
           avatar={logo}
           chatMessage="Whats your idea!"
