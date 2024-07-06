@@ -1,4 +1,5 @@
 import * as React from "react";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
 import { type HeadFC, type PageProps } from "gatsby";
 import NavBar from "../components/navBar/navbar";
 import Footer from "../components/footer/footer";
@@ -18,6 +19,7 @@ import Loading from "../components/otherComp/Loading";
 import { useState, useEffect } from "react";
 import LetsTalk from "../components/ui/letstalk";
 import $ from "jquery";
+import logo from "../images/logo-transparent.png";
 const IndexPage: React.FC<PageProps> = () => {
   const delay = 5;
   let timer1: NodeJS.Timeout;
@@ -107,6 +109,18 @@ const IndexPage: React.FC<PageProps> = () => {
         <LetsTalk
           text={"Book Free Appointment"}
           className={"bg-[#050f05] py-2 px-4 rounded-2xl text-lime-100"}
+        />
+      </div>
+      <div>
+        <FloatingWhatsApp
+          phoneNumber="+91 99339 24693"
+          accountName="Messy Programmer"
+          avatar={logo}
+          chatMessage="Whats your idea!"
+          allowClickAway={true}
+          className="[--w-bottom:4.6rem] sm:[--w-bottom:6rem] [--w-right:.5rem] sm:[--w-right:1.3rem]"
+          buttonClassName="size-14 bg-gradient-to-tr from-green-700 to-lime-500"
+          buttonStyle={{ bottom: "var(--w-bottom)", right: "var(--w-right)" }}
         />
       </div>
     </div>
