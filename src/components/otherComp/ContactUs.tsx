@@ -1,5 +1,4 @@
 import * as React from "react";
-import { SignupFormDemo } from "./FormComp";
 import { IoMail } from "react-icons/io5";
 import { FaBuilding } from "react-icons/fa";
 import { StaticImage } from "gatsby-plugin-image";
@@ -13,7 +12,10 @@ import { Spotlight } from "../ui/Spotlight";
 import BookMeeting from "../ui/bookmeeting";
 const ContactUs = () => {
   return (
-    <div id="contact" className="bg-[#051405] xl:py-40 ">
+    <div
+      id="contact"
+      className="bg-gradient-to-b from-[#0d270d] to-[#051405] xl:py-40 "
+    >
       {/* down div contains the whole context  */}
       <div className="text-slate-100 text-center px-4">
         <h1 className="text-3xl gradient-txt font-medium sm:text-4xl xl:text-6xl xl:p-5">

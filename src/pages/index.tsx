@@ -5,8 +5,6 @@ import NavBar from "../components/navBar/navbar";
 import Footer from "../components/footer/footer";
 import { BackgroundGradientAnimation } from "../components/ui/background-gradient-animation";
 import HeroText from "../components/otherComp/heroText";
-import { BackgroundBeams } from "../components/ui/background-beam";
-import { StaticImage } from "gatsby-plugin-image";
 import { InfiniteMovingLogoComp } from "../components/otherComp/moving-logo-comp";
 import StatsComponent from "../components/otherComp/ourStats";
 import { EverVaultCardComp } from "../components/otherComp/EverVaultCardComp";
@@ -17,9 +15,9 @@ import { Testimonials } from "../components/otherComp/Testimonial";
 import ContactUs from "../components/otherComp/ContactUs";
 import Loading from "../components/otherComp/Loading";
 import { useState, useEffect } from "react";
-import LetsTalk from "../components/ui/letstalk";
-import $ from "jquery";
+import BookAppointment from "../components/otherComp/BookAppointment";
 import logo from "../images/logo-transparent.png";
+import $ from "jquery";
 const IndexPage: React.FC<PageProps> = () => {
   const delay = 5;
   let timer1: NodeJS.Timeout;
@@ -51,51 +49,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <BackgroundGradientAnimation>
         <HeroText />
       </BackgroundGradientAnimation>
-      <div className=" relative bg-gradient-to-b from-[#0d270d] to-[#051405] md:inline-block px-3 pb-12 lg:py-24 lg:px-12 w-full -z-10">
-        <div>
-          <div className="flex lg:gap-12 xl:max-w-[70rem] xl:mx-auto">
-            <div>
-              <StaticImage
-                src="../images/projectConsole.png"
-                alt=""
-                placeholder="blurred"
-                layout="constrained"
-                loading="eager"
-                quality={100}
-              />
-            </div>
-            <div className="mt-8">
-              <StaticImage
-                src="../images/projectDev.png"
-                alt=""
-                placeholder="blurred"
-                layout="constrained"
-                loading="eager"
-                quality={100}
-              />
-            </div>
-            <div className="mt-16 flex flex-col lg:gap-3 xl:gap-4">
-              <StaticImage
-                src="../images/projectCode.png"
-                alt=""
-                placeholder="blurred"
-                layout="constrained"
-                loading="eager"
-                quality={100}
-              />
-              <StaticImage
-                src="../images/projectTerminal.png"
-                alt=""
-                placeholder="blurred"
-                layout="constrained"
-                loading="eager"
-                quality={100}
-              />
-            </div>
-          </div>
-        </div>
-        <BackgroundBeams />
-      </div>
+      <ContactUs />
       <InfiniteMovingLogoComp />
       <StatsComponent />
       <EverVaultCardComp />
@@ -103,14 +57,8 @@ const IndexPage: React.FC<PageProps> = () => {
       <TabsDemo />
       <WhyUs />
       <Testimonials />
-      <ContactUs />
       <Footer />
-      <div className="fixed bottom-3 right-2 sm:bottom-8 sm:right-5 z-50 ">
-        <LetsTalk
-          text={"Book Free Appointment"}
-          className={"bg-[#050f05] py-2 px-4 rounded-2xl text-lime-100"}
-        />
-      </div>
+      <BookAppointment />
       <div>
         <FloatingWhatsApp
           phoneNumber="+919933924693"
