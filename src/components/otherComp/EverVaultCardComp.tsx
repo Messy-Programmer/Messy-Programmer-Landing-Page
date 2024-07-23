@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import scrollTo from "gatsby-plugin-smoothscroll";
 export function EverVaultCardComp() {
   return (
-    <div className="flex flex-col items-center pt-16 bg-[#051405] lg:pb-16">
+    <div className="flex flex-col px-2 mt-10 items-center pt-16 bg-[#051405] lg:pb-16">
       <motion.div
         className="text-slate-100 text-center"
         whileInView={{ opacity: 1 }}

@@ -16,7 +16,7 @@ export const ExploreService = () => {
             needs.
           </p>
         </div>
-        <div className="flex flex-col gap-20 mt-12 sm:mt-20 xl:items-center">
+        <div className="flex px-3 flex-col gap-20 mt-12 sm:mt-20 xl:items-center">
           <div
             id="ex-1"
             className="sm:flex sm:items-center sm:flex-row-reverse xl:max-w-[80.75rem] xl:gap-40"

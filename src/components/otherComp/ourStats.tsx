@@ -41,9 +41,9 @@ const StatsComponent = () => {
               whileInView={{ x: "var(--tx-to)", opacity: 1 }}
             >
               <div className="gradient-txt text-4xl sm:text-6xl mb-2">
-                <AnimatedCounter from={0} to={153} />+
+                <AnimatedCounter from={0} to={89} />+
               </div>
-              <h2>Completed Projects</h2>
+              <h2>Happy Clients 😄</h2>
             </motion.div>
             <motion.div
               className="text-slate-100 w-[13rem] h-[10rem] sm:size-[13rem] bg-gradient-to-br from-[#0c240c] to-[#081a08] text-center flex flex-col justify-center rounded-xl border-[1.5px] border-t-[#284528] border-l-[#284528] border-b-[#112311] border-r-[#112311] [--tx-from:-9rem] [--tx-to:0rem] sm:[--tx-from:10rem] sm:[--tx-to:0rem]"
@@ -52,9 +52,9 @@ const StatsComponent = () => {
               transition={{ delay: 0.3 }}
             >
               <div className="gradient-txt text-6xl mb-2">
-                <AnimatedCounter from={0} to={89} />+
+                <AnimatedCounter from={0} to={153} />+
               </div>
-              <h2>Happy Clients 😄</h2>
+              <h2>Completed Projects</h2>
             </motion.div>
           </div>
           {/* last two card container */}
@@ -66,9 +66,9 @@ const StatsComponent = () => {
               transition={{ delay: 0.2 }}
             >
               <div className="gradient-txt text-6xl mb-2">
-                <AnimatedCounter from={0} to={86} />+
+                <AnimatedCounter from={0} to={4000} />+
               </div>
-              <span>5🌟 Reviews</span>
+              <span>Hours Worked</span>
             </motion.div>
             <motion.div
               className="text-slate-100 size-[10rem] sm:size-[13rem] bg-gradient-to-br from-[#0c240c] to-[#081a08] text-center flex flex-col justify-center rounded-xl border-[1.5px] border-t-[#284528] border-l-[#284528] border-b-[#112311] border-r-[#112311] [--tx-from:-9rem] [--tx-to:0rem] sm:[--tx-from:10rem] sm:[--tx-to:0rem]"
@@ -77,9 +77,9 @@ const StatsComponent = () => {
               transition={{ delay: 0.4 }}
             >
               <div className="gradient-txt text-3xl sm:text-6xl mb-2">
-                <AnimatedCounter from={0} to={4000} />+
+                <AnimatedCounter from={0} to={86} />+
               </div>
-              <h2>Hours Worked</h2>
+              <h2>5🌟 Reviews </h2>
             </motion.div>
           </div>
         </div>
