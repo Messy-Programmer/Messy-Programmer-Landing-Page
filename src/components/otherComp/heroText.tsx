@@ -7,7 +7,7 @@ const HeroText = () => {
     <>
       <div className="z-50 mt-36 absolute top-0 sm:mt-[15rem] w-full lg:mt-[15rem] 3xl:mt-[30rem]">
         <div className="flex flex-col max-w-[904px] text-center sm:text-start sm:pl-7 sm:max-w-[48rem] lg:max-w-[58rem] lg:pl-[5rem] 2xl:max-w-[70rem] 3xl:max-w-[120rem]">
-          <div className="w-full text-[1.7rem] font-medium max-md:max-w-full gradient-txt sm:text-4xl md:text-5xl lg:text-6xl lg:leading-loose 2xl:text-7xl 2xl:leading-[6rem] 3xl:text-9xl 3xl:leading-[9rem]">
+          <div className="w-full text-4xl font-bold max-md:max-w-full gradient-txt sm:text-4xl md:text-5xl lg:text-6xl lg:leading-loose 2xl:text-7xl 2xl:leading-[6rem] 3xl:text-9xl 3xl:leading-[9rem]">
             Your Success Story,
           </div>
           <div className="flex gap-5 flex-col px-5 mt-3 sm:px-0 sm:flex-row">
@@ -15,11 +15,11 @@ const HeroText = () => {
               <IoMail className="text-lg 3xl:text-3xl" />
               <div className="my-auto">contact@messyprogrammer.in</div>
             </div>
-            <div className="text-[1.7rem] font-medium max-md:max-w-full gradient-txt sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl 3xl:text-9xl">
+            <div className="text-4xl font-medium max-md:max-w-full gradient-txt sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl 3xl:text-9xl">
               Our Tech Expertise
             </div>
           </div>
-          <div className="mt-3.5 w-full text-sm px-4 leading-6 md:leading-9 text-slate-100 max-md:max-w-full sm:px-0 lg:text-[1.2rem] 2xl:pr-56 3xl:text-[2rem] 3xl:leading-[3rem] 3xl:pr-60">
+          <div className="mt-3.5 w-full text-sm font-extralight px-4 leading-6 md:leading-9 text-slate-100 max-md:max-w-full sm:px-0 lg:text-[1.2rem] 2xl:pr-56 3xl:text-[2rem] 3xl:leading-[3rem] 3xl:pr-60">
             Messy Programmer is your trusted partner for top-notch IT services
             at affordable prices. With a focus on quality and affordability, we
             specialize in providing a wide range of IT solutions tailored to
