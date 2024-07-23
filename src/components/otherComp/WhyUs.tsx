@@ -18,7 +18,7 @@ const WhyUs = () => {
         </div>
         {/* bottom div is item two */}
         <div className="px-5 text-slate-100 sm:w-[55%] xl:pr-[5rem]">
-          <h1 className="text-3xl mt-2 lg:text-4xl xl:text-5xl">
+          <h1 className="text-4xl mt-2 lg:text-4xl xl:text-5xl">
             Why choosing us?
           </h1>
           <p className="text-sm font-extralight mt-4 leading-7 xl:text-base xl:leading-9">

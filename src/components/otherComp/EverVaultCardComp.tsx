@@ -13,7 +13,7 @@ export function EverVaultCardComp() {
         initial={{ opacity: 0 }}
         transition={{ delay: 0.2 }}
       >
-        <h1 className="text-4xl gradient-txt font-medium xl:text-7xl xl:py-5">
+        <h1 className="text-5xl leading-[3.5rem] gradient-txt font-medium xl:text-7xl xl:py-5">
           Our Services Categories
         </h1>
         <p className="font-thin mt-4 xl:text-lg xl:font-light">

@@ -18,7 +18,7 @@ import Policymakr from "../../images/policy.png";
 export function InfiniteMovingLogoComp() {
   return (
     <div className="h-[11rem] sm:h-[20rem] flex flex-col antialiased items-center justify-center relative overflow-hidden z-0 mt-9">
-      <h2 className="text-slate-100 text-4xl gradient-txt font-semibold sm:text-4xl lg:text-5xl xl:text-7xl mb-5 sm:hidden">
+      <h2 className="text-slate-100 text-5xl gradient-txt font-semibold lg:text-5xl xl:text-7xl mb-5">
         Our Partners
       </h2>
       <InfiniteMovingLogo items={imageLink} direction="right" speed="slow" />

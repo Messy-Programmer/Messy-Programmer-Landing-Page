@@ -6,10 +6,10 @@ export function Testimonials() {
   return (
     <div className="bg-[#051405]">
       <div className="text-slate-100 text-center pt-8">
-        <h1 className="gradient-txt text-3xl xl:text-7xl font-medium">
+        <h1 className="gradient-txt text-5xl leading-[4rem] xl:text-7xl font-medium">
           What Our Clients Are Saying
         </h1>
-        <p className="text-base xl:mt-6">
+        <p className="text-base xl:mt-6 px-4">
           Our mission is to empower companies with the Tech!
         </p>
       </div>

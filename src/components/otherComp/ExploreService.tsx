@@ -7,8 +7,8 @@ export const ExploreService = () => {
     <div id="explore-service" className="bg-[#051405] py-20">
       {/* this div will contain the context  */}
       <div className="sm:px-6 ">
-        <div className="text-slate-100 text-center px-1">
-          <h1 className="text-3xl gradient-txt font-medium sm:text-4xl lg:text-5xl xl:text-7xl">
+        <div className="text-slate-100 text-center px-4">
+          <h1 className="text-5xl gradient-txt font-medium sm:text-4xl lg:text-5xl xl:text-7xl">
             Explore Services
           </h1>
           <p className="font-extralight mt-4 xl:font-light xl:text-lg">

@@ -14,11 +14,11 @@ const ContactUs = () => {
   return (
     <div
       id="contact"
-      className="bg-gradient-to-b from-[#0d270d] to-[#051405] xl:py-40 "
+      className="bg-gradient-to-b from-[#0d270d] to-[#051405] xl:py-40 mb-[8rem] sm:mb-16"
     >
       {/* down div contains the whole context  */}
       <div className="text-slate-100 text-center px-4">
-        <h1 className="text-3xl gradient-txt font-medium sm:text-4xl xl:text-6xl xl:p-5">
+        <h1 className="text-3xl gradient-txt font-medium sm:text-4xl xl:text-6xl xl:p-5 mb-5">
           Unlock Your Project's Potential with a Free Discovery Meeting
         </h1>
         <p className="text-sm font-extralight mt-4 xl:text-sm xl:font-light">
