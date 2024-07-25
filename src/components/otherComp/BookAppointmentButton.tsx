@@ -1,6 +1,6 @@
 import React from "react";
 import LetsTalk from "../ui/letstalk";
-const BookAppointment = () => {
+const BookAppointmentButton = () => {
   return (
     <div className="fixed bottom-3 right-2 sm:bottom-8 sm:right-5 z-50 ">
       <LetsTalk
@@ -10,4 +10,4 @@ const BookAppointment = () => {
     </div>
   );
 };
-export default BookAppointment;
+export default BookAppointmentButton;
