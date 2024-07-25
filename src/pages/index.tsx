@@ -19,6 +19,7 @@ import ogImage from "../images/og-image.jpg";
 import $ from "jquery";
 import AfterHero from "../components/otherComp/AfterHero";
 import BookAppointmentButton from "../components/otherComp/BookAppointmentButton";
+import AppointMent from "../components/otherComp/AppointMent";
 const IndexPage: React.FC<PageProps> = () => {
   const delay = 5;
   let timer1: NodeJS.Timeout;
@@ -51,6 +52,7 @@ const IndexPage: React.FC<PageProps> = () => {
         <HeroText />
       </BackgroundGradientAnimation>
       <AfterHero />
+      <AppointMent />
       <InfiniteMovingLogoComp />
       <StatsComponent />
       <EverVaultCardComp />
