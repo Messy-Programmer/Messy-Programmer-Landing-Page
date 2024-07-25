@@ -29,12 +29,12 @@ const AppointMent = () => {
           <LetsTalk
             text={"Book Appointment"}
             className={
-              " text-slate-100 rounded-xl bg-gradient-to-tr from-green-700 to-lime-500 py-3 px-3 lg:px-6 w-52 z-50"
+              "text-slate-100 rounded-xl bg-gradient-to-tr from-green-700 to-lime-500 py-3 px-3 lg:px-6 w-52 z-50"
             }
           />
           {/* layer 1  */}
-          <div className="absolute appointment-bg inset-0 w-full z-20 h-full"></div>
-          <div className="absolute appointment-bg1 inset-0 w-full z-10 h-full"></div>
+          <div className="absolute appointment-bg inset-0 w-full z-[3] h-full"></div>
+          <div className="absolute appointment-bg1 inset-0 w-full z-[2] h-full"></div>
         </div>
       </div>
     </div>
