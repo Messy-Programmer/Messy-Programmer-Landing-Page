@@ -17,7 +17,7 @@ const AfterHero = () => {
               quality={100}
             />
           </div>
-          <div className="mt-8">
+          <div className="mt-8 sm:mt-0">
             <StaticImage
               src="../../images/projectDev.png"
               alt="example"
@@ -27,7 +27,7 @@ const AfterHero = () => {
               quality={100}
             />
           </div>
-          <div className="mt-16 flex flex-col lg:gap-3 xl:gap-4">
+          <div className="mt-16 flex flex-col sm:mt-0 lg:gap-3 xl:gap-4">
             <StaticImage
               src="../../images/projectCode.png"
               alt="example"
