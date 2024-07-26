@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
 import { HiMiniQuestionMarkCircle } from "react-icons/hi2";
 import { IoCalendar } from "react-icons/io5";
-import { MdPeopleAlt } from "react-icons/md";
-import { FaExclamationCircle } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import submitGif from "../images/Submit-gif.gif";
 import { SparklesCore } from "../components/ui/sparkles";
