@@ -20,6 +20,21 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.submit-bg {
+  background-image: url(../images/submit-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.submit-bg1 {
+  background-image: url(../images/Appointment-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.submit-bg2 {
+  background-image: url(../images/Appointment-bg1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .styles-module_whatsappButton__tVits:after {
   animation: none !important;
 }
