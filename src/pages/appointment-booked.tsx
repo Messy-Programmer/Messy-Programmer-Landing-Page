@@ -81,7 +81,9 @@ const SubmitPage = () => {
                     When
                   </td>
                   <td className="font-extralight">
-                    Starts - {istStartTime} End- {istEndTime}
+                    Starts -{" "}
+                    <span className="text-lime-500"> {istStartTime}</span> End-{" "}
+                    <span className="text-red-400"> {istEndTime}</span>
                   </td>
                 </tr>
                 <tr>
@@ -91,7 +93,7 @@ const SubmitPage = () => {
                   </td>
                   <td className="font-extralight">
                     Google meet link will be sent to your confirmation email-{" "}
-                    {email}
+                    <span className="text-lime-500">{email}</span>
                   </td>
                 </tr>
                 <tr>
