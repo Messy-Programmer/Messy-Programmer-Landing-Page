@@ -5,6 +5,8 @@ import { FaLocationDot } from "react-icons/fa6";
 import submitGif from "../images/Submit-gif.gif";
 import { SparklesCore } from "../components/ui/sparkles";
 import NavBar from "../components/navBar/navbar";
+import LetsTalk from "../components/ui/letstalk";
+import { StaticImage } from "gatsby-plugin-image";
 const SubmitPage = () => {
   const [email, setEmail] = useState<string | null>("");
   const [istStartTime, setStartTime] = useState<string | null>("");
@@ -34,7 +36,33 @@ const SubmitPage = () => {
 
   return (
     <>
-      <NavBar />
+      <div>
+        <nav
+          id="nav"
+          className=" fixed top-0 w-full bg-gradient-to-b from-[#030503] via-[#03050354] z-[60] sm:py-4 transition-all backdrop-blur-sm"
+        >
+          <div className="flex justify-between items-center px-2 py-2">
+            <div className="log">
+              <StaticImage
+                src="../images/messyProgrammerLogo.png"
+                alt="messyProgrammerLogo"
+                className=" text-slate-100 font-medium it w-48"
+                placeholder="blurred"
+                layout="constrained"
+                loading="eager"
+                quality={100}
+              />
+            </div>
+
+            <LetsTalk
+              text={"Let's Talk"}
+              className={
+                " text-slate-100 rounded-xl bg-gradient-to-tr from-green-700 to-lime-500 py-2 px-3 lg:px-6"
+              }
+            />
+          </div>
+        </nav>
+      </div>
       <div className="h-screen relative w-full bg-[#051405] flex flex-col items-center justify-center overflow-hidden rounded-md">
         <div className="w-full absolute inset-0 h-full">
           <SparklesCore
