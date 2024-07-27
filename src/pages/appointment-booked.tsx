@@ -4,10 +4,13 @@ import { IoCalendar } from "react-icons/io5";
 import { FaLocationDot } from "react-icons/fa6";
 import submitGif from "../images/Submit-gif.gif";
 import { SparklesCore } from "../components/ui/sparkles";
+import NavBar from "../components/navBar/navbar";
 const SubmitPage = () => {
   const [email, setEmail] = useState<string | null>("");
   const [istStartTime, setStartTime] = useState<string | null>("");
   const [istEndTime, setEndTime] = useState<string | null>("");
+  const [startDate, setStartDate] = useState<string | null>();
+  const [endDate, setEndDate] = useState<string | null>();
   function convertToIST(utcTime: any) {
     const utcDate = new Date(utcTime);
     const offset = utcDate.getTimezoneOffset() * 60000;
@@ -15,22 +18,26 @@ const SubmitPage = () => {
       utcDate.getTime() + offset + (5 * 60 + 30) * 60000
     );
     const options = { timeZone: "Asia/Kolkata", hour12: true };
-    return istTime.toLocaleString("en-US", options);
+    console.log("ist time- ", istTime.toString());
+    // return istTime.toLocaleString("en-US", options);
+    return { time: istTime.toLocaleTimeString(), date: istTime.toDateString() };
   }
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const startTime = params?.get("startTime");
     const endTime = params?.get("endTime");
     setEmail(params.get("email"));
-    const IstStart = convertToIST(startTime);
-    const IstEnd = convertToIST(endTime);
-    setStartTime(IstStart);
-    setEndTime(IstEnd);
-    console.log("s-time", startTime);
+    const Start = convertToIST(startTime);
+    setStartTime(Start.time);
+    setStartDate(Start.date);
+    const End = convertToIST(endTime);
+    setEndTime(End.time);
+    setEndDate(End.date);
   });
 
   return (
     <>
+      <NavBar />
       <div className="h-screen relative w-full bg-[#051405] flex flex-col items-center justify-center overflow-hidden rounded-md">
         <div className="w-full absolute inset-0 h-full">
           <SparklesCore
@@ -64,7 +71,7 @@ const SubmitPage = () => {
               <h1 className="gradient-txt text-4xl font-semibold mb-4">
                 Your booking has been submitted
               </h1>
-              <p className="font-extralight text-sm">
+              <p className="font-light text-sm">
                 Messy Programmer still needs to confirm or reject the bookings.
               </p>
             </div>
@@ -81,7 +88,7 @@ const SubmitPage = () => {
                       <HiMiniQuestionMarkCircle className="size-5 inline mr-2" />
                       What
                     </td>
-                    <td className="font-extralight">
+                    <td className="font-light">
                       Discovery meeting between Messy Programmer and Suman Das
                     </td>
                   </tr>
@@ -90,10 +97,15 @@ const SubmitPage = () => {
                       <IoCalendar className="size-5 inline mr-2" />
                       When
                     </td>
-                    <td className="font-extralight">
+                    <td className="font-light">
                       Starts -{" "}
-                      <span className="text-lime-500"> {istStartTime}</span>{" "}
-                      End- <span className="text-red-400"> {istEndTime}</span>
+                      <span className="text-lime-500">
+                        {startDate} {istStartTime}
+                      </span>{" "}
+                      End -{" "}
+                      <span className="text-lime-500">
+                        {endDate} {istEndTime}
+                      </span>
                     </td>
                   </tr>
                   <tr>
@@ -101,14 +113,15 @@ const SubmitPage = () => {
                       <FaLocationDot className="size-5 inline mr-2" />
                       Where
                     </td>
-                    <td className="font-extralight">
-                      Google meet link will be sent to your confirmation email-{" "}
-                      <span className="text-lime-500">{email}</span>
+                    <td className="font-light">
+                      Google meet link will be sent to{" "}
+                      <span className="text-lime-500">{email}</span> after
+                      confirmation
                     </td>
                   </tr>
                   <tr>
                     <td className="flex font-semibold"></td>
-                    <td className="font-extralight text-right text-lime-500 hover:text-lime-300 transition duration-300">
+                    <td className="font-light text-right text-lime-500 hover:text-lime-300 transition duration-300">
                       <a href="/">← Back to Home</a>
                     </td>
                   </tr>
