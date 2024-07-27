@@ -4,7 +4,6 @@ import { IoCalendar } from "react-icons/io5";
 import { FaLocationDot } from "react-icons/fa6";
 import submitGif from "../images/Submit-gif.gif";
 import { SparklesCore } from "../components/ui/sparkles";
-import NavBar from "../components/navBar/navbar";
 import LetsTalk from "../components/ui/letstalk";
 import { StaticImage } from "gatsby-plugin-image";
 const SubmitPage = () => {
@@ -12,14 +11,16 @@ const SubmitPage = () => {
   const [istStartTime, setStartTime] = useState<string | null>("");
   const [istEndTime, setEndTime] = useState<string | null>("");
   const [startDate, setStartDate] = useState<string | null>("");
-  const [endDate, setEndDate] = useState<string | null>("");
   function convertToIST(utcTime: any) {
     const utcDate = new Date(utcTime);
     const offset = utcDate.getTimezoneOffset() * 60000;
     const istTime = new Date(
       utcDate.getTime() + offset + (5 * 60 + 30) * 60000
     );
-    return { time: istTime.toLocaleTimeString(), date: istTime.toDateString() };
+    return {
+      time: istTime.toLocaleTimeString("en-US", { hour12: false }),
+      date: istTime.toDateString(),
+    };
   }
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -31,7 +32,6 @@ const SubmitPage = () => {
     setStartDate(Start.date);
     const End = convertToIST(endTime);
     setEndTime(End.time);
-    setEndDate(End.date);
   });
 
   return (
@@ -123,13 +123,15 @@ const SubmitPage = () => {
                       When
                     </td>
                     <td className="font-light">
-                      Starts -{" "}
+                      Date{" "}
                       <span className="text-lime-500">
-                        {startDate} {istStartTime}
-                      </span>{" "}
-                      End -{" "}
+                        {startDate}
+                        <span className="text-slate-100 px-1">Time</span>
+                        {istStartTime}
+                      </span>
+                      <span className="px-1">-</span>
                       <span className="text-lime-500">
-                        {endDate} {istEndTime} (
+                        {istEndTime} (
                         <span className="text-slate-100">
                           Indian Standard Time
                         </span>
