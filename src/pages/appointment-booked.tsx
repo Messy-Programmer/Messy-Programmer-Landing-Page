@@ -9,17 +9,14 @@ const SubmitPage = () => {
   const [email, setEmail] = useState<string | null>("");
   const [istStartTime, setStartTime] = useState<string | null>("");
   const [istEndTime, setEndTime] = useState<string | null>("");
-  const [startDate, setStartDate] = useState<string | null>();
-  const [endDate, setEndDate] = useState<string | null>();
+  const [startDate, setStartDate] = useState<string | null>("");
+  const [endDate, setEndDate] = useState<string | null>("");
   function convertToIST(utcTime: any) {
     const utcDate = new Date(utcTime);
     const offset = utcDate.getTimezoneOffset() * 60000;
     const istTime = new Date(
       utcDate.getTime() + offset + (5 * 60 + 30) * 60000
     );
-    const options = { timeZone: "Asia/Kolkata", hour12: true };
-    console.log("ist time- ", istTime.toString());
-    // return istTime.toLocaleString("en-US", options);
     return { time: istTime.toLocaleTimeString(), date: istTime.toDateString() };
   }
   useEffect(() => {
