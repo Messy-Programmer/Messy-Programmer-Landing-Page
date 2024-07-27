@@ -123,20 +123,20 @@ const SubmitPage = () => {
                       When
                     </td>
                     <td className="font-light">
-                      Date{" "}
-                      <span className="text-lime-500">
+                      <div className="text-lime-500">
+                        <span className="text-slate-100 px-1">Date</span>
                         {startDate}
+                      </div>
+                      <div className="text-lime-500">
                         <span className="text-slate-100 px-1">Time</span>
                         {istStartTime}
-                      </span>
-                      <span className="px-1">-</span>
-                      <span className="text-lime-500">
+                        <span className="px-1">-</span>
                         {istEndTime} (
                         <span className="text-slate-100">
                           Indian Standard Time
                         </span>
                         )
-                      </span>
+                      </div>
                     </td>
                   </tr>
                   <tr>
