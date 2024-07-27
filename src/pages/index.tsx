@@ -12,12 +12,14 @@ import { ExploreService } from "../components/otherComp/ExploreService";
 import { TabsDemo } from "../components/otherComp/TabComp";
 import WhyUs from "../components/otherComp/WhyUs";
 import { Testimonials } from "../components/otherComp/Testimonial";
-import ContactUs from "../components/otherComp/ContactUs";
 import Loading from "../components/otherComp/Loading";
 import { useState, useEffect } from "react";
-import BookAppointment from "../components/otherComp/BookAppointment";
 import logo from "../images/logo-transparent.png";
+import ogImage from "../images/og-image.jpg";
 import $ from "jquery";
+import AfterHero from "../components/otherComp/AfterHero";
+import BookAppointmentButton from "../components/otherComp/BookAppointmentButton";
+import AppointMent from "../components/otherComp/AppointMent";
 const IndexPage: React.FC<PageProps> = () => {
   const delay = 5;
   let timer1: NodeJS.Timeout;
@@ -49,7 +51,8 @@ const IndexPage: React.FC<PageProps> = () => {
       <BackgroundGradientAnimation>
         <HeroText />
       </BackgroundGradientAnimation>
-      <ContactUs />
+      <AfterHero />
+      <AppointMent />
       <InfiniteMovingLogoComp />
       <StatsComponent />
       <EverVaultCardComp />
@@ -58,7 +61,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <WhyUs />
       <Testimonials />
       <Footer />
-      <BookAppointment />
+      <BookAppointmentButton />
       <div>
         <FloatingWhatsApp
           phoneNumber="+919933924693"
@@ -97,7 +100,7 @@ export const Head: HeadFC = () => (
     ></link>
     <meta
       property="og:image"
-      content="https://messyprogrammer.in/../images/LogoVector1.png"
+      content={`https://messyprogrammer.in${ogImage}`}
     />
     <meta
       property="og:image:secure_url"

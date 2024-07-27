@@ -19,7 +19,7 @@ const HeroText = () => {
               Our Tech Expertise
             </div>
           </div>
-          <div className="mt-3.5 w-full text-sm font-extralight px-4 leading-6 md:leading-9 text-slate-100 max-md:max-w-full sm:px-0 lg:text-[1.2rem] 2xl:pr-56 3xl:text-[2rem] 3xl:leading-[3rem] 3xl:pr-60">
+          <div className="mt-3.5 w-full text-sm font-light px-4 leading-6 md:leading-9 text-slate-100 max-md:max-w-full sm:px-0 lg:text-[1.2rem] 2xl:pr-56 3xl:text-[2rem] 3xl:leading-[3rem] 3xl:pr-60">
             Messy Programmer is your trusted partner for top-notch IT services
             at affordable prices. With a focus on quality and affordability, we
             specialize in providing a wide range of IT solutions tailored to

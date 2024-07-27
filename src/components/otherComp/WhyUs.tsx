@@ -21,7 +21,7 @@ const WhyUs = () => {
           <h1 className="text-4xl mt-2 lg:text-4xl xl:text-5xl">
             Why choosing us?
           </h1>
-          <p className="text-sm font-extralight mt-4 leading-7 xl:text-base xl:leading-9">
+          <p className="text-sm font-light mt-4 leading-7 xl:text-base xl:leading-9">
             Quality IT services often come at a high cost, while low-cost
             alternatives can compromise on quality, leaving businesses
             struggling. At Messy Programmer, we bridge this gap by offering

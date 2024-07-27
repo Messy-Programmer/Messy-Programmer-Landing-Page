@@ -11,7 +11,7 @@ export const ExploreService = () => {
           <h1 className="text-5xl gradient-txt font-medium sm:text-4xl lg:text-5xl xl:text-7xl">
             Explore Services
           </h1>
-          <p className="font-extralight mt-4 xl:font-light xl:text-lg">
+          <p className="font-light mt-4 xl:font-light xl:text-lg">
             Browse through 8+ Tech Services and find the one that fits your
             needs.
           </p>
@@ -42,7 +42,7 @@ export const ExploreService = () => {
               <h1 className="text-3xl mt-2 gradient-txt sm:font-medium lg:text-5xl">
                 Website Development
               </h1>
-              <p className="text-sm font-extralight mt-4 xl:text-base xl:leading-8 tracking-wider">
+              <p className="text-sm font-light mt-4 xl:text-base xl:leading-8 tracking-wider">
                 From simple landing pages to complex e-commerce platforms, we
                 design and develop stunning websites that captivate your
                 audience and drive results.
@@ -71,7 +71,7 @@ export const ExploreService = () => {
               <h1 className="text-3xl mt-2 gradient-txt sm:font-medium lg:text-5xl">
                 Custom Internal Business Application Development
               </h1>
-              <p className="text-sm font-extralight mt-4 xl:text-base xl:leading-8 tracking-wider">
+              <p className="text-sm font-light mt-4 xl:text-base xl:leading-8 tracking-wider">
                 Boost efficiency and productivity with custom internal business
                 applications tailored to your unique workflows and requirements.
               </p>
@@ -102,7 +102,7 @@ export const ExploreService = () => {
               <h1 className="text-3xl mt-2 gradient-txt sm:font-medium lg:text-5xl">
                 Web App Development
               </h1>
-              <p className="text-sm font-extralight mt-4 xl:text-base xl:leading-8 tracking-wider">
+              <p className="text-sm font-light mt-4 xl:text-base xl:leading-8 tracking-wider">
                 Harness the power of web technologies with our custom web app
                 development services. We create intuitive and scalable web
                 applications that streamline your business processes.
@@ -134,7 +134,7 @@ export const ExploreService = () => {
               <h1 className="text-3xl mt-2 gradient-txt sm:font-medium lg:text-5xl">
                 Business Automation Tool Development
               </h1>
-              <p className="text-sm font-extralight mt-4 xl:text-base xl:leading-8 tracking-wider">
+              <p className="text-sm font-light mt-4 xl:text-base xl:leading-8 tracking-wider">
                 Automate repetitive tasks and streamline operations with our
                 bespoke business automation tools. Say goodbye to manual
                 processes and hello to efficiency.
@@ -166,7 +166,7 @@ export const ExploreService = () => {
               <h1 className="text-3xl mt-2 gradient-txt sm:font-medium lg:text-5xl">
                 IOS Mobile App Development
               </h1>
-              <p className="text-sm font-extralight mt-4 xl:text-base xl:leading-8 tracking-wider">
+              <p className="text-sm font-light mt-4 xl:text-base xl:leading-8 tracking-wider">
                 Elevate your productivity with our intuitive iOS app, designed
                 to streamline your tasks and boost efficiency. Experience
                 boundless entertainment options with our cutting-edge iOS app,
@@ -193,7 +193,7 @@ export const ExploreService = () => {
             {/* bottom div is item two */}
             <div className="px-5 text-slate-100 sm:w-[50%] sm:px-2 xl:w-[55%]">
               <div className="text-xs bg-gradient-to-r from-[#004500] to-[#286528] py-1 px-2 mr-[5rem] rounded-md xl:mr-[25rem]">
-                <p className=" text-[10px] font-extralight xl:text-base">
+                <p className=" text-[10px] font-light xl:text-base">
                   Android mobile applications
                 </p>
               </div>
@@ -232,7 +232,7 @@ export const ExploreService = () => {
               <h1 className="text-3xl mt-2 gradient-txt sm:font-medium lg:text-5xl">
                 Business Workflow Design & Implementation
               </h1>
-              <p className="text-sm font-extralight mt-4 xl:text-base xl:leading-8 tracking-wider">
+              <p className="text-sm font-light mt-4 xl:text-base xl:leading-8 tracking-wider">
                 Optimize your business workflows for maximum efficiency and
                 effectiveness. Our experts analyze your processes and design
                 tailored solutions to drive growth.
@@ -345,7 +345,7 @@ export const ExploreService = () => {
               <h1 className="text-3xl mt-2 gradient-txt sm:font-medium lg:text-5xl">
                 Dedicated Tech Team for Your Business
               </h1>
-              <p className="text-sm font-extralight mt-4 xl:text-base xl:leading-8 tracking-wider">
+              <p className="text-sm font-light mt-4 xl:text-base xl:leading-8 tracking-wider">
                 Scale your development team quickly and cost-effectively with
                 our dedicated tech team services. From project management to
                 coding, we provide skilled professionals to meet your needs.
@@ -377,7 +377,7 @@ export const ExploreService = () => {
               <h1 className="text-3xl mt-2 gradient-txt sm:font-medium lg:text-5xl">
                 Tech Consultancy
               </h1>
-              <p className="text-sm font-extralight mt-4 xl:text-base xl:leading-8 tracking-wider">
+              <p className="text-sm font-light mt-4 xl:text-base xl:leading-8 tracking-wider">
                 Leverage our expertise and industry insights to make informed
                 technology decisions. Whether it's choosing the right tech stack
                 or optimizing your IT infrastructure, we're here to help.
