@@ -1,10 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { HiMiniQuestionMarkCircle } from "react-icons/hi2";
 import { IoCalendar } from "react-icons/io5";
 import { FaLocationDot } from "react-icons/fa6";
 import submitGif from "../images/Submit-gif.gif";
 import { SparklesCore } from "../components/ui/sparkles";
 const SubmitPage = () => {
+  const [email, setEmail] = useState<string | null>("");
+  const [istStartTime, setStartTime] = useState<string | null>("");
+  const [istEndTime, setEndTime] = useState<string | null>("");
   function convertToIST(utcTime: any) {
     const utcDate = new Date(utcTime);
     const offset = utcDate.getTimezoneOffset() * 60000;
@@ -14,12 +17,17 @@ const SubmitPage = () => {
     const options = { timeZone: "Asia/Kolkata", hour12: true };
     return istTime.toLocaleString("en-US", options);
   }
-  const params = new URLSearchParams(document.location.search);
-  const startTime = params.get("startTime");
-  const endTime = params.get("endTime");
-  const email = params.get("email");
-  const istStartTime = convertToIST(startTime);
-  const istEndTime = convertToIST(endTime);
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const startTime = params?.get("startTime");
+    const endTime = params?.get("endTime");
+    setEmail(params.get("email"));
+    const IstStart = convertToIST(startTime);
+    const IstEnd = convertToIST(endTime);
+    setStartTime(IstStart);
+    setEndTime(IstEnd);
+    console.log("s-time", startTime);
+  });
 
   return (
     <div className="h-screen relative w-full bg-[#051405] flex flex-col items-center justify-center overflow-hidden rounded-md">
