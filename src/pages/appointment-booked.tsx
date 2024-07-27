@@ -104,7 +104,11 @@ const SubmitPage = () => {
                       </span>{" "}
                       End -{" "}
                       <span className="text-lime-500">
-                        {endDate} {istEndTime}
+                        {endDate} {istEndTime} (
+                        <span className="text-slate-100">
+                          Indian Standard Time
+                        </span>
+                        )
                       </span>
                     </td>
                   </tr>
