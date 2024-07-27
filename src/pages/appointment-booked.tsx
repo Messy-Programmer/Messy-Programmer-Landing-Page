@@ -77,7 +77,7 @@ const SubmitPage = () => {
         </div>
         <div
           id="container-SubmitPage"
-          className="submit-bg py-10 2xl:flex 2xl:justify-center 2xl:items-center xl:py-20 3xl:py-[50rem] 3xl:w-full sm:h-full sm:w-full"
+          className="submit-bg py-10 mt-16 2xl:flex 2xl:justify-center 2xl:items-center xl:py-20 3xl:py-[50rem] 3xl:w-full sm:h-full sm:w-full"
         >
           <div
             id="inner-container"
