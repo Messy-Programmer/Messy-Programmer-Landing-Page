@@ -106,7 +106,9 @@ const SubmitPage = () => {
                 Your booking has been submitted
               </h1>
               <p className="font-light text-sm">
-                Messy Programmer still needs to confirm or reject the bookings.
+                We will send you a confirmation email after evaluating your
+                project requirements. Make sure you have submitted your
+                requirements properly.
               </p>
             </div>
             <div
@@ -150,7 +152,10 @@ const SubmitPage = () => {
                       Where
                     </td>
                     <td className="font-light">
-                      Google meet link will be sent to <span>{email}</span>{" "}
+                      Google meet link will be sent to{" "}
+                      <span className="border border-t-0 border-l-0 border-r-0 border-b-lime-600">
+                        {email}
+                      </span>{" "}
                       after confirmation
                     </td>
                   </tr>
