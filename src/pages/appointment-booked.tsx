@@ -18,8 +18,17 @@ const SubmitPage = () => {
       utcDate.getTime() + offset + (5 * 60 + 30) * 60000
     );
     return {
-      time: istTime.toLocaleTimeString("en-US", { hour12: false }),
-      date: istTime.toDateString(),
+      time: istTime.toLocaleTimeString("en-US", {
+        hour12: false,
+        hour: "2-digit",
+        minute: "2-digit",
+      }),
+      date: istTime.toLocaleDateString("en-us", {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      }),
     };
   }
   useEffect(() => {
@@ -39,7 +48,7 @@ const SubmitPage = () => {
       <div>
         <nav
           id="nav"
-          className=" fixed top-0 w-full bg-gradient-to-b from-[#030503] via-[#03050354] z-[60] sm:py-4 transition-all backdrop-blur-sm"
+          className=" fixed top-0 w-full bg-gradient-to-b from-[#030503] via-[#03050354] z-[60] sm:py-4 transition-all"
         >
           <div className="flex justify-between items-center px-2 py-2">
             <div className="log">
@@ -77,7 +86,7 @@ const SubmitPage = () => {
         </div>
         <div
           id="container-SubmitPage"
-          className="submit-bg py-10 2xl:flex 2xl:justify-center 2xl:items-center xl:py-20 3xl:py-[50rem] 3xl:w-full sm:h-full sm:w-full"
+          className="submit-bg w-full h-full flex items-center justify-center sm:mt-0 2xl:flex 2xl:justify-center 2xl:items-center xl:py-20 3xl:w-full sm:h-full sm:w-full"
         >
           <div
             id="inner-container"
@@ -97,12 +106,14 @@ const SubmitPage = () => {
                 Your booking has been submitted
               </h1>
               <p className="font-light text-sm">
-                Messy Programmer still needs to confirm or reject the bookings.
+                We will send you a confirmation email after evaluating your
+                project requirements. Make sure you have submitted your
+                requirements properly.
               </p>
             </div>
             <div
               id="grid-box"
-              className="border-2 rounded-2xl border-t-[#2E4F2E] border-l-[#2E4F2E] border-b-[#112311] border-r-[#112311] px-4 py-4 gap-4 mx-2 mb-8 relative z-0 bg-grid-black overflow-hidden sm:mx-14 xl:mx-20"
+              className="border-2 rounded-2xl border-t-[#2E4F2E] border-l-[#2E4F2E] border-b-[#112311] border-r-[#112311] px-4 py-4 gap-4 mx-2 relative z-0 bg-grid-black overflow-hidden sm:mx-14 xl:mx-20"
             >
               <div className="submit-bg1 z-20 h-full w-full absolute inset-0"></div>
               <div className="submit-bg2 z-10 h-full w-full absolute inset-0"></div>
@@ -123,12 +134,8 @@ const SubmitPage = () => {
                       When
                     </td>
                     <td className="font-light">
-                      <div className="text-lime-500">
-                        <span className="text-slate-100 px-1">Date</span>
-                        {startDate}
-                      </div>
-                      <div className="text-lime-500">
-                        <span className="text-slate-100 px-1">Time</span>
+                      <div>{startDate}</div>
+                      <div>
                         {istStartTime}
                         <span className="px-1">-</span>
                         {istEndTime} (
@@ -146,8 +153,10 @@ const SubmitPage = () => {
                     </td>
                     <td className="font-light">
                       Google meet link will be sent to{" "}
-                      <span className="text-lime-500">{email}</span> after
-                      confirmation
+                      <span className="border border-t-0 border-l-0 border-r-0 border-b-lime-600">
+                        {email}
+                      </span>{" "}
+                      after confirmation
                     </td>
                   </tr>
                   <tr>
