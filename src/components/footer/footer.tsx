@@ -76,7 +76,7 @@ const Footer = () => (
               target="blank"
               className="text-slate-100"
             >
-              Terms-Conditions
+              Terms & Conditions
             </Link>
             <Link
               to="/copyright-notice/"
