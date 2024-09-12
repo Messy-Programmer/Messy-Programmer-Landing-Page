@@ -69,7 +69,7 @@ const Footer = () => (
               target="blank"
               className="text-slate-100"
             >
-              Privacy-Policy
+              Privacy Policy
             </Link>
             <Link
               to="/terms-conditions/"
@@ -83,7 +83,7 @@ const Footer = () => (
               target="blank"
               className="text-slate-100"
             >
-              Copyright-Notice
+              Copyright Notice
             </Link>
           </div>
           {/* this is the contact us section  */}
