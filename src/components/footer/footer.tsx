@@ -85,6 +85,13 @@ const Footer = () => (
             >
               Copyright Notice
             </Link>
+            <Link
+              to="/refund-policy/"
+              target="blank"
+              className="text-slate-100"
+            >
+              Refund Policy
+            </Link>
           </div>
           {/* this is the contact us section  */}
           <div className="relative mt-16 md:mt-0">
